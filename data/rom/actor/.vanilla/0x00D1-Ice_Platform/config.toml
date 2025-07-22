@@ -1,0 +1,4 @@
+# Ice_Platform
+vram_addr       = 0x808B0960
+init_vars       = 0x808B1690
+alloc_type      = 0

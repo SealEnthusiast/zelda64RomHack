@@ -1,0 +1,4 @@
+# Shop_Shelves
+vram_addr       = 0x80B17F30
+init_vars       = 0x80B181E0
+alloc_type      = 0

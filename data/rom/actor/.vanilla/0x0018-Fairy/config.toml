@@ -1,0 +1,4 @@
+# Fairy
+vram_addr       = 0x80A01C30
+init_vars       = 0x80A06000
+alloc_type      = 0

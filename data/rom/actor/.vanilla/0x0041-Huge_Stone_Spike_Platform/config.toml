@@ -1,0 +1,4 @@
+# Huge_Stone_Spike_Platform
+vram_addr       = 0x80889130
+init_vars       = 0x80889800
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Hylians
+vram_addr       = 0x80A6F5B0
+init_vars       = 0x80A71EA0
+alloc_type      = 0

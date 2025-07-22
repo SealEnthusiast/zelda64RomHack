@@ -1,0 +1,4 @@
+# Alpha_Orange_Pot
+vram_addr       = 0x80B28EB0
+init_vars       = 0x80B28F50
+alloc_type      = 0

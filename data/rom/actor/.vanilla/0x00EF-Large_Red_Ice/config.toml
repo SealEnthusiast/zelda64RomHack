@@ -1,0 +1,4 @@
+# Large_Red_Ice
+vram_addr       = 0x80890740
+init_vars       = 0x808916D0
+alloc_type      = 0

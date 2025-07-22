@@ -1,0 +1,4 @@
+# Mini_Game_Displayed_GI_Models
+vram_addr       = 0x80A08EA0
+init_vars       = 0x80A09DE0
+alloc_type      = 0

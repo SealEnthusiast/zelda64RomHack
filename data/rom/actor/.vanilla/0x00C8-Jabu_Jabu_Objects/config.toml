@@ -1,0 +1,4 @@
+# Jabu_Jabu_Objects
+vram_addr       = 0x8086BCA0
+init_vars       = 0x8086CD50
+alloc_type      = 0

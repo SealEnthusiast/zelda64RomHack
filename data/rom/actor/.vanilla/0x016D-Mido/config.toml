@@ -1,0 +1,4 @@
+# Mido
+vram_addr       = 0x80AAA250
+init_vars       = 0x80AAC2F0
+alloc_type      = 0

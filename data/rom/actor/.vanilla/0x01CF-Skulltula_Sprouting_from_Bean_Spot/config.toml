@@ -1,0 +1,4 @@
+# Skulltula_Sprouting_from_Bean_Spot
+vram_addr       = 0x80B98270
+init_vars       = 0x80B98410
+alloc_type      = 0

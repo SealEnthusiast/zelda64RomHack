@@ -1,0 +1,4 @@
+# Gate_Guards
+vram_addr       = 0x80A52EA0
+init_vars       = 0x80A54EF0
+alloc_type      = 0

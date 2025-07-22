@@ -1,0 +1,4 @@
+# Pillar_after_being_hit_by_Iron_Knuckle
+vram_addr       = 0x808980C0
+init_vars       = 0x80898720
+alloc_type      = 0

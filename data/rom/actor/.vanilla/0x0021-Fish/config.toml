@@ -1,0 +1,4 @@
+# Fish
+vram_addr       = 0x80A15280
+init_vars       = 0x80A17050
+alloc_type      = 0

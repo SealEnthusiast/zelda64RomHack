@@ -1,0 +1,4 @@
+# Blue_Warp
+vram_addr       = 0x80998780
+init_vars       = 0x8099C580
+alloc_type      = 0

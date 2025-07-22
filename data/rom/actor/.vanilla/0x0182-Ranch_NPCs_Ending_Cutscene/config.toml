@@ -1,0 +1,4 @@
+# Ranch_NPCs_Ending_Cutscene
+vram_addr       = 0x8096D4B0
+init_vars       = 0x80970610
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Windmill_Sails
+vram_addr       = 0x808AA9C0
+init_vars       = 0x808AAC00
+alloc_type      = 0

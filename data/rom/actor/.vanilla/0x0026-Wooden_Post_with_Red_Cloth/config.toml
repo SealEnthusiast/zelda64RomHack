@@ -1,0 +1,4 @@
+# Wooden_Post_with_Red_Cloth
+vram_addr       = 0x80A50D50
+init_vars       = 0x80A511F0
+alloc_type      = 0

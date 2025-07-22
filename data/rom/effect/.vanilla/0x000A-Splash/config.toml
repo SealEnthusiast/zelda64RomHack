@@ -1,0 +1,3 @@
+# Splash
+vram_addr       = 0x809A7540
+init_vars       = 0x809A7940

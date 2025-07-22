@@ -1,0 +1,4 @@
+# Brick_Pillar_Spirit_Temple
+vram_addr       = 0x808988A0
+init_vars       = 0x80899484
+alloc_type      = 0

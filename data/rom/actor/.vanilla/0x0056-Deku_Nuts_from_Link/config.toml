@@ -1,0 +1,4 @@
+# Deku_Nuts_from_Link
+vram_addr       = 0x80A9EE40
+init_vars       = 0x80A9EF60
+alloc_type      = 2

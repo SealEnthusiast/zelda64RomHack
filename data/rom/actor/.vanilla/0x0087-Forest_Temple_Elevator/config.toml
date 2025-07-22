@@ -1,0 +1,4 @@
+# Forest_Temple_Elevator
+vram_addr       = 0x808A1800
+init_vars       = 0x808A2214
+alloc_type      = 0

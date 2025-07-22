@@ -1,0 +1,4 @@
+# Spike_Enemy
+vram_addr       = 0x80ABCBB0
+init_vars       = 0x80ABE310
+alloc_type      = 0

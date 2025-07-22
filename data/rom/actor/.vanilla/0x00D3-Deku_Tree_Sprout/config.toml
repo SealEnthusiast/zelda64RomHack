@@ -1,0 +1,4 @@
+# Deku_Tree_Sprout
+vram_addr       = 0x80B92420
+init_vars       = 0x80B929E0
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Title_Screen_Actor
+vram_addr       = 0x80AA3B00
+init_vars       = 0x80AA5EA0
+alloc_type      = 0

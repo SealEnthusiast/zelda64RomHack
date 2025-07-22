@@ -1,0 +1,4 @@
+# Water_Spout
+vram_addr       = 0x80AFBB80
+init_vars       = 0x80AFC7F0
+alloc_type      = 0

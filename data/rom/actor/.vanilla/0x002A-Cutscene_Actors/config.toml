@@ -1,0 +1,4 @@
+# Cutscene_Actors
+vram_addr       = 0x80B2A200
+init_vars       = 0x80B2CEC4
+alloc_type      = 0

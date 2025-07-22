@@ -1,0 +1,4 @@
+# Dust_Motes_Gathering_Together
+vram_addr       = 0x8099D8D0
+init_vars       = 0x8099EB40
+alloc_type      = 0

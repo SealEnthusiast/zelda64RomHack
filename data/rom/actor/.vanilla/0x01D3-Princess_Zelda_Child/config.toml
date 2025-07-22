@@ -1,0 +1,4 @@
+# Princess_Zelda_Child
+vram_addr       = 0x80B5B7B0
+init_vars       = 0x80B5E760
+alloc_type      = 0

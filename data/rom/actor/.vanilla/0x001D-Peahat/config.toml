@@ -1,0 +1,4 @@
+# Peahat
+vram_addr       = 0x80ACF4A0
+init_vars       = 0x80AD2720
+alloc_type      = 0

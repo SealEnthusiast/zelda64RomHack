@@ -1,0 +1,4 @@
+# Spinning_Flame_Thrower_Statue
+vram_addr       = 0x8088C200
+init_vars       = 0x8088CC60
+alloc_type      = 0

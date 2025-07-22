@@ -1,0 +1,4 @@
+# Gohma_Larva
+vram_addr       = 0x80A48EC0
+init_vars       = 0x80A4B780
+alloc_type      = 0

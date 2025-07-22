@@ -1,0 +1,4 @@
+# Windmill_Man
+vram_addr       = 0x80A1D810
+init_vars       = 0x80A1E400
+alloc_type      = 0

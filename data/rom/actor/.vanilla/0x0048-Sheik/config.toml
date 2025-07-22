@@ -1,0 +1,4 @@
+# Sheik
+vram_addr       = 0x80B3C1E0
+init_vars       = 0x80B41F30
+alloc_type      = 0

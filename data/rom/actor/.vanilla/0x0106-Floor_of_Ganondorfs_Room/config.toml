@@ -1,0 +1,4 @@
+# Floor_of_Ganondorfs_Room
+vram_addr       = 0x80875920
+init_vars       = 0x80876A40
+alloc_type      = 0

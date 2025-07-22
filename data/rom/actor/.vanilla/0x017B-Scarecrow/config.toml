@@ -1,0 +1,4 @@
+# Scarecrow
+vram_addr       = 0x80A8F170
+init_vars       = 0x80A8FE0C
+alloc_type      = 0

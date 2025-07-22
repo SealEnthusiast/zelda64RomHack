@@ -1,0 +1,4 @@
+# Gates_and_Rotating_Pillars
+vram_addr       = 0x808A3060
+init_vars       = 0x808A35A0
+alloc_type      = 0

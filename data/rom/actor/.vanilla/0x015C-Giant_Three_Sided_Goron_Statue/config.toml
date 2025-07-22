@@ -1,0 +1,4 @@
+# Giant_Three_Sided_Goron_Statue
+vram_addr       = 0x808B7710
+init_vars       = 0x808B8550
+alloc_type      = 0

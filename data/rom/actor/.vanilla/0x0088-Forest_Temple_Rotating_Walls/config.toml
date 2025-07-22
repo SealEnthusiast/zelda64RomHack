@@ -1,0 +1,4 @@
+# Forest_Temple_Rotating_Walls
+vram_addr       = 0x808A4DC0
+init_vars       = 0x808A53B0
+alloc_type      = 0

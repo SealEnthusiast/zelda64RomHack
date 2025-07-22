@@ -1,0 +1,4 @@
+# Rain_and_Lightning
+vram_addr       = 0x80ABE760
+init_vars       = 0x80ABEBD0
+alloc_type      = 0

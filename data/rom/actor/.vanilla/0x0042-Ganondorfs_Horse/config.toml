@@ -1,0 +1,4 @@
+# Ganondorfs_Horse
+vram_addr       = 0x80A68660
+init_vars       = 0x80A69190
+alloc_type      = 0

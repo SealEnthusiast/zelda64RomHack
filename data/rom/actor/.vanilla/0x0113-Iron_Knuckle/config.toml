@@ -1,0 +1,4 @@
+# Iron_Knuckle
+vram_addr       = 0x80A74310
+init_vars       = 0x80A78628
+alloc_type      = 0

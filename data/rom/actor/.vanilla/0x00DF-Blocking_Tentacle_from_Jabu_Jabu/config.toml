@@ -1,0 +1,4 @@
+# Blocking_Tentacle_from_Jabu_Jabu
+vram_addr       = 0x809D1AE0
+init_vars       = 0x809D2470
+alloc_type      = 0

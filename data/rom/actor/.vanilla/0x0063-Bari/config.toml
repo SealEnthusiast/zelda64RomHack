@@ -1,0 +1,4 @@
+# Bari
+vram_addr       = 0x80B266B0
+init_vars       = 0x80B28880
+alloc_type      = 0

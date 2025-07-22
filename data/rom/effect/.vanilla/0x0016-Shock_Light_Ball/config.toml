@@ -1,0 +1,3 @@
+# Shock_Light_Ball
+vram_addr       = 0x809A4660
+init_vars       = 0x809A5080

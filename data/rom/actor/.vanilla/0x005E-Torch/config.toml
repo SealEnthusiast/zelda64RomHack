@@ -1,0 +1,4 @@
+# Torch
+vram_addr       = 0x80B9F2B0
+init_vars       = 0x80B9FDF0
+alloc_type      = 0

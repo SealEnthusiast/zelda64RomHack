@@ -1,0 +1,4 @@
+# Drawbridge
+vram_addr       = 0x808A9780
+init_vars       = 0x808AA790
+alloc_type      = 0

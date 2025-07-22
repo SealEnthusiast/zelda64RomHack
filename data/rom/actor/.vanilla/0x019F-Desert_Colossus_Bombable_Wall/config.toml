@@ -1,0 +1,4 @@
+# Desert_Colossus_Bombable_Wall
+vram_addr       = 0x808B2180
+init_vars       = 0x808B26E0
+alloc_type      = 0

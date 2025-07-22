@@ -1,0 +1,4 @@
+# Falling_Rock_Spawner
+vram_addr       = 0x80A07990
+init_vars       = 0x80A08B50
+alloc_type      = 0

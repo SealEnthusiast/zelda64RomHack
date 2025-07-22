@@ -1,0 +1,4 @@
+# Lowering_Circular_Platform
+vram_addr       = 0x808A0BC0
+init_vars       = 0x808A14C0
+alloc_type      = 0

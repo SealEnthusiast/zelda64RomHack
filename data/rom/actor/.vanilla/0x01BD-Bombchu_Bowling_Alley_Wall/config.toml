@@ -1,0 +1,4 @@
+# Bombchu_Bowling_Alley_Wall
+vram_addr       = 0x8086F160
+init_vars       = 0x8086FA20
+alloc_type      = 0

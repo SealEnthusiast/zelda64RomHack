@@ -1,0 +1,4 @@
+# Impa
+vram_addr       = 0x80984BE0
+init_vars       = 0x809887F0
+alloc_type      = 0

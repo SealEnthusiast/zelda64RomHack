@@ -1,0 +1,4 @@
+# Rolling_Boulder
+vram_addr       = 0x80A4BCA0
+init_vars       = 0x80A4DE60
+alloc_type      = 0

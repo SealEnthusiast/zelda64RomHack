@@ -1,0 +1,4 @@
+# Tektite
+vram_addr       = 0x80B18A80
+init_vars       = 0x80B1B5B0
+alloc_type      = 0

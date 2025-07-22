@@ -1,0 +1,4 @@
+# Ice_Arrow
+vram_addr       = 0x80867CD0
+init_vars       = 0x80869AE0
+alloc_type      = 1

@@ -1,0 +1,4 @@
+# Gerudo_Training_Area_Gate
+vram_addr       = 0x808B3420
+init_vars       = 0x808B3820
+alloc_type      = 0

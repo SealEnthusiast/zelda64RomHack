@@ -1,0 +1,4 @@
+# Young_Link_Silver_Block
+vram_addr       = 0x808941A0
+init_vars       = 0x808943E0
+alloc_type      = 0

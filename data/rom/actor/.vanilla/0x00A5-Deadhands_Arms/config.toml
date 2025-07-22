@@ -1,0 +1,4 @@
+# Deadhands_Arms
+vram_addr       = 0x809EC880
+init_vars       = 0x809ED630
+alloc_type      = 0

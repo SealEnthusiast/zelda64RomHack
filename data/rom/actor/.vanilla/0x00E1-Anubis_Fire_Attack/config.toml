@@ -1,0 +1,4 @@
+# Anubis_Fire_Attack
+vram_addr       = 0x809B25A0
+init_vars       = 0x809B31C0
+alloc_type      = 0

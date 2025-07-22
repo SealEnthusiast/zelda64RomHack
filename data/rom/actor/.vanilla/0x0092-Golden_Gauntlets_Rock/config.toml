@@ -1,0 +1,4 @@
+# Golden_Gauntlets_Rock
+vram_addr       = 0x80883790
+init_vars       = 0x80884E50
+alloc_type      = 0

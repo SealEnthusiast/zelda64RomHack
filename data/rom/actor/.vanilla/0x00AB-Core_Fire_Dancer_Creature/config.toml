@@ -1,0 +1,4 @@
+# Core_Fire_Dancer_Creature
+vram_addr       = 0x80A1E5A0
+init_vars       = 0x80A1FB40
+alloc_type      = 0

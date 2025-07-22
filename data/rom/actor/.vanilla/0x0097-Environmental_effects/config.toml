@@ -1,0 +1,4 @@
+# Environmental_effects
+vram_addr       = 0x80BA2AA0
+init_vars       = 0x80BA5920
+alloc_type      = 0

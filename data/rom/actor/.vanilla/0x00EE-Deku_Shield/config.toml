@@ -1,0 +1,4 @@
+# Deku_Shield
+vram_addr       = 0x80B86920
+init_vars       = 0x80B871CC
+alloc_type      = 0

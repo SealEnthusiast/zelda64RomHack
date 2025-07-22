@@ -1,0 +1,4 @@
+# Floormaster
+vram_addr       = 0x80A17510
+init_vars       = 0x80A1A450
+alloc_type      = 0

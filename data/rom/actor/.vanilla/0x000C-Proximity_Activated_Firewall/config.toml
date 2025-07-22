@@ -1,0 +1,4 @@
+# Proximity_Activated_Firewall
+vram_addr       = 0x80886660
+init_vars       = 0x80886CB0
+alloc_type      = 0

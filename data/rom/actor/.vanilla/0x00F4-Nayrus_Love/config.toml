@@ -1,0 +1,4 @@
+# Nayrus_Love
+vram_addr       = 0x80B873D0
+init_vars       = 0x80B880C0
+alloc_type      = 1

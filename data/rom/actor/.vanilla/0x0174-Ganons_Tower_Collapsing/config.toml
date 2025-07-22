@@ -1,0 +1,4 @@
+# Ganons_Tower_Collapsing
+vram_addr       = 0x8097D670
+init_vars       = 0x80982758
+alloc_type      = 0

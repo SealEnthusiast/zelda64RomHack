@@ -1,0 +1,4 @@
+# Green_Deku_Scrubs
+vram_addr       = 0x80A57200
+init_vars       = 0x80A589E0
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Sparkling_Rupee
+vram_addr       = 0x80A0A410
+init_vars       = 0x80A0B338
+alloc_type      = 0

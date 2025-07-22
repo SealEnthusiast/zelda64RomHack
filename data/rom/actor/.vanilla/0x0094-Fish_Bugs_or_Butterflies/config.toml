@@ -1,0 +1,4 @@
+# Fish_Bugs_or_Butterflies
+vram_addr       = 0x80B98AA0
+init_vars       = 0x80B99A30
+alloc_type      = 0

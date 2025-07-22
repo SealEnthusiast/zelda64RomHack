@@ -1,0 +1,4 @@
+# Circular_Lifting_Metal_Shutter_Spirit_Temple
+vram_addr       = 0x808932C0
+init_vars       = 0x808935D0
+alloc_type      = 0

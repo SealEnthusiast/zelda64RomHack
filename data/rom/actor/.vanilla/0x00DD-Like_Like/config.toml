@@ -1,0 +1,4 @@
+# Like_Like
+vram_addr       = 0x80AE8440
+init_vars       = 0x80AEA620
+alloc_type      = 0

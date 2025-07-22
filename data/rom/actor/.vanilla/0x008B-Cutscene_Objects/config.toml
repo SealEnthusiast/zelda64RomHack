@@ -1,0 +1,4 @@
+# Cutscene_Objects
+vram_addr       = 0x80970F50
+init_vars       = 0x809767F0
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Withered_Deku_Baba
+vram_addr       = 0x80A95350
+init_vars       = 0x80A969D0
+alloc_type      = 0

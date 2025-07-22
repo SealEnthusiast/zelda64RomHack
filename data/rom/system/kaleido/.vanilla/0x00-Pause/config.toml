@@ -1,0 +1,4 @@
+# Pause
+vram_addr       = 0x80813820
+init            = 0x80826CB4
+updt            = 0x808262B8

@@ -1,0 +1,4 @@
+# Ganons_Tower_Magic_Barrier
+vram_addr       = 0x8098CFD0
+init_vars       = 0x8098E090
+alloc_type      = 0

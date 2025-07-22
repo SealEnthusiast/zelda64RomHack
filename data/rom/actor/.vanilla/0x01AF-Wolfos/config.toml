@@ -1,0 +1,4 @@
+# Wolfos
+vram_addr       = 0x80B33CB0
+init_vars       = 0x80B37AA8
+alloc_type      = 0

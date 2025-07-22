@@ -1,0 +1,4 @@
+# Fire_Arrow_Shot_Suns_Song_Fairy
+vram_addr       = 0x80BADCC0
+init_vars       = 0x80BAE2D0
+alloc_type      = 0

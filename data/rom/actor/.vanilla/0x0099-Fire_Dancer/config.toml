@@ -1,0 +1,4 @@
+# Fire_Dancer
+vram_addr       = 0x80A0B6C0
+init_vars       = 0x80A0DE00
+alloc_type      = 0

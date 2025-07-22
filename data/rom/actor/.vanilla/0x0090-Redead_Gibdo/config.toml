@@ -1,0 +1,4 @@
+# Redead_Gibdo
+vram_addr       = 0x80AE2400
+init_vars       = 0x80AE48A0
+alloc_type      = 0

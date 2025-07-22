@@ -1,0 +1,4 @@
+# Ganondorfs_Mantle
+vram_addr       = 0x80A23D60
+init_vars       = 0x80A24D00
+alloc_type      = 0

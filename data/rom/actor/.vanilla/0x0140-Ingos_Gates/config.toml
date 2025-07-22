@@ -1,0 +1,4 @@
+# Ingos_Gates
+vram_addr       = 0x80892740
+init_vars       = 0x80892A90
+alloc_type      = 0

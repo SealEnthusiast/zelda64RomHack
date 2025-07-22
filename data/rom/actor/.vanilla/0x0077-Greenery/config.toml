@@ -1,0 +1,4 @@
+# Greenery
+vram_addr       = 0x80B3AF70
+init_vars       = 0x80B3BEE0
+alloc_type      = 0

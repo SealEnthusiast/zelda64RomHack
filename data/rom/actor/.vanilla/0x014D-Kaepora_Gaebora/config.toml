@@ -1,0 +1,4 @@
+# Kaepora_Gaebora
+vram_addr       = 0x80AC9F20
+init_vars       = 0x80ACD5D0
+alloc_type      = 0

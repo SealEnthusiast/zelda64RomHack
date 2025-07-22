@@ -1,0 +1,4 @@
+# Bird_Statue_Bombables
+vram_addr       = 0x808825C0
+init_vars       = 0x80883628
+alloc_type      = 0

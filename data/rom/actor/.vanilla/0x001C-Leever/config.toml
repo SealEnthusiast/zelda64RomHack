@@ -1,0 +1,4 @@
+# Leever
+vram_addr       = 0x80AE4CD0
+init_vars       = 0x80AE6580
+alloc_type      = 0

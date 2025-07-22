@@ -1,0 +1,4 @@
+# Man_in_Purple_Pants_and_White_Top
+vram_addr       = 0x80A50220
+init_vars       = 0x80A50B50
+alloc_type      = 0

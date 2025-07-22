@@ -1,0 +1,4 @@
+# Saria
+vram_addr       = 0x80AF5560
+init_vars       = 0x80AF7240
+alloc_type      = 0

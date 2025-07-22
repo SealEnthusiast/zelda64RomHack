@@ -1,0 +1,4 @@
+# Invisible_Collectibles
+vram_addr       = 0x80B38060
+init_vars       = 0x80B38D6C
+alloc_type      = 0

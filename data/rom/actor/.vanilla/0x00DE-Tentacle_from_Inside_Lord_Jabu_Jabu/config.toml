@@ -1,0 +1,4 @@
+# Tentacle_from_Inside_Lord_Jabu_Jabu
+vram_addr       = 0x809B6350
+init_vars       = 0x809B8060
+alloc_type      = 0

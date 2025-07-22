@@ -1,0 +1,4 @@
+# Block_Save_Point
+vram_addr       = 0x80B91460
+init_vars       = 0x80B915A0
+alloc_type      = 0

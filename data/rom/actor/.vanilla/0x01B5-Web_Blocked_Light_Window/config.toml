@@ -1,0 +1,4 @@
+# Web_Blocked_Light_Window
+vram_addr       = 0x8087ADC0
+init_vars       = 0x8087B510
+alloc_type      = 0

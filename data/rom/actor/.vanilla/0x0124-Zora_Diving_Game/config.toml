@@ -1,0 +1,4 @@
+# Zora_Diving_Game
+vram_addr       = 0x809ED870
+init_vars       = 0x809EF090
+alloc_type      = 0

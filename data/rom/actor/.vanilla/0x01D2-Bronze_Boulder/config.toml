@@ -1,0 +1,4 @@
+# Bronze_Boulder
+vram_addr       = 0x80B92F90
+init_vars       = 0x80B93730
+alloc_type      = 0

@@ -1,0 +1,3 @@
+# Bomb_Unused
+vram_addr       = 0x8099F1B0
+init_vars       = 0x8099F580

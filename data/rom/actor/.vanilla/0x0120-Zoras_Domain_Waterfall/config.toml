@@ -1,0 +1,4 @@
+# Zoras_Domain_Waterfall
+vram_addr       = 0x808AFC30
+init_vars       = 0x808B01E0
+alloc_type      = 0

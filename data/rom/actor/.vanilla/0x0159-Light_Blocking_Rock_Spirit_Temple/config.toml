@@ -1,0 +1,4 @@
+# Light_Blocking_Rock_Spirit_Temple
+vram_addr       = 0x808944A0
+init_vars       = 0x80894F20
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Lava_Sprites
+vram_addr       = 0x8099CCB0
+init_vars       = 0x8099D750
+alloc_type      = 0

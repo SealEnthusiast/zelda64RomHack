@@ -1,0 +1,4 @@
+# Room_Timer
+vram_addr       = 0x80B9CFD0
+init_vars       = 0x80B9D1B0
+alloc_type      = 0

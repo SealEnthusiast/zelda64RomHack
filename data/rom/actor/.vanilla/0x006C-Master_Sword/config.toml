@@ -1,0 +1,4 @@
+# Master_Sword
+vram_addr       = 0x808BAE40
+init_vars       = 0x808BC3C0
+alloc_type      = 0

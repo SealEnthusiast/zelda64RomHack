@@ -1,0 +1,4 @@
+# Cracked_Stone_Platform
+vram_addr       = 0x8088A020
+init_vars       = 0x8088ADF0
+alloc_type      = 0

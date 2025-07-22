@@ -1,0 +1,4 @@
+# Sage_Saria_Cutscene
+vram_addr       = 0x8098E460
+init_vars       = 0x80990DBC
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Grounded_Business_Scrub
+vram_addr       = 0x80AFA720
+init_vars       = 0x80AFB4C0
+alloc_type      = 0

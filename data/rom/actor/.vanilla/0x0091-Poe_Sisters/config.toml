@@ -1,0 +1,4 @@
+# Poe_Sisters
+vram_addr       = 0x80AD8F90
+init_vars       = 0x80ADD710
+alloc_type      = 0

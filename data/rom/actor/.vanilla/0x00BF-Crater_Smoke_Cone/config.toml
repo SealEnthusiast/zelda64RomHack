@@ -1,0 +1,4 @@
+# Crater_Smoke_Cone
+vram_addr       = 0x808B7400
+init_vars       = 0x808B7600
+alloc_type      = 0

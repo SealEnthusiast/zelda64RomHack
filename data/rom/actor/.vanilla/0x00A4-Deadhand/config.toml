@@ -1,0 +1,4 @@
+# Deadhand
+vram_addr       = 0x809EAD40
+init_vars       = 0x809EC5A0
+alloc_type      = 0

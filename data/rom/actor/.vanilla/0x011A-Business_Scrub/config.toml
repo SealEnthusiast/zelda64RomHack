@@ -1,0 +1,4 @@
+# Business_Scrub
+vram_addr       = 0x809EF350
+init_vars       = 0x809F03C0
+alloc_type      = 0

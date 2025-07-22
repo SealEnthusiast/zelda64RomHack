@@ -1,0 +1,4 @@
+# Rock
+vram_addr       = 0x80A7E460
+init_vars       = 0x80A7F9F8
+alloc_type      = 0

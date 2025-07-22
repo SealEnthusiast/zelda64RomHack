@@ -1,0 +1,4 @@
+# 2D_Ice_Bars
+vram_addr       = 0x80891AC0
+init_vars       = 0x80891E90
+alloc_type      = 0

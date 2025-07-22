@@ -1,0 +1,4 @@
+# Freezard
+vram_addr       = 0x80A1FDC0
+init_vars       = 0x80A21B70
+alloc_type      = 0

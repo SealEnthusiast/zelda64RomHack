@@ -1,0 +1,4 @@
+# Stone_Stairs
+vram_addr       = 0x808710F0
+init_vars       = 0x808718A0
+alloc_type      = 0

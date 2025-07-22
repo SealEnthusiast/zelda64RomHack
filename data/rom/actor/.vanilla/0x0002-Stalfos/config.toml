@@ -1,0 +1,4 @@
+# Stalfos
+vram_addr       = 0x8085F650
+init_vars       = 0x80864550
+alloc_type      = 0

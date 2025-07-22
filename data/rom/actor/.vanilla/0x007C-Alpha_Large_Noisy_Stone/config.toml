@@ -1,0 +1,4 @@
+# Alpha_Large_Noisy_Stone
+vram_addr       = 0x80A9E9D0
+init_vars       = 0x80A9EDE0
+alloc_type      = 0

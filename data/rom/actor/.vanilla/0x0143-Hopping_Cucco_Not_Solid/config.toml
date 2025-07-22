@@ -1,0 +1,4 @@
+# Hopping_Cucco_Not_Solid
+vram_addr       = 0x80B118F0
+init_vars       = 0x80B13640
+alloc_type      = 0

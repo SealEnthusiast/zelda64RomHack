@@ -1,0 +1,6 @@
+# Player
+vram_addr       = 0x80832210
+init            = 0x80846CD8
+dest            = 0x8084AB54
+updt            = 0x80849EA8
+draw            = 0x8084A5C4

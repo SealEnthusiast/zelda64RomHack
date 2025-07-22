@@ -1,0 +1,4 @@
+# Great_Fairy
+vram_addr       = 0x80872830
+init_vars       = 0x8087544C
+alloc_type      = 0

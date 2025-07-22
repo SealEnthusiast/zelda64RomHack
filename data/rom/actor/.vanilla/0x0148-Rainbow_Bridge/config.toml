@@ -1,0 +1,4 @@
+# Rainbow_Bridge
+vram_addr       = 0x808786C0
+init_vars       = 0x80878B30
+alloc_type      = 0

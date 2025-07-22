@@ -1,0 +1,4 @@
+# King_Zora
+vram_addr       = 0x80A9C550
+init_vars       = 0x80A9D8A0
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Nabooru
+vram_addr       = 0x80AB0D90
+init_vars       = 0x80AB4F68
+alloc_type      = 0

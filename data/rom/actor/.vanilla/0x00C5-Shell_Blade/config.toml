@@ -1,0 +1,4 @@
+# Shell_Blade
+vram_addr       = 0x80AF77F0
+init_vars       = 0x80AF89B0
+alloc_type      = 0

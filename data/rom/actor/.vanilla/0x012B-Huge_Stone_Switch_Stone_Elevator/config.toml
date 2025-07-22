@@ -1,0 +1,4 @@
+# Huge_Stone_Switch_Stone_Elevator
+vram_addr       = 0x80B92B00
+init_vars       = 0x80B92E30
+alloc_type      = 0

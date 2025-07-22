@@ -1,0 +1,4 @@
+# Skullkid
+vram_addr       = 0x80AFE2B0
+init_vars       = 0x80B01658
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Blue_Flame
+vram_addr       = 0x80A72FF0
+init_vars       = 0x80A73FF0
+alloc_type      = 0

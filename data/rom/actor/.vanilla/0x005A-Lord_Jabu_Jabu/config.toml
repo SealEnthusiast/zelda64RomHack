@@ -1,0 +1,4 @@
+# Lord_Jabu_Jabu
+vram_addr       = 0x80A87800
+init_vars       = 0x80A88140
+alloc_type      = 0

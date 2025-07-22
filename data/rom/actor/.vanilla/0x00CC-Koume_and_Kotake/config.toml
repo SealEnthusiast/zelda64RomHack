@@ -1,0 +1,4 @@
+# Koume_and_Kotake
+vram_addr       = 0x80B22CF0
+init_vars       = 0x80B24340
+alloc_type      = 0

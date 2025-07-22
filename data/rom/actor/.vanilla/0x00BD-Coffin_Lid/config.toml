@@ -1,0 +1,4 @@
+# Coffin_Lid
+vram_addr       = 0x8087CFC0
+init_vars       = 0x8087D920
+alloc_type      = 0

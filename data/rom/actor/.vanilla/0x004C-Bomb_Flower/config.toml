@@ -1,0 +1,4 @@
+# Bomb_Flower
+vram_addr       = 0x809C6F60
+init_vars       = 0x809C8240
+alloc_type      = 0

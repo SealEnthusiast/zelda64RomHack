@@ -1,0 +1,4 @@
+# Horseback_Games
+vram_addr       = 0x80A67550
+init_vars       = 0x80A68420
+alloc_type      = 0

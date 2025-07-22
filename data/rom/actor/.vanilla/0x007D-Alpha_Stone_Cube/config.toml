@@ -1,0 +1,4 @@
+# Alpha_Stone_Cube
+vram_addr       = 0x80AE20C0
+init_vars       = 0x80AE23B0
+alloc_type      = 0

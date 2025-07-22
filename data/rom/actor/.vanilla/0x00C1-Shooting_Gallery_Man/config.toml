@@ -1,0 +1,4 @@
+# Shooting_Gallery_Man
+vram_addr       = 0x80B10870
+init_vars       = 0x80B115C0
+alloc_type      = 0

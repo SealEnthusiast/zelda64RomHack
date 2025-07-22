@@ -1,0 +1,4 @@
+# Alpha_Bird
+vram_addr       = 0x809C1BB0
+init_vars       = 0x809C1FD0
+alloc_type      = 0

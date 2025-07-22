@@ -1,0 +1,4 @@
+# Keese
+vram_addr       = 0x80A13070
+init_vars       = 0x80A14F10
+alloc_type      = 0

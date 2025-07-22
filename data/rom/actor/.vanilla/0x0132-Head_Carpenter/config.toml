@@ -1,0 +1,4 @@
+# Head_Carpenter
+vram_addr       = 0x80B20170
+init_vars       = 0x80B20BE0
+alloc_type      = 0

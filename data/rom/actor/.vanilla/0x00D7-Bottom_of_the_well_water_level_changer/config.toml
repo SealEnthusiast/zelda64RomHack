@@ -1,0 +1,4 @@
+# Bottom_of_the_well_water_level_changer
+vram_addr       = 0x80881D00
+init_vars       = 0x80882490
+alloc_type      = 0

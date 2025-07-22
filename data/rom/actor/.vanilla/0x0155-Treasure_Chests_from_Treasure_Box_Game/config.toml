@@ -1,0 +1,4 @@
+# Treasure_Chests_from_Treasure_Box_Game
+vram_addr       = 0x809D2690
+init_vars       = 0x809D3080
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Farores_Wind
+vram_addr       = 0x80B8B100
+init_vars       = 0x80B8B860
+alloc_type      = 1

@@ -1,0 +1,4 @@
+# Back_and_Forth_Moving_Platform
+vram_addr       = 0x808BE500
+init_vars       = 0x808BEC00
+alloc_type      = 0

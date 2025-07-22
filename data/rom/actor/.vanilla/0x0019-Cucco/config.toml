@@ -1,0 +1,4 @@
+# Cucco
+vram_addr       = 0x80AB5780
+init_vars       = 0x80AB85E4
+alloc_type      = 0

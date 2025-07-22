@@ -1,0 +1,4 @@
+# Flying_Magic_Pot
+vram_addr       = 0x80B258F0
+init_vars       = 0x80B2650C
+alloc_type      = 0

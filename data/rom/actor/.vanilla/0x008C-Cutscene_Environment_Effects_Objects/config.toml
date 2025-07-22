@@ -1,0 +1,4 @@
+# Cutscene_Environment_Effects_Objects
+vram_addr       = 0x80988E80
+init_vars       = 0x8098C2D0
+alloc_type      = 0

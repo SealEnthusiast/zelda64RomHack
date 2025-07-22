@@ -1,0 +1,4 @@
+# Open_Topped_Skull_Statue
+vram_addr       = 0x80881250
+init_vars       = 0x80881B40
+alloc_type      = 0

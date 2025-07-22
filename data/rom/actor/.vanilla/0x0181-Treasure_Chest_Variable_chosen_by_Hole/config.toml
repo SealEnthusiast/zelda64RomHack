@@ -1,0 +1,4 @@
+# Treasure_Chest_Variable_chosen_by_Hole
+vram_addr       = 0x80B1D890
+init_vars       = 0x80B1D920
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Boot_Title
+vram_addr       = 0x80800000
+init_func       = 0x80800878
+dest_func       = 0x80800858

@@ -1,0 +1,4 @@
+# Grass_Clump_doesnt_regrow
+vram_addr       = 0x80A9AFA0
+init_vars       = 0x80A9C1E0
+alloc_type      = 0

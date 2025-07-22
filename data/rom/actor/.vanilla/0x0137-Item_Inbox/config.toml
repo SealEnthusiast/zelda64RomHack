@@ -1,0 +1,4 @@
+# Item_Inbox
+vram_addr       = 0x80B85FE0
+init_vars       = 0x80B860E0
+alloc_type      = 0

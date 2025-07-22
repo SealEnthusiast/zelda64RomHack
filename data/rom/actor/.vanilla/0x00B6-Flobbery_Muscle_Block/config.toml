@@ -1,0 +1,4 @@
+# Flobbery_Muscle_Block
+vram_addr       = 0x809CAB10
+init_vars       = 0x809CBA60
+alloc_type      = 0

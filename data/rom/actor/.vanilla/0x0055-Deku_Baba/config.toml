@@ -1,0 +1,4 @@
+# Deku_Baba
+vram_addr       = 0x809E57D0
+init_vars       = 0x809E8EAC
+alloc_type      = 0

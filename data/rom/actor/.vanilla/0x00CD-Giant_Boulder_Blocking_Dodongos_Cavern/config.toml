@@ -1,0 +1,4 @@
+# Giant_Boulder_Blocking_Dodongos_Cavern
+vram_addr       = 0x808B4C30
+init_vars       = 0x808B601C
+alloc_type      = 0

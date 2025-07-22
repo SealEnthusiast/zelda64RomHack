@@ -1,0 +1,4 @@
+# King_Dodongo
+vram_addr       = 0x808C1190
+init_vars       = 0x808C6FE0
+alloc_type      = 0

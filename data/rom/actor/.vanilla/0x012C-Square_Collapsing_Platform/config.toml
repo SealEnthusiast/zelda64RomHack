@@ -1,0 +1,4 @@
+# Square_Collapsing_Platform
+vram_addr       = 0x80B960D0
+init_vars       = 0x80B969A0
+alloc_type      = 0

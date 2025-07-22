@@ -1,0 +1,4 @@
+# Queen_Gohma
+vram_addr       = 0x80915A10
+init_vars       = 0x8091AE40
+alloc_type      = 0

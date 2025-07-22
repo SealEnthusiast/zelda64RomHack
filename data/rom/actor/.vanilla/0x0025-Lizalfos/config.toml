@@ -1,0 +1,4 @@
+# Lizalfos
+vram_addr       = 0x80B44050
+init_vars       = 0x80B4A1B8
+alloc_type      = 0

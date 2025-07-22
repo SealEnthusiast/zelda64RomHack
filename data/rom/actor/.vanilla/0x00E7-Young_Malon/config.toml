@@ -1,0 +1,4 @@
+# Young_Malon
+vram_addr       = 0x80AA0690
+init_vars       = 0x80AA1620
+alloc_type      = 0

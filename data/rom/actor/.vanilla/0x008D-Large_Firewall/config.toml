@@ -1,0 +1,4 @@
+# Large_Firewall
+vram_addr       = 0x808872F0
+init_vars       = 0x80887EB0
+alloc_type      = 0

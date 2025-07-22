@@ -1,0 +1,4 @@
+# Gerudo_Fortress_wooden_gate
+vram_addr       = 0x808B2F90
+init_vars       = 0x808B3310
+alloc_type      = 0

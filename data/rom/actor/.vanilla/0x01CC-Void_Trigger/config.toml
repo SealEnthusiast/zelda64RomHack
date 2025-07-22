@@ -1,0 +1,4 @@
+# Void_Trigger
+vram_addr       = 0x809FFD90
+init_vars       = 0x809FFEE8
+alloc_type      = 0

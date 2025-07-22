@@ -1,0 +1,4 @@
+# Zoras_River_Waterfall
+vram_addr       = 0x808ADAE0
+init_vars       = 0x808AE390
+alloc_type      = 0

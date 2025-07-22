@@ -1,0 +1,3 @@
+# Lightning
+vram_addr       = 0x809AAEF0
+init_vars       = 0x809AB530

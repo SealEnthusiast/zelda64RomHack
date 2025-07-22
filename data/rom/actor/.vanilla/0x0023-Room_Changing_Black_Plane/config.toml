@@ -1,0 +1,4 @@
+# Room_Changing_Black_Plane
+vram_addr       = 0x80A58C10
+init_vars       = 0x80A59A20
+alloc_type      = 2

@@ -1,0 +1,3 @@
+# HitMark
+vram_addr       = 0x809A8150
+init_vars       = 0x809A8660

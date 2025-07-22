@@ -1,0 +1,4 @@
+# Skullkids_Needle
+vram_addr       = 0x80B01EB0
+init_vars       = 0x80B02160
+alloc_type      = 0

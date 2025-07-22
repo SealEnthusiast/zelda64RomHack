@@ -1,0 +1,4 @@
+# Adult_Zelda
+vram_addr       = 0x80B533B0
+init_vars       = 0x80B5A574
+alloc_type      = 0

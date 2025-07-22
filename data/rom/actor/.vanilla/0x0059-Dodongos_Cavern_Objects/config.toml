@@ -1,0 +1,4 @@
+# Dodongos_Cavern_Objects
+vram_addr       = 0x8086FBE0
+init_vars       = 0x80870740
+alloc_type      = 0

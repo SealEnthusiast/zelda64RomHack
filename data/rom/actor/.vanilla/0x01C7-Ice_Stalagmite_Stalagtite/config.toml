@@ -1,0 +1,4 @@
+# Ice_Stalagmite_Stalagtite
+vram_addr       = 0x80891F20
+init_vars       = 0x8089264C
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Barinade
+vram_addr       = 0x8094F2C0
+init_vars       = 0x8095BF40
+alloc_type      = 0

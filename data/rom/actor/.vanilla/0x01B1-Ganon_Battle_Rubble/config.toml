@@ -1,0 +1,4 @@
+# Ganon_Battle_Rubble
+vram_addr       = 0x80978930
+init_vars       = 0x8097BF70
+alloc_type      = 0

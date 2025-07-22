@@ -1,0 +1,4 @@
+# Hookshot
+vram_addr       = 0x80864F00
+init_vars       = 0x80865AE0
+alloc_type      = 2

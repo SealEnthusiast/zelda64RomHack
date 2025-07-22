@@ -1,0 +1,4 @@
+# Dampe_Game_Collectables
+vram_addr       = 0x80A87680
+init_vars       = 0x80A87798
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Kokiri
+vram_addr       = 0x80A96DB0
+init_vars       = 0x80A9A0E0
+alloc_type      = 0

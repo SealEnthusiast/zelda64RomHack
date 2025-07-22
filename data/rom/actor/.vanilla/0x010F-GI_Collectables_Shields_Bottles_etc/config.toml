@@ -1,0 +1,4 @@
+# GI_Collectables_Shields_Bottles_etc
+vram_addr       = 0x80B855F0
+init_vars       = 0x80B85D00
+alloc_type      = 0

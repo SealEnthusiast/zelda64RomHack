@@ -1,0 +1,4 @@
+# Volvagia_Platform
+vram_addr       = 0x808BDD60
+init_vars       = 0x808BE3F0
+alloc_type      = 0

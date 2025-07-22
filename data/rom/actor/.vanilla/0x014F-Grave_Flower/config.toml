@@ -1,0 +1,4 @@
+# Grave_Flower
+vram_addr       = 0x80B93860
+init_vars       = 0x80B93A50
+alloc_type      = 0

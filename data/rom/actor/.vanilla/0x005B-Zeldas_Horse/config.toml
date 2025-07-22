@@ -1,0 +1,4 @@
+# Zeldas_Horse
+vram_addr       = 0x80A6D8D0
+init_vars       = 0x80A6E1B0
+alloc_type      = 0

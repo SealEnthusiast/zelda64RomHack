@@ -1,0 +1,4 @@
+# Unknown_scene_change
+vram_addr       = 0x80AF8C70
+init_vars       = 0x80AF8D80
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Normal_Horse
+vram_addr       = 0x80A6B250
+init_vars       = 0x80A6D350
+alloc_type      = 0

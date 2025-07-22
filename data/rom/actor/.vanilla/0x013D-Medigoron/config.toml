@@ -1,0 +1,4 @@
+# Medigoron
+vram_addr       = 0x80A3D6E0
+init_vars       = 0x80A3E330
+alloc_type      = 0

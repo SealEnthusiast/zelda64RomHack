@@ -1,0 +1,4 @@
+# Gorons_and_Biggoron
+vram_addr       = 0x80A42D30
+init_vars       = 0x80A4814C
+alloc_type      = 0

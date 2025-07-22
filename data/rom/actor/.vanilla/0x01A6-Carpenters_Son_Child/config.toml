@@ -1,0 +1,4 @@
+# Carpenters_Son_Child
+vram_addr       = 0x80A6EFA0
+init_vars       = 0x80A6F480
+alloc_type      = 0

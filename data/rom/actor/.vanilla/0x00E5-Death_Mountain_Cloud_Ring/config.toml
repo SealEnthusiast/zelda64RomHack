@@ -1,0 +1,4 @@
+# Death_Mountain_Cloud_Ring
+vram_addr       = 0x808B6440
+init_vars       = 0x808B69F0
+alloc_type      = 0

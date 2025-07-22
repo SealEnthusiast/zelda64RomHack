@@ -1,0 +1,4 @@
+# Shadow_Temple_Ship
+vram_addr       = 0x8087F100
+init_vars       = 0x8087FAA0
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Great_Fairys_Pink_and_Yellow_Beams
+vram_addr       = 0x809FF6F0
+init_vars       = 0x809FFC20
+alloc_type      = 0

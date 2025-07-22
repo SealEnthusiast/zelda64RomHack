@@ -1,0 +1,4 @@
+# Vortex_Koume_Kotake_kidnap_Nabooru
+vram_addr       = 0x80977390
+init_vars       = 0x80977C84
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Rotating_Cobra_Mirror
+vram_addr       = 0x808958F0
+init_vars       = 0x808972E8
+alloc_type      = 0

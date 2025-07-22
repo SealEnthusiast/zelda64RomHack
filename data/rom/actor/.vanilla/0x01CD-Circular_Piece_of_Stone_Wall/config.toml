@@ -1,0 +1,4 @@
+# Circular_Piece_of_Stone_Wall
+vram_addr       = 0x8089C330
+init_vars       = 0x8089C410
+alloc_type      = 0

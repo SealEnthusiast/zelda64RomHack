@@ -1,0 +1,4 @@
+# Broken_Drawbridge
+vram_addr       = 0x808A95E0
+init_vars       = 0x808A9720
+alloc_type      = 0

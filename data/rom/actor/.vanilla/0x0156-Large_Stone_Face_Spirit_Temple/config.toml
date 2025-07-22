@@ -1,0 +1,4 @@
+# Large_Stone_Face_Spirit_Temple
+vram_addr       = 0x8089A130
+init_vars       = 0x8089AFC0
+alloc_type      = 0

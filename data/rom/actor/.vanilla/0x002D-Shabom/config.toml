@@ -1,0 +1,4 @@
+# Shabom
+vram_addr       = 0x809CBC00
+init_vars       = 0x809CCE10
+alloc_type      = 0

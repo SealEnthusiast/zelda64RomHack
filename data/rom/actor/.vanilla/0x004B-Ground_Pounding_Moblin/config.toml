@@ -1,0 +1,4 @@
+# Ground_Pounding_Moblin
+vram_addr       = 0x80AA6050
+init_vars       = 0x80AA9BE0
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Phantom_Ganons_Horse
+vram_addr       = 0x80B629C0
+init_vars       = 0x80B65170
+alloc_type      = 0

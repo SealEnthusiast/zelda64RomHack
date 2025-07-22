@@ -1,0 +1,4 @@
+# Golden_Torch_Stand_Poe_Sisters
+vram_addr       = 0x808A80B0
+init_vars       = 0x808A89AC
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Dark_Link
+vram_addr       = 0x80B1D980
+init_vars       = 0x80B1F9D0
+alloc_type      = 0

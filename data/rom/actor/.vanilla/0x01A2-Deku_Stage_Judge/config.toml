@@ -1,0 +1,4 @@
+# Deku_Stage_Judge
+vram_addr       = 0x809F1AE0
+init_vars       = 0x809F2F80
+alloc_type      = 0

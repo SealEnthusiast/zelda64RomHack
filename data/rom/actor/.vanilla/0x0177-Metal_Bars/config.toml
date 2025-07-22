@@ -1,0 +1,4 @@
+# Metal_Bars
+vram_addr       = 0x808C0C20
+init_vars       = 0x808C1020
+alloc_type      = 0

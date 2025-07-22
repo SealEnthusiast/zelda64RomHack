@@ -1,0 +1,4 @@
+# Opening
+vram_addr       = 0x80803BF0
+init_func       = 0x80803CAC
+dest_func       = 0x80803CA4

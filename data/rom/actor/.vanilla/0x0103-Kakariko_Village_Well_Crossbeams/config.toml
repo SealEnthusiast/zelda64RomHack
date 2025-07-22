@@ -1,0 +1,4 @@
+# Kakariko_Village_Well_Crossbeams
+vram_addr       = 0x808AACE0
+init_vars       = 0x808AB848
+alloc_type      = 0

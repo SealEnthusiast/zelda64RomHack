@@ -1,0 +1,4 @@
+# Water_Temple_Bombable_Walls
+vram_addr       = 0x8089C480
+init_vars       = 0x8089D6A0
+alloc_type      = 0

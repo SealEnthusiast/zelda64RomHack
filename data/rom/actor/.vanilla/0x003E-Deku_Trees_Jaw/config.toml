@@ -1,0 +1,4 @@
+# Deku_Trees_Jaw
+vram_addr       = 0x808BC500
+init_vars       = 0x808BD990
+alloc_type      = 0

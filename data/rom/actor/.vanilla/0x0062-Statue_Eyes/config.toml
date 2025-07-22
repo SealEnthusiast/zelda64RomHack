@@ -1,0 +1,4 @@
+# Statue_Eyes
+vram_addr       = 0x8089BC70
+init_vars       = 0x8089C070
+alloc_type      = 0

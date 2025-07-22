@@ -1,0 +1,4 @@
+# Darunia
+vram_addr       = 0x809FDC30
+init_vars       = 0x809FF210
+alloc_type      = 0

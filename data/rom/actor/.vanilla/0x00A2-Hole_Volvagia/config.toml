@@ -1,0 +1,4 @@
+# Hole_Volvagia
+vram_addr       = 0x808D2670
+init_vars       = 0x808D5FB0
+alloc_type      = 0

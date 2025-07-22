@@ -1,0 +1,3 @@
+# Fire_1
+vram_addr       = 0x809A91B0
+init_vars       = 0x809A95C0

@@ -1,0 +1,4 @@
+# Ocarina_of_Time
+vram_addr       = 0x80B86130
+init_vars       = 0x80B867F0
+alloc_type      = 0

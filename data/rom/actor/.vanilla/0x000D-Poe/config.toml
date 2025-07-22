@@ -1,0 +1,4 @@
+# Poe
+vram_addr       = 0x80ADDD50
+init_vars       = 0x80AE1A54
+alloc_type      = 0

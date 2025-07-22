@@ -1,0 +1,4 @@
+# Gerudo_giving_you_Membership_Card
+vram_addr       = 0x80A34620
+init_vars       = 0x80A35170
+alloc_type      = 0

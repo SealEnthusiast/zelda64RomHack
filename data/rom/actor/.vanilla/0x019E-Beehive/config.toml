@@ -1,0 +1,4 @@
+# Beehive
+vram_addr       = 0x80B91B60
+init_vars       = 0x80B922C0
+alloc_type      = 0

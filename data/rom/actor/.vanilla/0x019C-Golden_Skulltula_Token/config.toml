@@ -1,0 +1,4 @@
+# Golden_Skulltula_Token
+vram_addr       = 0x80AFB690
+init_vars       = 0x80AFBAE8
+alloc_type      = 0

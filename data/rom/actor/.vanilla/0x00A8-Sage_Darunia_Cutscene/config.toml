@@ -1,0 +1,4 @@
+# Sage_Darunia_Cutscene
+vram_addr       = 0x80969AD0
+init_vars       = 0x8096CFB0
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Stationary_Flame_Thrower_Statue
+vram_addr       = 0x8088CEC0
+init_vars       = 0x8088E160
+alloc_type      = 0

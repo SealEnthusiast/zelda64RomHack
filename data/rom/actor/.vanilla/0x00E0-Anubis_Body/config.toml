@@ -1,0 +1,4 @@
+# Anubis_Body
+vram_addr       = 0x809B1120
+init_vars       = 0x809B22B0
+alloc_type      = 0

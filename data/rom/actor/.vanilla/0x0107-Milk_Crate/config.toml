@@ -1,0 +1,4 @@
+# Milk_Crate
+vram_addr       = 0x808B3960
+init_vars       = 0x808B4594
+alloc_type      = 0

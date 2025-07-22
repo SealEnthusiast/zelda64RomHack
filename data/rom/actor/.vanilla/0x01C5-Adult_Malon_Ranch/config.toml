@@ -1,0 +1,4 @@
+# Adult_Malon_Ranch
+vram_addr       = 0x80AA2AA0
+init_vars       = 0x80AA37F0
+alloc_type      = 0

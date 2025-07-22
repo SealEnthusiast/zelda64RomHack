@@ -1,0 +1,4 @@
+# Sun_Block_Switch_Hardcoded_Positions
+vram_addr       = 0x80B8D050
+init_vars       = 0x80B8E650
+alloc_type      = 0

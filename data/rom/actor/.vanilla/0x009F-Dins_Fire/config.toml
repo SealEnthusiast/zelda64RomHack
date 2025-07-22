@@ -1,0 +1,4 @@
+# Dins_Fire
+vram_addr       = 0x80B88D70
+init_vars       = 0x80B898E0
+alloc_type      = 1

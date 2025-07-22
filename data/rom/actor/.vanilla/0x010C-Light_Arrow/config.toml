@@ -1,0 +1,4 @@
+# Light_Arrow
+vram_addr       = 0x80869CB0
+init_vars       = 0x8086BAD0
+alloc_type      = 1

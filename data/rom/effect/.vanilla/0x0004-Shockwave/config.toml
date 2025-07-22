@@ -1,0 +1,3 @@
+# Shockwave
+vram_addr       = 0x8099EDB0
+init_vars       = 0x8099F110

@@ -1,0 +1,4 @@
+# The_End_Message
+vram_addr       = 0x80B65720
+init_vars       = 0x80B65E80
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Navi_Information_Spot
+vram_addr       = 0x809ACB20
+init_vars       = 0x809AD250
+alloc_type      = 0

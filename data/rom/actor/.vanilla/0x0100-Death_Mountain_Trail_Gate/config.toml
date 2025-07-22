@@ -1,0 +1,4 @@
+# Death_Mountain_Trail_Gate
+vram_addr       = 0x80878160
+init_vars       = 0x80878590
+alloc_type      = 0

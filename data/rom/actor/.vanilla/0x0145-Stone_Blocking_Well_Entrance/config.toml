@@ -1,0 +1,4 @@
+# Stone_Blocking_Well_Entrance
+vram_addr       = 0x808ABE80
+init_vars       = 0x808AC050
+alloc_type      = 0

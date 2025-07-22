@@ -1,0 +1,4 @@
+# Graveyard_Objects
+vram_addr       = 0x808AC660
+init_vars       = 0x808AD880
+alloc_type      = 0

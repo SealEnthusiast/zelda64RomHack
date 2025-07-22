@@ -1,0 +1,4 @@
+# Deku_Scrubs_Attack
+vram_addr       = 0x80ABBA50
+init_vars       = 0x80ABBFA0
+alloc_type      = 0

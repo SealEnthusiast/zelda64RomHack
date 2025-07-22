@@ -1,0 +1,4 @@
+# Warp_Pad
+vram_addr       = 0x808A0780
+init_vars       = 0x808A0AE0
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Potion_Shop_Lady
+vram_addr       = 0x809FD030
+init_vars       = 0x809FDB20
+alloc_type      = 0

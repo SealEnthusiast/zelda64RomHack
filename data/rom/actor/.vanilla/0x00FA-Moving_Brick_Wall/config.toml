@@ -1,0 +1,4 @@
+# Moving_Brick_Wall
+vram_addr       = 0x8089B440
+init_vars       = 0x8089B9D0
+alloc_type      = 0

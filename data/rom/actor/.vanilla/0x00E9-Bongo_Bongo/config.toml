@@ -1,0 +1,4 @@
+# Bongo_Bongo
+vram_addr       = 0x8092C5D0
+init_vars       = 0x80937474
+alloc_type      = 0

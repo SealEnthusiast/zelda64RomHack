@@ -1,0 +1,4 @@
+# Cursed_Skulltula_People
+vram_addr       = 0x80B02270
+init_vars       = 0x80B04450
+alloc_type      = 0

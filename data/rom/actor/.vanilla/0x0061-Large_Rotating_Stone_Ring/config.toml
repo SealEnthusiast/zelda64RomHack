@@ -1,0 +1,4 @@
+# Large_Rotating_Stone_Ring
+vram_addr       = 0x8089C1B0
+init_vars       = 0x8089C2D0
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# File_Choose
+vram_addr       = 0x80803D40
+init_func       = 0x80811A20
+dest_func       = 0x80811A18

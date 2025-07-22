@@ -1,0 +1,4 @@
+# Gerudo_Valley_Objects
+vram_addr       = 0x808B1AE0
+init_vars       = 0x808B1F70
+alloc_type      = 0

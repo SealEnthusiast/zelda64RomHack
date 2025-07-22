@@ -1,0 +1,4 @@
+# Sacred_Forest_Meadow_Water_and_Gate
+vram_addr       = 0x808AE470
+init_vars       = 0x808AE700
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Shopkeeper
+vram_addr       = 0x80AC2CA0
+init_vars       = 0x80AC88A0
+alloc_type      = 0

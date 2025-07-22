@@ -1,0 +1,4 @@
+# Shadow_Temple_Truth_Spinner
+vram_addr       = 0x8087BDF0
+init_vars       = 0x8087CCDC
+alloc_type      = 0

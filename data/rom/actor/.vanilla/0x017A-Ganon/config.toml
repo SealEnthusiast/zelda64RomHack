@@ -1,0 +1,4 @@
+# Ganon
+vram_addr       = 0x808FCF40
+init_vars       = 0x80906D40
+alloc_type      = 0

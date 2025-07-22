@@ -1,0 +1,4 @@
+# Phantom_Ganon
+vram_addr       = 0x80910640
+init_vars       = 0x80914CB0
+alloc_type      = 0

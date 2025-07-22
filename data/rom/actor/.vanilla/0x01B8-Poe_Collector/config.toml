@@ -1,0 +1,4 @@
+# Poe_Collector
+vram_addr       = 0x80A2F180
+init_vars       = 0x80A30640
+alloc_type      = 0

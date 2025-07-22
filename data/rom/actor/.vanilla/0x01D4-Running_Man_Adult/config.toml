@@ -1,0 +1,4 @@
+# Running_Man_Adult
+vram_addr       = 0x80AAEE50
+init_vars       = 0x80AAFAA0
+alloc_type      = 0

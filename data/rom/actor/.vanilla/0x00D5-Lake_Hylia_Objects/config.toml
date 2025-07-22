@@ -1,0 +1,4 @@
+# Lake_Hylia_Objects
+vram_addr       = 0x808AE780
+init_vars       = 0x808AF910
+alloc_type      = 0

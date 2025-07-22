@@ -1,0 +1,4 @@
+# Hyrule_Castle_Gate
+vram_addr       = 0x808B4850
+init_vars       = 0x808B4B30
+alloc_type      = 0

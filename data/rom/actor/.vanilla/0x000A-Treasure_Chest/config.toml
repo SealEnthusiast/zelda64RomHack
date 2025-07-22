@@ -1,0 +1,4 @@
+# Treasure_Chest
+vram_addr       = 0x809C8DC0
+init_vars       = 0x809CA7E0
+alloc_type      = 0

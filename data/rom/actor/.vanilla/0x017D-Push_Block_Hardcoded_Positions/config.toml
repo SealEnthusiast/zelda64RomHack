@@ -1,0 +1,4 @@
+# Push_Block_Hardcoded_Positions
+vram_addr       = 0x80B98510
+init_vars       = 0x80B988D0
+alloc_type      = 0

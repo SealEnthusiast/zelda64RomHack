@@ -1,0 +1,4 @@
+# Metal_Gate
+vram_addr       = 0x80889960
+init_vars       = 0x80889E4C
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Song_of_Time_Effect
+vram_addr       = 0x80BACC10
+init_vars       = 0x80BAD050
+alloc_type      = 1

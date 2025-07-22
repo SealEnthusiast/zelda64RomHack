@@ -1,0 +1,4 @@
+# Switch_from_Inside_Lord_Jabu_Jabu
+vram_addr       = 0x8086D010
+init_vars       = 0x8086E080
+alloc_type      = 0

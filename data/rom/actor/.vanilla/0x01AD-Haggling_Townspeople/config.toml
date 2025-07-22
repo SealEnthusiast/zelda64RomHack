@@ -1,0 +1,4 @@
+# Haggling_Townspeople
+vram_addr       = 0x80AB0420
+init_vars       = 0x80AB0C08
+alloc_type      = 0

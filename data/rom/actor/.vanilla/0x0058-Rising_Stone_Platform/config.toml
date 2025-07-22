@@ -1,0 +1,4 @@
+# Rising_Stone_Platform
+vram_addr       = 0x80870AB0
+init_vars       = 0x80871060
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Octorok
+vram_addr       = 0x80AC0660
+init_vars       = 0x80AC2800
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Dampes_Ghost
+vram_addr       = 0x80AD7740
+init_vars       = 0x80AD8CD8
+alloc_type      = 0

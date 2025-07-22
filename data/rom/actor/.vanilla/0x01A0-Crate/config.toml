@@ -1,0 +1,4 @@
+# Crate
+vram_addr       = 0x80B959D0
+init_vars       = 0x80B95FB0
+alloc_type      = 0

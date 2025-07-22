@@ -1,0 +1,4 @@
+# Volvagia_Rocks
+vram_addr       = 0x80B28FA0
+init_vars       = 0x80B29FE0
+alloc_type      = 0

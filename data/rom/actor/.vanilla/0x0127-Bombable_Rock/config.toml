@@ -1,0 +1,4 @@
+# Bombable_Rock
+vram_addr       = 0x80B915F0
+init_vars       = 0x80B91A80
+alloc_type      = 0

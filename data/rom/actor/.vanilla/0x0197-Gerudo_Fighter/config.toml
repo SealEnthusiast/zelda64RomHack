@@ -1,0 +1,4 @@
+# Gerudo_Fighter
+vram_addr       = 0x80A35310
+init_vars       = 0x80A39FC0
+alloc_type      = 0

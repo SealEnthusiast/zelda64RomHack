@@ -1,0 +1,4 @@
+# Fishing_Game_Fish_and_Fisherman
+vram_addr       = 0x80B699A0
+init_vars       = 0x80B7A630
+alloc_type      = 0

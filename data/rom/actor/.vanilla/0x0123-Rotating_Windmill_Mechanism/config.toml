@@ -1,0 +1,4 @@
+# Rotating_Windmill_Mechanism
+vram_addr       = 0x808A8E50
+init_vars       = 0x808A94E0
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Gossip_Stone
+vram_addr       = 0x80A4E320
+init_vars       = 0x80A4FD80
+alloc_type      = 0

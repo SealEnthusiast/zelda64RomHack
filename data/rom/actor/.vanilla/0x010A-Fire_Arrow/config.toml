@@ -1,0 +1,4 @@
+# Fire_Arrow
+vram_addr       = 0x80865D10
+init_vars       = 0x80867B00
+alloc_type      = 1

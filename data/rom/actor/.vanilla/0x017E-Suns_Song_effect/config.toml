@@ -1,0 +1,4 @@
+# Suns_Song_effect
+vram_addr       = 0x80BA6070
+init_vars       = 0x80BA6840
+alloc_type      = 1

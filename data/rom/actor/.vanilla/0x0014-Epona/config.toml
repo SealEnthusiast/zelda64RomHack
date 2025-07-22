@@ -1,0 +1,4 @@
+# Epona
+vram_addr       = 0x80A5B2F0
+init_vars       = 0x80A65E8C
+alloc_type      = 0

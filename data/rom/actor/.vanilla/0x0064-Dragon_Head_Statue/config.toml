@@ -1,0 +1,4 @@
+# Dragon_Head_Statue
+vram_addr       = 0x8089DC30
+init_vars       = 0x8089EB20
+alloc_type      = 0

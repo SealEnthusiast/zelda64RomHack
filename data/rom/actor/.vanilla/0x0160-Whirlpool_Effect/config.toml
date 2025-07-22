@@ -1,0 +1,4 @@
+# Whirlpool_Effect
+vram_addr       = 0x80B0B7A0
+init_vars       = 0x80B0BCA0
+alloc_type      = 0

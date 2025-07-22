@@ -1,0 +1,4 @@
+# Tower_of_Rupees
+vram_addr       = 0x80B9A9D0
+init_vars       = 0x80B9B0A0
+alloc_type      = 0

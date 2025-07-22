@@ -1,0 +1,4 @@
+# Flying_Volvagia
+vram_addr       = 0x808CADC0
+init_vars       = 0x808D1640
+alloc_type      = 0

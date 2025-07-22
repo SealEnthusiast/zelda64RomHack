@@ -1,0 +1,4 @@
+# Forest_Temple_Well_Water
+vram_addr       = 0x808A4640
+init_vars       = 0x808A4C14
+alloc_type      = 0

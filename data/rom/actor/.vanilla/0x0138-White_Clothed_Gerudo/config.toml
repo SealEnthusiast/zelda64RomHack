@@ -1,0 +1,4 @@
+# White_Clothed_Gerudo
+vram_addr       = 0x80A30970
+init_vars       = 0x80A32750
+alloc_type      = 0

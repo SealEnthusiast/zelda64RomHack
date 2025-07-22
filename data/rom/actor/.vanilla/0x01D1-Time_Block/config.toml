@@ -1,0 +1,4 @@
+# Time_Block
+vram_addr       = 0x80B9FFA0
+init_vars       = 0x80BA0AD0
+alloc_type      = 0

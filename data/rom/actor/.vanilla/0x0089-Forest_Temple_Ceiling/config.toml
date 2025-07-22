@@ -1,0 +1,4 @@
+# Forest_Temple_Ceiling
+vram_addr       = 0x808A5570
+init_vars       = 0x808A5E64
+alloc_type      = 0

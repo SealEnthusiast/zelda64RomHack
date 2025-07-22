@@ -1,0 +1,4 @@
+# Gorons_Cutscene
+vram_addr       = 0x8097C870
+init_vars       = 0x8097D470
+alloc_type      = 0

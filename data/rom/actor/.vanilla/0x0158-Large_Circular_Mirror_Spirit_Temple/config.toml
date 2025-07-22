@@ -1,0 +1,4 @@
+# Large_Circular_Mirror_Spirit_Temple
+vram_addr       = 0x808936E0
+init_vars       = 0x80893ED4
+alloc_type      = 0

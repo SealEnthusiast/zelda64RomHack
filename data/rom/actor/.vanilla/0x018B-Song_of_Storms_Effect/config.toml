@@ -1,0 +1,4 @@
+# Song_of_Storms_Effect
+vram_addr       = 0x80BA70E0
+init_vars       = 0x80BA7870
+alloc_type      = 1

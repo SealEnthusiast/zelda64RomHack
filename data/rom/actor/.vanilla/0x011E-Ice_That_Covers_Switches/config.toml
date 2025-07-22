@@ -1,0 +1,4 @@
+# Ice_That_Covers_Switches
+vram_addr       = 0x80B94260
+init_vars       = 0x80B94B10
+alloc_type      = 0

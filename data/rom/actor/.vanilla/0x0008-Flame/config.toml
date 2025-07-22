@@ -1,0 +1,4 @@
+# Flame
+vram_addr       = 0x80A9DB40
+init_vars       = 0x80A9E820
+alloc_type      = 0

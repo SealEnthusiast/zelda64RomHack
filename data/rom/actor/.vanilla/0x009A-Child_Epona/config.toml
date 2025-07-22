@@ -1,0 +1,4 @@
+# Child_Epona
+vram_addr       = 0x80A693D0
+init_vars       = 0x80A6AEC0
+alloc_type      = 0

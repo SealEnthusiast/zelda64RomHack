@@ -1,0 +1,4 @@
+# Hyrule_Field_Poes_Big_Poes
+vram_addr       = 0x80AD3B00
+init_vars       = 0x80AD7060
+alloc_type      = 0

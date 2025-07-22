@@ -1,0 +1,4 @@
+# Ambient_Sound_Effects
+vram_addr       = 0x80AE6930
+init_vars       = 0x80AE71D0
+alloc_type      = 0

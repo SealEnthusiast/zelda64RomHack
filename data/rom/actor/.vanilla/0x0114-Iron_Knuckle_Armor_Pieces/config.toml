@@ -1,0 +1,4 @@
+# Iron_Knuckle_Armor_Pieces
+vram_addr       = 0x80983300
+init_vars       = 0x80984784
+alloc_type      = 0

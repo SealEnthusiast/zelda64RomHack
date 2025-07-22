@@ -1,0 +1,4 @@
+# Lifting_Wooden_Door
+vram_addr       = 0x809962A0
+init_vars       = 0x809980D0
+alloc_type      = 2

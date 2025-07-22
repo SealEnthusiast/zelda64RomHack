@@ -1,0 +1,4 @@
+# Bombchu_Bowling_Alley_Game
+vram_addr       = 0x8086E550
+init_vars       = 0x8086E730
+alloc_type      = 0

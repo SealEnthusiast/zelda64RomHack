@@ -1,0 +1,4 @@
+# Lon_Lon_Ranch_Horse_Jumping_Fence
+vram_addr       = 0x808BDBE0
+init_vars       = 0x808BDD00
+alloc_type      = 0

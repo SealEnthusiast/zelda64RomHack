@@ -1,0 +1,4 @@
+# Weather_Effects
+vram_addr       = 0x80B31020
+init_vars       = 0x80B31E20
+alloc_type      = 0

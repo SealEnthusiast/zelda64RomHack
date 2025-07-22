@@ -1,0 +1,4 @@
+# Bombable_Rock_Wall_Spirit_Temple
+vram_addr       = 0x808951A0
+init_vars       = 0x80895700
+alloc_type      = 0

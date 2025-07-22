@@ -1,0 +1,4 @@
+# Castle_Courtyard_Guards
+vram_addr       = 0x80A512D0
+init_vars       = 0x80A527A4
+alloc_type      = 0

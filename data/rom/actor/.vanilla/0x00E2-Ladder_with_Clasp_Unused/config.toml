@@ -1,0 +1,4 @@
+# Ladder_with_Clasp_Unused
+vram_addr       = 0x808A2560
+init_vars       = 0x808A2D80
+alloc_type      = 0

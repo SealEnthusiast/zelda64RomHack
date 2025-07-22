@@ -1,0 +1,4 @@
+# Square_Signpost
+vram_addr       = 0x80A91FA0
+init_vars       = 0x80A94470
+alloc_type      = 0

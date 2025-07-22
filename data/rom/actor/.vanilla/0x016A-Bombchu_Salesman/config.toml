@@ -1,0 +1,4 @@
+# Bombchu_Salesman
+vram_addr       = 0x80A88E10
+init_vars       = 0x80A89690
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Beta_Arrow_Trap
+vram_addr       = 0x809B37D0
+init_vars       = 0x809B38D0
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Twinrova
+vram_addr       = 0x80938CD0
+init_vars       = 0x8094A7B0
+alloc_type      = 0

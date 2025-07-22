@@ -1,0 +1,4 @@
+# Eponas_Song_Effect
+vram_addr       = 0x80BA9BB0
+init_vars       = 0x80BAA010
+alloc_type      = 1

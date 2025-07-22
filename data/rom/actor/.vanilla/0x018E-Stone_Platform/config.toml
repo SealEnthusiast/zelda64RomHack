@@ -1,0 +1,4 @@
+# Stone_Platform
+vram_addr       = 0x80892B60
+init_vars       = 0x808930E4
+alloc_type      = 0

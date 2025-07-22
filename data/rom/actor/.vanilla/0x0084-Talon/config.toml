@@ -1,0 +1,4 @@
+# Talon
+vram_addr       = 0x80B13AA0
+init_vars       = 0x80B16E30
+alloc_type      = 0

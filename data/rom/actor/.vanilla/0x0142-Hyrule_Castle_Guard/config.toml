@@ -1,0 +1,4 @@
+# Hyrule_Castle_Guard
+vram_addr       = 0x80A55640
+init_vars       = 0x80A55F44
+alloc_type      = 0

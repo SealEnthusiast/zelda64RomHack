@@ -1,0 +1,4 @@
+# Unused_Gorons
+vram_addr       = 0x80A3E570
+init_vars       = 0x80A41AE0
+alloc_type      = 0

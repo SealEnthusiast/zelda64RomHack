@@ -1,0 +1,4 @@
+# Cow
+vram_addr       = 0x809DEE00
+init_vars       = 0x809E00C0
+alloc_type      = 0

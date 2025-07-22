@@ -1,0 +1,4 @@
+# Temple_of_Time_Windows
+vram_addr       = 0x808B9F00
+init_vars       = 0x808BAC50
+alloc_type      = 0

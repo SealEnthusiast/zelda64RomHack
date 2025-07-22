@@ -1,0 +1,4 @@
+# Beamos
+vram_addr       = 0x80B2D460
+init_vars       = 0x80B2EA00
+alloc_type      = 0

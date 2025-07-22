@@ -1,0 +1,4 @@
+# Bombchu_Bowling_Bullseyes_Pits_used_by_game_engine
+vram_addr       = 0x80B2EDF0
+init_vars       = 0x80B2F320
+alloc_type      = 0

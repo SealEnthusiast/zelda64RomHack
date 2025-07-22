@@ -1,0 +1,4 @@
+# Boss_Ganondorf
+vram_addr       = 0x808D6870
+init_vars       = 0x808E4BE0
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Checkable_Spot
+vram_addr       = 0x80B39ED0
+init_vars       = 0x80B3A8C0
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Level_Select
+vram_addr       = 0x80800B90
+init_func       = 0x80801E44
+dest_func       = 0x80801E0C

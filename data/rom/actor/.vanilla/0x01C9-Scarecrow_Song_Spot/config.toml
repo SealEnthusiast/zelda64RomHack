@@ -1,0 +1,4 @@
+# Scarecrow_Song_Spot
+vram_addr       = 0x80A90010
+init_vars       = 0x80A909CC
+alloc_type      = 0

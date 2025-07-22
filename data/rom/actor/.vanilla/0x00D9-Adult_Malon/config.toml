@@ -1,0 +1,4 @@
+# Adult_Malon
+vram_addr       = 0x80AA19A0
+init_vars       = 0x80AA2800
+alloc_type      = 0

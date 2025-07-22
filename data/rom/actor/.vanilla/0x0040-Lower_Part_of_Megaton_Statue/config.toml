@@ -1,0 +1,4 @@
+# Lower_Part_of_Megaton_Statue
+vram_addr       = 0x80885E20
+init_vars       = 0x80886480
+alloc_type      = 0

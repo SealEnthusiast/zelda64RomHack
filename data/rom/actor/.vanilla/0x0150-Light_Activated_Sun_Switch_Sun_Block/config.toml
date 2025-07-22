@@ -1,0 +1,4 @@
+# Light_Activated_Sun_Switch_Sun_Block
+vram_addr       = 0x80B96BA0
+init_vars       = 0x80B97F00
+alloc_type      = 0

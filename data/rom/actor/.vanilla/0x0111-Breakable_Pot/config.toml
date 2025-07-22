@@ -1,0 +1,4 @@
+# Breakable_Pot
+vram_addr       = 0x80BA0D60
+init_vars       = 0x80BA1B60
+alloc_type      = 0

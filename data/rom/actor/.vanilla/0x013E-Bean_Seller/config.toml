@@ -1,0 +1,4 @@
+# Bean_Seller
+vram_addr       = 0x80AAFD20
+init_vars       = 0x80AB0300
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Dungeon_Switches
+vram_addr       = 0x80B9D210
+init_vars       = 0x80B9EC00
+alloc_type      = 0

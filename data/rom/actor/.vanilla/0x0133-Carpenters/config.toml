@@ -1,0 +1,4 @@
+# Carpenters
+vram_addr       = 0x809E2B30
+init_vars       = 0x809E4040
+alloc_type      = 0

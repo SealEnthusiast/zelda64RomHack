@@ -1,0 +1,4 @@
+# Bomb
+vram_addr       = 0x809C26D0
+init_vars       = 0x809C3410
+alloc_type      = 2

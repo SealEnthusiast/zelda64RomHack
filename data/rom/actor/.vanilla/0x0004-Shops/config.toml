@@ -1,0 +1,4 @@
+# Shops
+vram_addr       = 0x80A3A750
+init_vars       = 0x80A3C570
+alloc_type      = 0

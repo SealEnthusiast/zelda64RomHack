@@ -1,0 +1,4 @@
+# Biri
+vram_addr       = 0x809BF8A0
+init_vars       = 0x809C1620
+alloc_type      = 0

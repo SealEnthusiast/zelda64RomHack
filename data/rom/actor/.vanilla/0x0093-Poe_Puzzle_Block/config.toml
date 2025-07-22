@@ -1,0 +1,4 @@
+# Poe_Puzzle_Block
+vram_addr       = 0x808A6210
+init_vars       = 0x808A7CB0
+alloc_type      = 0

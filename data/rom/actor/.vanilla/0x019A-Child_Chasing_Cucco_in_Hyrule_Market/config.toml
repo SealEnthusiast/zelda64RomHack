@@ -1,0 +1,4 @@
+# Child_Chasing_Cucco_in_Hyrule_Market
+vram_addr       = 0x80AB8F80
+init_vars       = 0x80AB9980
+alloc_type      = 0

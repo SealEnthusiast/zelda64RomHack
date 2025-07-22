@@ -1,0 +1,4 @@
+# Zeldas_Lullaby_Effect
+vram_addr       = 0x80BA8D90
+init_vars       = 0x80BA92C0
+alloc_type      = 1

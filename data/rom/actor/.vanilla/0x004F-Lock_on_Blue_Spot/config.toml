@@ -1,0 +1,4 @@
+# Lock_on_Blue_Spot
+vram_addr       = 0x80ABE6A0
+init_vars       = 0x80ABE700
+alloc_type      = 0

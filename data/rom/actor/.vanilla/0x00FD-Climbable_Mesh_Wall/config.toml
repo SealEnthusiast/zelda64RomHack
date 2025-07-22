@@ -1,0 +1,4 @@
+# Climbable_Mesh_Wall
+vram_addr       = 0x80899740
+init_vars       = 0x80899A80
+alloc_type      = 0

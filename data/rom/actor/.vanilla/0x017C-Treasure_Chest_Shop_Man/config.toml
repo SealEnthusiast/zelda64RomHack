@@ -1,0 +1,4 @@
+# Treasure_Chest_Shop_Man
+vram_addr       = 0x80B17560
+init_vars       = 0x80B17DB0
+alloc_type      = 0

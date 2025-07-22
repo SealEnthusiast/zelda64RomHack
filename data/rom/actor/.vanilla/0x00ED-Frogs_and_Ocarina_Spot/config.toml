@@ -1,0 +1,4 @@
+# Frogs_and_Ocarina_Spot
+vram_addr       = 0x80A1A9A0
+init_vars       = 0x80A1D034
+alloc_type      = 0

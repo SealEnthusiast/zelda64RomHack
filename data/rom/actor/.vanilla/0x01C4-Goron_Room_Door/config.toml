@@ -1,0 +1,4 @@
+# Goron_Room_Door
+vram_addr       = 0x808B93D0
+init_vars       = 0x808B9850
+alloc_type      = 0

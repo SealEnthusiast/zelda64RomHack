@@ -1,0 +1,4 @@
+# Sliding_Spike_Trap
+vram_addr       = 0x80B24660
+init_vars       = 0x80B25810
+alloc_type      = 0

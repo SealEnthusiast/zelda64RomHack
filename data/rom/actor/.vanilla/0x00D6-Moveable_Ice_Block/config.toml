@@ -1,0 +1,4 @@
+# Moveable_Ice_Block
+vram_addr       = 0x8088F810
+init_vars       = 0x808904A4
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Exchangeable_Time_Block
+vram_addr       = 0x80BA1DF0
+init_vars       = 0x80BA2820
+alloc_type      = 0

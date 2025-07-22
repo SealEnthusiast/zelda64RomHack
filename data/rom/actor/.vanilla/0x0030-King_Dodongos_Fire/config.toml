@@ -1,0 +1,4 @@
+# King_Dodongos_Fire
+vram_addr       = 0x809BC030
+init_vars       = 0x809BCAF0
+alloc_type      = 0

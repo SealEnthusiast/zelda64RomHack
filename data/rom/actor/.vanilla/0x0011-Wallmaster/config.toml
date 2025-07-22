@@ -1,0 +1,4 @@
+# Wallmaster
+vram_addr       = 0x80B2F520
+init_vars       = 0x80B30CF0
+alloc_type      = 0

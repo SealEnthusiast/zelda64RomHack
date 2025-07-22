@@ -1,0 +1,4 @@
+# Door_of_Time
+vram_addr       = 0x80998620
+init_vars       = 0x80998720
+alloc_type      = 0

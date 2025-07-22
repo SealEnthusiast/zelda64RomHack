@@ -1,0 +1,4 @@
+# Rauru
+vram_addr       = 0x80AE72B0
+init_vars       = 0x80AE81DC
+alloc_type      = 0

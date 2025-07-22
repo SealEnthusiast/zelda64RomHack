@@ -1,0 +1,4 @@
+# Bongo_Bongo_Floor
+vram_addr       = 0x808B9910
+init_vars       = 0x808B9E1C
+alloc_type      = 0

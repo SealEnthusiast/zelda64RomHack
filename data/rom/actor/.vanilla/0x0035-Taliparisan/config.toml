@@ -1,0 +1,4 @@
+# Taliparisan
+vram_addr       = 0x80B20DE0
+init_vars       = 0x80B22A70
+alloc_type      = 0

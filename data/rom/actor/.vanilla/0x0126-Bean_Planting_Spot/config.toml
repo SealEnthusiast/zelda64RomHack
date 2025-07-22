@@ -1,0 +1,4 @@
+# Bean_Planting_Spot
+vram_addr       = 0x80B8EA80
+init_vars       = 0x80B90E34
+alloc_type      = 0

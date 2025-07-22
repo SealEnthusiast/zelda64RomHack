@@ -1,0 +1,4 @@
+# Hole_in_Ground_Exit
+vram_addr       = 0x80993EF0
+init_vars       = 0x809944A0
+alloc_type      = 0

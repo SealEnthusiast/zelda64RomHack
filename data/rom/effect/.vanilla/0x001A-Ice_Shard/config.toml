@@ -1,0 +1,3 @@
+# Ice_Shard
+vram_addr       = 0x809A8700
+init_vars       = 0x809A8B10

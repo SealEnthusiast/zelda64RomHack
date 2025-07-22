@@ -1,0 +1,4 @@
+# Water_Temple_Water
+vram_addr       = 0x8089F8B0
+init_vars       = 0x808A0530
+alloc_type      = 0

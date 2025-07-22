@@ -1,0 +1,3 @@
+# Flame_Footprint
+vram_addr       = 0x809A5ED0
+init_vars       = 0x809A60D0

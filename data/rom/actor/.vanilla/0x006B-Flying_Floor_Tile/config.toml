@@ -1,0 +1,4 @@
+# Flying_Floor_Tile
+vram_addr       = 0x80B439C0
+init_vars       = 0x80B43F10
+alloc_type      = 0

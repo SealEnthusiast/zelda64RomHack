@@ -1,0 +1,4 @@
+# Semi_Built_Shooting_Gallery
+vram_addr       = 0x808AC140
+init_vars       = 0x808AC4E0
+alloc_type      = 0

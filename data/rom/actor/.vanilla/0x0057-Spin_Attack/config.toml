@@ -1,0 +1,4 @@
+# Spin_Attack
+vram_addr       = 0x80A9EFE0
+init_vars       = 0x80AA0400
+alloc_type      = 2

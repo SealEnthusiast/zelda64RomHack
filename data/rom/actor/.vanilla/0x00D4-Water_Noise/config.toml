@@ -1,0 +1,4 @@
+# Water_Noise
+vram_addr       = 0x8089F6E0
+init_vars       = 0x8089F840
+alloc_type      = 0

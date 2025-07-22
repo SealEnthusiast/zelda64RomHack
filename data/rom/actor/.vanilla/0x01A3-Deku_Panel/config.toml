@@ -1,0 +1,4 @@
+# Deku_Panel
+vram_addr       = 0x809F32C0
+init_vars       = 0x809F5DB0
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Twisted_Hallway
+vram_addr       = 0x808A37D0
+init_vars       = 0x808A43E4
+alloc_type      = 0

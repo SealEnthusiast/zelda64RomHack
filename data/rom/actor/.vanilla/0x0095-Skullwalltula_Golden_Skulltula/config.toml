@@ -1,0 +1,4 @@
+# Skullwalltula_Golden_Skulltula
+vram_addr       = 0x80B0BDB0
+init_vars       = 0x80B0F020
+alloc_type      = 0

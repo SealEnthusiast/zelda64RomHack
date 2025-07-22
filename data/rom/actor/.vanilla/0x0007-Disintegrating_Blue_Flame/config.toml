@@ -1,0 +1,4 @@
+# Disintegrating_Blue_Flame
+vram_addr       = 0x80ACDDD0
+init_vars       = 0x80ACF190
+alloc_type      = 0

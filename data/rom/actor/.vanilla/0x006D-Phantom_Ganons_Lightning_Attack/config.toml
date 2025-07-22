@@ -1,0 +1,4 @@
+# Phantom_Ganons_Lightning_Attack
+vram_addr       = 0x80A0F260
+init_vars       = 0x80A11770
+alloc_type      = 0

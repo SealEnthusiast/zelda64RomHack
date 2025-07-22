@@ -1,0 +1,4 @@
+# Horseback_Archery_Target
+vram_addr       = 0x80B42DC0
+init_vars       = 0x80B43540
+alloc_type      = 0

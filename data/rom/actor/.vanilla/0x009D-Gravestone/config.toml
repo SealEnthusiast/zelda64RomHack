@@ -1,0 +1,4 @@
+# Gravestone
+vram_addr       = 0x8087B6B0
+init_vars       = 0x8087BCD0
+alloc_type      = 0

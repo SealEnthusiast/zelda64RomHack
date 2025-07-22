@@ -1,0 +1,4 @@
+# Stalchildren
+vram_addr       = 0x80AFC9A0
+init_vars       = 0x80AFE098
+alloc_type      = 0

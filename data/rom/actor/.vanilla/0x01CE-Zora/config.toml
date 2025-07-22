@@ -1,0 +1,4 @@
+# Zora
+vram_addr       = 0x80B60220
+init_vars       = 0x80B624C4
+alloc_type      = 0

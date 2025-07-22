@@ -1,0 +1,4 @@
+# Lid_to_the_Giant_Goron_Pot
+vram_addr       = 0x808B8780
+init_vars       = 0x808B88B0
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Sinkable_Lava_Platform
+vram_addr       = 0x808794C0
+init_vars       = 0x808799C0
+alloc_type      = 0

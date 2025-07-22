@@ -1,0 +1,4 @@
+# Shadow_temple_objects
+vram_addr       = 0x8087FCA0
+init_vars       = 0x80880F34
+alloc_type      = 0

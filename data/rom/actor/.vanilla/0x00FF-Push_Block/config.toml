@@ -1,0 +1,4 @@
+# Push_Block
+vram_addr       = 0x80B9B180
+init_vars       = 0x80B9C9A0
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Shooting_Gallery_Game
+vram_addr       = 0x80B0F6B0
+init_vars       = 0x80B10220
+alloc_type      = 0

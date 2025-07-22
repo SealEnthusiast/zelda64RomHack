@@ -1,0 +1,4 @@
+# Alpha_Link_Shadow_Activator
+vram_addr       = 0x80AF8E20
+init_vars       = 0x80AFA0B0
+alloc_type      = 0

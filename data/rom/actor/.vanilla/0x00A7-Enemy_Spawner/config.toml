@@ -1,0 +1,4 @@
+# Enemy_Spawner
+vram_addr       = 0x80A06720
+init_vars       = 0x80A07470
+alloc_type      = 0

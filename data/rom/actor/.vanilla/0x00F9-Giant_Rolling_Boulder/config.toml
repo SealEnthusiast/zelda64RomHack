@@ -1,0 +1,4 @@
+# Giant_Rolling_Boulder
+vram_addr       = 0x80897970
+init_vars       = 0x80897F50
+alloc_type      = 0

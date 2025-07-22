@@ -1,0 +1,16 @@
+# Spawn Cutscene Table
+#
+# Every entry has to be separated with [[spawn_cutscene_entry]]
+#
+# # scene_id = Decimal or hex index of scene where the cutscene takes place
+# # spawn_id = Spawn point where the cutscene takes place
+# # age = "child" / "adult" / "both"
+# # flag_type = "switch" / "chest" / "event_chk_inf" / "collectible"
+# # flag_id = Decimal or hex index of the flag value
+#
+# Next two variables are meant for accessing the cutscene.
+# Choose either one, not both.
+#
+# # segment = Hardcoded segment for the cutscene
+# # header = Scene header which holds the cutscene. Only gets the cutscene
+#            data.

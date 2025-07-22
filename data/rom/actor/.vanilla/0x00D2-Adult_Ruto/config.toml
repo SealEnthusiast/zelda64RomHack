@@ -1,0 +1,4 @@
+# Adult_Ruto
+vram_addr       = 0x80AF2550
+init_vars       = 0x80AF5118
+alloc_type      = 0

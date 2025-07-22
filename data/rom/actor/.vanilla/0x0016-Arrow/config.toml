@@ -1,0 +1,4 @@
+# Arrow
+vram_addr       = 0x809B3920
+init_vars       = 0x809B4D30
+alloc_type      = 2

@@ -1,0 +1,4 @@
+# Flare_Dancer_Fire_Attack
+vram_addr       = 0x80A0E4B0
+init_vars       = 0x80A0F010
+alloc_type      = 0

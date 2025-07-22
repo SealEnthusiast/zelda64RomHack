@@ -1,0 +1,4 @@
+# Guay
+vram_addr       = 0x809E0240
+init_vars       = 0x809E164C
+alloc_type      = 0

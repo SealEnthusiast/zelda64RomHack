@@ -1,0 +1,4 @@
+# Dodongo_Skulls_Jaw
+vram_addr       = 0x80871A00
+init_vars       = 0x80872520
+alloc_type      = 0

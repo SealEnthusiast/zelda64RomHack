@@ -1,0 +1,4 @@
+# Stingray
+vram_addr       = 0x80B32290
+init_vars       = 0x80B33A70
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Alpha_Blue_Balls
+vram_addr       = 0x80ABC0E0
+init_vars       = 0x80ABCA60
+alloc_type      = 0

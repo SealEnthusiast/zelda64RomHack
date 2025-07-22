@@ -1,0 +1,4 @@
+# Sarias_Song_Effect
+vram_addr       = 0x80BAB3F0
+init_vars       = 0x80BAB850
+alloc_type      = 1

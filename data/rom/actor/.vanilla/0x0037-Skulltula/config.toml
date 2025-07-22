@@ -1,0 +1,4 @@
+# Skulltula
+vram_addr       = 0x80B04890
+init_vars       = 0x80B06FD0
+alloc_type      = 0

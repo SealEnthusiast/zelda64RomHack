@@ -1,0 +1,4 @@
+# Flying_Rubble
+vram_addr       = 0x80A11C20
+init_vars       = 0x80A12C80
+alloc_type      = 0

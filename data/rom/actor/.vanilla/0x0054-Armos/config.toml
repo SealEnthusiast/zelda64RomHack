@@ -1,0 +1,4 @@
+# Armos
+vram_addr       = 0x809ADF20
+init_vars       = 0x809AFF60
+alloc_type      = 0

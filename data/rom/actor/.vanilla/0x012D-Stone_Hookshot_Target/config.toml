@@ -1,0 +1,4 @@
+# Stone_Hookshot_Target
+vram_addr       = 0x80B93B60
+init_vars       = 0x80B940A0
+alloc_type      = 0

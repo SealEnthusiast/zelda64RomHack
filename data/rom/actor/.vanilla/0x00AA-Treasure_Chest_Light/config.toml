@@ -1,0 +1,4 @@
+# Treasure_Chest_Light
+vram_addr       = 0x809936C0
+init_vars       = 0x80993D90
+alloc_type      = 0

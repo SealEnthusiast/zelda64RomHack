@@ -1,0 +1,4 @@
+# Ganondorfs_Organ
+vram_addr       = 0x80A28000
+init_vars       = 0x80A283C0
+alloc_type      = 0

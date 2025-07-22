@@ -1,0 +1,4 @@
+# Flame_Circle
+vram_addr       = 0x808851A0
+init_vars       = 0x80885BC4
+alloc_type      = 0

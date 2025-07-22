@@ -1,0 +1,4 @@
+# Dampe_Grave_Digging_Game
+vram_addr       = 0x80B1B900
+init_vars       = 0x80B1D4B0
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Refilling_Oasis
+vram_addr       = 0x808B27F0
+init_vars       = 0x808B2DF0
+alloc_type      = 0

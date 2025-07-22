@@ -1,0 +1,4 @@
+# Bongo_Bongo_Shadow
+vram_addr       = 0x80991230
+init_vars       = 0x80991660
+alloc_type      = 0

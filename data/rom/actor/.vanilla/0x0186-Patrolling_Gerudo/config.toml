@@ -1,0 +1,4 @@
+# Patrolling_Gerudo
+vram_addr       = 0x80A32BD0
+init_vars       = 0x80A342F0
+alloc_type      = 0

@@ -1,0 +1,4 @@
+# Flying_Carpet
+vram_addr       = 0x80A897A0
+init_vars       = 0x80A8AA70
+alloc_type      = 0

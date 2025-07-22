@@ -1,0 +1,4 @@
+# Large_Ice_Cube
+vram_addr       = 0x80879AA0
+init_vars       = 0x8087A720
+alloc_type      = 0

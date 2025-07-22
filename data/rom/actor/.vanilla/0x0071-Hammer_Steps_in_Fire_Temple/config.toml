@@ -1,0 +1,4 @@
+# Hammer_Steps_in_Fire_Temple
+vram_addr       = 0x80888040
+init_vars       = 0x80888E0C
+alloc_type      = 0

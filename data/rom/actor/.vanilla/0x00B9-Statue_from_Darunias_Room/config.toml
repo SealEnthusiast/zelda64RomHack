@@ -1,0 +1,4 @@
+# Statue_from_Darunias_Room
+vram_addr       = 0x808B8910
+init_vars       = 0x808B90D0
+alloc_type      = 0

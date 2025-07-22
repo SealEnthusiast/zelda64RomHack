@@ -1,0 +1,4 @@
+# Fire_Temple_Stone_Block
+vram_addr       = 0x8088F3C0
+init_vars       = 0x8088F760
+alloc_type      = 0
