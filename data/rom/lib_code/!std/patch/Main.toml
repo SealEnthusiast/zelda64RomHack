@@ -1,0 +1,3 @@
+rom             = 0xB3DFC0
+ram             = 0x800C6E20
+next            = 0x800C7250

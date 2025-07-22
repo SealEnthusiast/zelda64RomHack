@@ -1,0 +1,27 @@
+#ifndef SPAWN_CUTSCENE_TABLE_H
+#define SPAWN_CUTSCENE_TABLE_H
+#define LINK_AGE_BOTH 2
+
+typedef enum {
+    FLAG_SWITCH = 0,
+    FLAG_CHEST,
+    FLAG_EVENTCHKINF,
+    FLAG_COLLECTIBLE,
+} FlagType;
+
+union {
+    struct {
+        u32 header        : 4;
+        u32 type          : 2;
+        u32 age           : 2;
+        u32 flag          : 8;
+        u32 nextIsSegment : 1;
+        u32 spawn         : 7;
+        u32 scene         : 8;
+    };
+    void* segment;
+} sSpawnCutsceneTable[] = {
+    
+};
+
+#endif

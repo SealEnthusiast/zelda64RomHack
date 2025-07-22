@@ -3,7 +3,7 @@
 	buildrom = "build"
 	vanilla = ".vanilla"
 	check_update = true
-	instant_prev = "off"
+	instant_prev = "on,108,0,15,0"
 	project64 = ""
 	basewad = ""
 	dolphin = ""

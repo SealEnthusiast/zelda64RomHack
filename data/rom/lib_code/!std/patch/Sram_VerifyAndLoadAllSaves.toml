@@ -1,0 +1,3 @@
+rom             = 0xB1FBC0
+ram             = 0x800A8A20
+next            = 0x800A9258

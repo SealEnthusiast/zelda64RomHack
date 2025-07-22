@@ -1,0 +1,3 @@
+rom             = 0xB3EB14
+ram             = 0x800C7974
+next            = 0x800C7C14

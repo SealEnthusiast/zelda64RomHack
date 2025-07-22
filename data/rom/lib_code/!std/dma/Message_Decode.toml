@@ -1,0 +1,2 @@
+rom             = 0xB80CDC
+ram             = 0x80109B3C
