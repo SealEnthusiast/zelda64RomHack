@@ -2,6 +2,7 @@
 *.z64
 *.n64
 *.v64
+.exe
 
 # Auto-generated code editor files
 .vs/*
