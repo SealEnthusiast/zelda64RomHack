@@ -11,7 +11,7 @@
   <ElfMessage>0</ElfMessage>
   <InjectOffset>66289664</InjectOffset>
   <SceneNumber>108</SceneNumber>
-  <Reverb>7</Reverb>
+  <Reverb>2</Reverb>
   <CameraMovement>0</CameraMovement>
   <WorldMap>0</WorldMap>
   <SceneSettings>0</SceneSettings>
@@ -84,7 +84,7 @@
   <inherittextureanims>true</inherittextureanims>
   <RestrictionFlags>0</RestrictionFlags>
   <TitleCard></TitleCard>
-  <CollisionFilename>floor1level1.obj</CollisionFilename>
+  <CollisionFilename>floor1level1rev1.obj</CollisionFilename>
   <ZObjects>
     <Capacity>0</Capacity>
   </ZObjects>
@@ -211,11 +211,6 @@
   <PolyTypes>
     <Capacity>8</Capacity>
     <ZColPolyType>
-      <Raw>0</Raw>
-      <PolyFlagA>0</PolyFlagA>
-      <PolyFlagB>0</PolyFlagB>
-    </ZColPolyType>
-    <ZColPolyType>
       <Raw>2</Raw>
       <PolyFlagA>0</PolyFlagA>
       <PolyFlagB>0</PolyFlagB>
@@ -292,19 +287,19 @@
   <Rooms>
     <Capacity>4</Capacity>
     <ZScene-ZRoom>
-      <ModelFilename>floor1level1.obj</ModelFilename>
+      <ModelFilename>floor1level1rev1.obj</ModelFilename>
       <StartTime>65535</StartTime>
       <TimeSpeed>10</TimeSpeed>
       <DisableSkybox>false</DisableSkybox>
-      <DisableSunMoon>true</DisableSunMoon>
+      <DisableSunMoon>false</DisableSunMoon>
       <WindWest>15</WindWest>
       <WindVertical>40</WindVertical>
       <WindSouth>109</WindSouth>
       <WindStrength>190</WindStrength>
-      <Restriction>1</Restriction>
+      <Restriction>0</Restriction>
       <IdleAnim>0</IdleAnim>
       <ShowInvisibleActors>false</ShowInvisibleActors>
-      <DisableWarpSongs>true</DisableWarpSongs>
+      <DisableWarpSongs>false</DisableWarpSongs>
       <Echo>0</Echo>
       <AffectedByPointLight>false</AffectedByPointLight>
       <AdditionalLights>
@@ -2153,7 +2148,7 @@
         </Vibrant>
       </GroupSettings>
       <OriginalMeshHeaderOffset>0</OriginalMeshHeaderOffset>
-      <ModelShortFilename>floor1level1</ModelShortFilename>
+      <ModelShortFilename>floor1level1rev1</ModelShortFilename>
     </ZScene-ZRoom>
   </Rooms>
 </ZScene>
