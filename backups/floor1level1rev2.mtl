@@ -1,0 +1,152 @@
+# Blender MTL File: 'floor1level1.blend'
+# Material Count: 50
+
+newmtl materials/courtyardbackroundtrees.vmat.004
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00013B60_64x16_rgba16.png
+
+newmtl materials/courtyardbackroundtrees.vmat.005
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00013B60_64x16_rgba16.png
+
+newmtl materials/courtyardbackroundtrees.vmat.006
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00013B60_64x16_rgba16.png
+
+newmtl materials/courtyardbackroundtrees.vmat.007
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00013B60_64x16_rgba16.png
+
+newmtl materials/courtyardgrass.vmat
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00014360_32x32_rgba16.png
+
+newmtl materials/courtyardgrass.vmat.001
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00014360_32x32_rgba16.png
+
+newmtl materials/courtyardgrass.vmat.002
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00014360_32x32_rgba16.png
+
+newmtl materials/courtyardgrass.vmat.003
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00014360_32x32_rgba16.png
+
+newmtl materials/courtyardgrass.vmat.018
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00014360_32x32_rgba16.png
+
+newmtl materials/courtyardgrass.vmat.019
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00014360_32x32_rgba16.png
+
+newmtl materials/courtyardgrass.vmat.020
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00014360_32x32_rgba16.png
+
+newmtl materials/courtyardgrass.vmat.021
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00014360_32x32_rgba16.png
+
+newmtl materials/courtyardgrass.vmat.022
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00014360_32x32_rgba16.png
+
+newmtl materials/courtyardgrass.vmat.023
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00014360_32x32_rgba16.png
+
+newmtl materials/courtyardgrass.vmat.024
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00014360_32x32_rgba16.png
+
+newmtl materials/courtyardgrass.vmat.025
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00014360_32x32_rgba16.png
+
+newmtl materials/courtyardgrass.vmat.026
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00014360_32x32_rgba16.png
+
+newmtl materials/courtyardgrass.vmat.027
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00014360_32x32_rgba16.png
+
+newmtl materials/courtyardpillars.vmat
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00016C00_32x32_rgba16.png
+
+newmtl materials/courtyardpillars.vmat.011
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00016C00_32x32_rgba16.png
+
+newmtl materials/courtyardpillars.vmat.012
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00016C00_32x32_rgba16.png
+
+newmtl materials/courtyardpillars.vmat.013
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00016C00_32x32_rgba16.png
+
+newmtl materials/courtyardpillars.vmat.014
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00016C00_32x32_rgba16.png
+
+newmtl materials/courtyardpillars.vmat.015
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00016C00_32x32_rgba16.png
+
+newmtl materials/courtyardpillars.vmat.016
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00016C00_32x32_rgba16.png
+
+newmtl materials/courtyardpillars.vmat.017
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00016C00_32x32_rgba16.png
+
+newmtl materials/courtyardpillars.vmat.018
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00016C00_32x32_rgba16.png
+
+newmtl materials/courtyardpillars.vmat.019
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00016C00_32x32_rgba16.png
+
+newmtl materials/courtyardstairs.vmat.001
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0002EE60_64x32_i8.png
+
+newmtl materials/courtyardtriforcebanner.vmat.001
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00041018_32x64_rgba16.png
+
+newmtl materials/courtyardunpolishedmarble.vmat.005
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00015E00_32x32_rgba16.png
+
+newmtl materials/courtyardunpolishedmarble.vmat.006
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00015E00_32x32_rgba16.png
+
+newmtl materials/courtyardunpolishedmarble.vmat.007
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00015E00_32x32_rgba16.png
+
+newmtl materials/courtyardunpolishedmarble.vmat.008
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00015E00_32x32_rgba16.png
+
+newmtl materials/courtyardunpolishedmarble.vmat.009
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00015E00_32x32_rgba16.png
+
+newmtl materials/courtyardvariedwhitebricks.vmat
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000E360_64x64_i4.png
+
+newmtl materials/courtyardvariedwhitebricks.vmat.003
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000E360_64x64_i4.png
+
+newmtl materials/courtyardwalls.vmat
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00011360_32x64_rgba16.png
+
+newmtl materials/courtyardwalls.vmat.001
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00011360_32x64_rgba16.png
+
+newmtl materials/courtyardwalls.vmat.002
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00011360_32x64_rgba16.png
+
+newmtl materials/courtyardwalls.vmat.003
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00011360_32x64_rgba16.png
+
+newmtl materials/insidebluecarpetwithgoldtrimmings.vmat
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\FT-0x4A0D8_32x32_RGBA16.png
+
+newmtl materials/insidebluecarpetwithgoldtrimmings.vmat.001
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\FT-0x4A0D8_32x32_RGBA16.png
+
+newmtl materials/insidecheckerboardflooring.vmat.002
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000D7A0_32x32_rgba16.png
+
+newmtl materials/insidecheckerboardflooring.vmat.003
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000D7A0_32x32_rgba16.png
+
+newmtl materials/insideredcarpetwithgoldtrimmings.vmat.003
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000CFA0_32x32_rgba16.png
+
+newmtl materials/insideredcarpetwithgoldtrimmings.vmat.004
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000CFA0_32x32_rgba16.png
+
+newmtl materials/insidewalls.vmat.003
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000BB60_16x128_rgba16.png
+
+newmtl materials/insidewalls.vmat.004
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000BB60_16x128_rgba16.png
+
+newmtl materials/insidewalls.vmat.005
+map_Kd ..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000BB60_16x128_rgba16.png
