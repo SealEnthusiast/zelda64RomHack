@@ -6,10 +6,10 @@
 // # # # # # # # # # # # # # # # # # # # #
 
 // New save patches
-#define Patch_SaveStartEntrance 0xBB
-#define Patch_SaveStartAge      LINK_AGE_CHILD
+#define Patch_SaveStartEntrance 0x34
+#define Patch_SaveStartAge LINK_AGE_ADULT;
 #define Patch_SaveStartTime     0x6AAB
-#define Patch_SaveStartCsIndex  0xFFF1
+#define Patch_SaveStartCsIndex 0xFFF1
 
 // Wield Hylian shield like Kokiri shield
 #define Patch_WieldHylianShieldLikeKokiriShield true
