@@ -1,4 +1,40 @@
-# Zelda 64: Romhack
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet lorem a mauris interdum malesuada. Vivamus congue, magna eu tincidunt mollis, eros enim fringilla nisl, dapibus rutrum arcu nulla non lectus. Maecenas sagittis ultricies lacus quis dignissim. Sed elementum elit sed quam porttitor consectetur. Morbi massa nisi, dignissim ut leo et, interdum laoreet orci. Donec vel congue ante. Nam blandit elit ut tellus interdum, cursus fermentum urna aliquet. Cras quis volutpat augue. Vivamus vel mi lacus. Phasellus eu nulla magna. Maecenas at tincidunt urna. Morbi elementum gravida ante, ut pretium felis varius mollis. Nunc non metus tincidunt, suscipit nibh et, sagittis dui. Integer sed sapien at risus vulputate sodales at a ante. Aliquam vel neque erat. Nulla a nulla volutpat, pretium eros quis, condimentum orci.
 
->TODO: Add a description and create a cool name :)
+# Zelda 64: Underground Bunker
+
+Loris ipsum
+
+
+## Features finished / In development
+
+- 6 new areas (Including a boss and mini boss)
+
+- Works with MM and OOT
+
+- A vanilla patched version (Keyless)
+
+- A master quest remix mode
+
+## Features planned
+
+- Zelda 64 Recomp Compatiblity
+
+- N64 Hardware compatible version
+
+- New items
+
+
+## FAQ
+
+#### Will there be support for SOH or Habour Master projects?
+
+No, they are cringe
+
+#### The game is crashing / Is going slow
+
+Turn on 8mb ram and overclocked CPU in your settings if needed (If on N64 make sure you are using the N64 branch)
+
+
+## Screenshots
+
+![Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
