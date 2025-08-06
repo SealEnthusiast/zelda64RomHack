@@ -4130,7 +4130,7 @@ f 545/1975/91 546/1976/91 541/1977/91
 fc 15 15 15
 f 553/1978/89 551/1979/89 549/1980/89
 fc 15 15 15
-g Room5mesh1_#Room5#_materials/windowlightray.vmat.001#NoCollision#AlphaA0
+g Room5mesh1_#Room5#_materials/windowlightray.vmat.001#NoCollision#AlphaAA
 usemtl materials/windowlightray.vmat.001
 f 528/1981/92 521/1982/93 527/1983/94
 fc 15 15 15
