@@ -6,4 +6,5 @@ src/lib_user/uLib_types.h
 include/sfx_enum.h
 src/system/kaleido/0x01-Player/playas_child.h
 src/system/kaleido/0x01-Player/playas_adult.h
+src/system/kaleido/0x01-Player/NewAnimHeader.h
 

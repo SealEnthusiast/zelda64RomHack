@@ -6,6 +6,7 @@
 
 #include <asm_macros.h>
 #include "Player.h"
+#include "NewAnimHeader.h"
 
 Asm_SymbolAlias("__z64_init", Player_Init);
 Asm_SymbolAlias("__z64_dest", Player_Destroy);
