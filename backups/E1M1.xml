@@ -2250,13 +2250,10 @@
       <ZObjects>
         <Capacity>4</Capacity>
         <ZScene-ZUShort>
-          <Value>50</Value>
+          <Value>387</Value>
         </ZScene-ZUShort>
         <ZScene-ZUShort>
           <Value>107</Value>
-        </ZScene-ZUShort>
-        <ZScene-ZUShort>
-          <Value>387</Value>
         </ZScene-ZUShort>
       </ZObjects>
       <ZActors>
