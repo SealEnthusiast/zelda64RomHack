@@ -1,4 +1,4 @@
-# Running_Man
-vram_addr       = 0x80AAD770
-init_vars       = 0x80AAEAC0
-alloc_type      = 0
+# file
+alloc_type = 0
+vram_addr  = 0x80800000
+init_vars  = 0x80801298

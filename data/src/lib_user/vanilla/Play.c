@@ -2,6 +2,11 @@
 #include "code/z_play.h"
 #include <code/z_scene_table.h>
 
+//Version: 1.2
+/*This version value is used by SharpOcarina to determine if it needs to update the Play.c of an old project
+to use newly added features. Put a high value like 99 to stop it from ever asking to update it again.
+*/
+
 asm ("TitleSetup_Init = 0x80803CAC");
 asm ("FileSelect_Init = 0x80811A20");
 
@@ -9,6 +14,22 @@ extern void z64rom_PrePlayUpdate(PlayState* play);
 extern void z64rom_PostPlayUpdate(PlayState* play);
 extern void z64rom_PrePlayDraw(PlayState* play);
 extern void z64rom_PostPlayDraw(PlayState* play);
+
+static void (*sSceneFunc)(PlayState*);
+
+#if SEGMENT_0x06_FOR_SCENES
+static u16 sSceneSegmentObj0x06 = 0;
+Asm_VanillaHook(Scene_CommandSkyboxSettings);
+void Scene_CommandSkyboxSettings(PlayState *play, SceneCmd *cmd) {
+    u8 *cmd8 = (u8*)cmd;
+    sSceneSegmentObj0x06 = (cmd8[1] << 8) | cmd8[2];
+    if (sSceneSegmentObj0x06)
+        sSceneSegmentObj0x06 = Object_Spawn(&play->objectCtx, sSceneSegmentObj0x06);
+    play->skyboxId = cmd->skyboxSettings.skyboxId;
+    play->envCtx.skyboxConfig = play->envCtx.changeSkyboxNextConfig = cmd->skyboxSettings.skyboxConfig;
+    play->envCtx.lightMode = cmd->skyboxSettings.envLightMode;
+}
+#endif
 
 static s32 Play_FrameAdvance(PlayState* play) {
 #ifdef DEV_BUILD
@@ -63,8 +84,25 @@ static void Play_Draw2(PlayState* play) {
     Matrix_Transpose(&play->billboardMtxF);
     play->billboardMtx = Matrix_MtxFToMtx(
         Matrix_CheckFloats(&play->billboardMtxF, "../z_play.c", 4005),
-        Graph_Alloc(gfxCtx, sizeof(Mtx))
+        Graph_Alloc(gfxCtx, sizeof(Mtx) * 2)
     );
+    
+    // cylindrical billboarding
+    {
+        u16 *cyl = (void*)(play->billboardMtx + 1);
+        
+        // cylinder = copy of sphere
+        bcopy(play->billboardMtx, cyl, 0x40);
+        
+        // revert up vector to identity
+        cyl[0x08 / 2] = 0; // x
+        cyl[0x0A / 2] = 1; // y
+        cyl[0x0C / 2] = 0; // z
+        
+        cyl[0x28 / 2] = 0; // x
+        cyl[0x2A / 2] = 0; // y
+        cyl[0x2C / 2] = 0; // z
+    }
     
     gSPSegment(POLY_OPA_DISP++, 0x01, play->billboardMtx);
     
@@ -192,6 +230,11 @@ static void Play_Draw2(PlayState* play) {
                     }
                     Profiler_Start(&gLibCtx.profiler.sceneDraw);
                     Scene_Draw(play);
+                    
+                    // embedded scene func
+                    if (sSceneFunc)
+                        sSceneFunc(play);
+                    
                     NewRoom_Draw(play, &play->roomCtx.curRoom, sp80 & 3);
                     NewRoom_Draw(play, &play->roomCtx.prevRoom, sp80 & 3);
                     Profiler_End(&gLibCtx.profiler.sceneDraw);
@@ -356,13 +399,54 @@ Asm_VanillaHook(Play_SpawnScene);
 void Play_SpawnScene(PlayState* play, s32 sceneNum, s32 spawn) {
     SceneTableEntry* scene = &gSceneTable[sceneNum];
     u32 roomSize;
+    bool hasEmbeds = false;
+    sSceneFunc = 0;
     
     scene->unk_13 = 0;
     play->loadedScene = scene;
     play->sceneId = sceneNum;
     play->sceneDrawConfig = scene->drawConfig;
     
-    play->sceneSegment = Play_LoadFile(play, &scene->sceneFile);
+    // this bit specifies embeds are present
+    RomFile sceneFile = scene->sceneFile;
+    if (sceneFile.vromStart & 0x80000000)
+    {
+        hasEmbeds = true;
+        sceneFile.vromStart &= 0x7fffffff;
+    }
+    
+    play->sceneSegment = Play_LoadFile(play, &sceneFile);
+    
+    // handle embeds
+    if (hasEmbeds)
+    {
+        u32 *jumps = play->sceneSegment;
+        u8 *scene = play->sceneSegment = &jumps[4];
+        
+        // overlay
+        if (jumps[0])
+        {
+            u32 *footer = (u32*)(scene + jumps[0]);
+            u8 *start  = scene + footer[2];
+            u8 *end    = scene + footer[3];
+            u8 *header = end - footer[0];
+            u32 main   = footer[1];
+            u32 size   = end - start;
+            
+            // relocate overlay from virtual ram to physical ram
+            Overlay_Relocate(start, (void*)header, (void*)0x80800000);
+            
+            // clear instruction cache for memory region occupied by overlay
+            osWritebackDCache(start, size);
+            osInvalICache(start, size);
+            
+            // use main routine as scene func
+            play->sceneDrawConfig = SDC_DEFAULT;
+            sSceneFunc = (void (*)(PlayState*))(scene + main);
+        }
+        // TODO jumps[1..3] are still free: use them wisely! (minimaps??)
+    }
+    
     scene->unk_13 = 0;
     
     gSegments[2] = VIRTUAL_TO_PHYSICAL(play->sceneSegment);
@@ -404,6 +488,20 @@ void Play_Init(GameState* __play) {
     s32 playerStartCamId;
     s32 i;
     u8 tempSetupIndex;
+    
+    // if array was changed to pointer, ensure it points to something!
+    //
+    // unfortunately, there is no way to check this using C preprocessor,
+    // so casting to a pointer-to-pointer is used to achieve polymorphism
+    //
+    // the compiler will optimize if (false) away
+    if (sizeof(play->objectCtx.status) == sizeof(void*))
+    {
+        // repurpose unused PAL text table for extended object status limit
+        ObjectStatus **status = (ObjectStatus**)&play->objectCtx.status;
+        *status = (void*)0x80153764; // tail of message entry table
+        *status -= OBJECT_EXCHANGE_BANK_MAX;
+    }
     
     gLibCtx.state.isPlayGameMode = true;
     
@@ -664,6 +762,13 @@ void Play_Draw(PlayState* playState) {
     gSPSegment(POLY_XLU_DISP++, 0x05, playState->objectCtx.status[playState->objectCtx.subKeepIndex].segment);
     gSPSegment(OVERLAY_DISP++, 0x05, playState->objectCtx.status[playState->objectCtx.subKeepIndex].segment);
     
+#if SEGMENT_0x06_FOR_SCENES
+    gSegments[6] = VIRTUAL_TO_PHYSICAL(playState->objectCtx.status[sSceneSegmentObj0x06].segment);
+    gSPSegment(POLY_OPA_DISP++, 0x06, playState->objectCtx.status[sSceneSegmentObj0x06].segment);
+    gSPSegment(POLY_XLU_DISP++, 0x06, playState->objectCtx.status[sSceneSegmentObj0x06].segment);
+    gSPSegment(OVERLAY_DISP++, 0x06, playState->objectCtx.status[sSceneSegmentObj0x06].segment);
+#endif
+    
     gSPSegment(POLY_OPA_DISP++, 0x02, playState->sceneSegment);
     gSPSegment(POLY_XLU_DISP++, 0x02, playState->sceneSegment);
     gSPSegment(OVERLAY_DISP++, 0x02, playState->sceneSegment);
@@ -673,7 +778,7 @@ void Play_Draw(PlayState* playState) {
     if ((HREG(80) != 10) || (HREG(82) != 0)){
         z64rom_PrePlayDraw(playState);
         Play_Draw2(playState);
-        z64rom_PostPlayUpdate(playState);
+        z64rom_PostPlayDraw(playState);
     }
     
     if (playState->view.unk_124 != 0) {

@@ -6,13 +6,17 @@
 // # # # # # # # # # # # # # # # # # # # #
 
 // New save patches
-#define Patch_SaveStartEntrance 0x34
-#define Patch_SaveStartAge LINK_AGE_ADULT;
+#define Patch_SaveStartEntrance 0xBB
+#define Patch_SaveStartAge      LINK_AGE_CHILD
 #define Patch_SaveStartTime     0x6AAB
-#define Patch_SaveStartCsIndex 0xFFF1
+#define Patch_SaveStartCsIndex  0xFFF1
 
-// Wield Hylian shield like Kokiri shield
-#define Patch_WieldHylianShieldLikeKokiriShield true
+#define OOT 0
+#define MM  1
+#define GC  2
+
+// Wield Hylian shield like Deku shield
+#define Patch_WieldHylianShieldLikeKokiriShield false
 
 // Play cutscene after obtaining Silver Gauntlets
 #define Patch_SilverGauntletObtainCS false
@@ -20,8 +24,60 @@
 // Flush current textbox by pressing B
 #define Patch_QuickText true
 
+// MM Timer (faked)
+#define Patch_MM_TIMER false
+
+// When Bunny Hood is equipped, you run fast like in MM
+#define MM_BUNNYHOOD false
+
+// Save anywhere but a grotto
+#define SAVE_ANYWHERE false
+
+// Use MM style titlecards
+#define MM_TITLECARD false
+
+// Enable motion blur + motion blur cutscene command
+#define MOTION_BLUR false
+
+// Enable use of segment 0x06 for scenes, similar to MM
+// Notes:
+//  - The scene header command 0x11 assumes this format:
+//      11wwww00 xx0y0z00
+//       - wwww  = Object ID to load into Segment 0x06 (what this mod adds)
+//       - x/y/z = Unchanged from base game
+//  - If used, the 0x11 command must be set in all scene headers
+//  - One use-case for this is to have multiple scenes reference the same
+//    textures w/o having to store duplicates of those textures in each scene
+//  - That is how it was used in MM, and it does save some space, but the
+//    tradeoff is if the texture bank you load using this method contains
+//    textures you don't need, that's RAM wasted instead
+//  - You might alternatively use this feature to load different textures
+//    for different scene headers: for example, you might want to reuse stage
+//    geometry but have it appear radically different at different points of
+//    the game by loading different texture banks for different scene headers
+#define SEGMENT_0x06_FOR_SCENES false
+
+// Interface Stuff
+// MM-Styled Interface (Corrdinates)
+#define Patch_MM_INTERFACE_BUTTONS_CORDS false
+
+// MM-Styled Interface (Shadows)
+#define Patch_MM_INTERFACE_SHADOWS false
+
+// Interface Colors for A and B buttons (OOT/MM/GC)
+#define Patch_INTERFACE_BUTTON_COLORS OOT
+
+// Interface Colors for C buttons (OOT/MM)
+#define Patch_INTERFACE_C_BUTTON_COLORS_MM false
+
+// Interface TATL height (c-up, requires texture patch)
+#define Patch_INTERFACE_C_UP_TATL false
+
+// Interface Colors for the Rupee counter, according to wallet upgrades 
+#define Patch_MM_INTERFACE_RUPEE_UPGRADES false
+
 // Space allocated for GI models, expand if needed
-#define Pathch_GetItem_SegmentSize 0x3008
+#define Patch_GetItem_SegmentSize 0x3008
 
 // Extension, these can be adjusted if necessary
 #define EXT_DMA_MAX    3800
@@ -69,8 +125,10 @@ asm ("osMemSize = 0x80000318");
 
 void uLib_Update(GameState* gameState);
 void* memset(void* m, int v, unsigned int s);
-void* memmove(void* dest, const void* src, size_t len);
 f32 fmodf(f32, f32);
+
+extern char gBlankString[1];
+asm("gBlankString = 0x8012602C;");
 
 #define DEFAULT_REVERB 0.35f
 #define DEFAULT_RANGE  800.0f
@@ -107,7 +165,7 @@ void osLibHex(const char* txt, const void* data, u32 size, u32 dispOffset);
 #define DebugMenu_CineCamera(...) do {} while (0)
 #define Profiler_Start(...)       do {} while (0)
 #define Profiler_End(...)         do {} while (0)
-#define Assert(cond)              if (cond) (void)0;
+#define Assert(cond)              do {} while (0)
 #define osInfo(title)             do {} while (0)
 #define osLibPrintf(...)          do {} while (0)
 #define osLibHex(...)             do {} while (0)
@@ -173,6 +231,57 @@ void Play_SetFadeOut(PlayState* play);
 struct Time Play_GetTime(void);
 void NewRoom_Draw(PlayState* play, Room* room, u32 flags);
 
+// please read the examples and 'important things to know' sections
+// of ActorPayload.c before using Actor_GetPayload() in your actors
+void *(Actor_GetPayload)(Actor *actor, PlayState *play);
+void *Actor_GetPayloadAndDoRelocs(Actor *actor, PlayState *play, u8 *relocs);
+
+// i wish there was a better way to do this sort of thing in c
+#define Actor_GetPayload_ARRAY(...) (u8[]){__VA_ARGS__, 0xff}
+#define Actor_GetPayload_EXPAND(x) x
+#define Actor_GetPayload_DICT(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19, NAME, ...) NAME
+#define Actor_GetPayload2(ACTOR, PLAY)                                                                               Actor_GetPayload(ACTOR, PLAY)
+#define Actor_GetPayload3(ACTOR, PLAY, A0)                                                                           Actor_GetPayloadAndDoRelocs(ACTOR, PLAY, Actor_GetPayload_ARRAY(A0/4))
+#define Actor_GetPayload4(ACTOR, PLAY, A0, A1)                                                                       Actor_GetPayloadAndDoRelocs(ACTOR, PLAY, Actor_GetPayload_ARRAY(A0/4, A1/4))
+#define Actor_GetPayload5(ACTOR, PLAY, A0, A1, A2)                                                                   Actor_GetPayloadAndDoRelocs(ACTOR, PLAY, Actor_GetPayload_ARRAY(A0/4, A1/4, A2/4))
+#define Actor_GetPayload6(ACTOR, PLAY, A0, A1, A2, A3)                                                               Actor_GetPayloadAndDoRelocs(ACTOR, PLAY, Actor_GetPayload_ARRAY(A0/4, A1/4, A2/4, A3/4))
+#define Actor_GetPayload7(ACTOR, PLAY, A0, A1, A2, A3, A4)                                                           Actor_GetPayloadAndDoRelocs(ACTOR, PLAY, Actor_GetPayload_ARRAY(A0/4, A1/4, A2/4, A3/4, A4/4))
+#define Actor_GetPayload8(ACTOR, PLAY, A0, A1, A2, A3, A4, A5)                                                       Actor_GetPayloadAndDoRelocs(ACTOR, PLAY, Actor_GetPayload_ARRAY(A0/4, A1/4, A2/4, A3/4, A4/4, A5/4))
+#define Actor_GetPayload9(ACTOR, PLAY, A0, A1, A2, A3, A4, A5, A6)                                                   Actor_GetPayloadAndDoRelocs(ACTOR, PLAY, Actor_GetPayload_ARRAY(A0/4, A1/4, A2/4, A3/4, A4/4, A5/4, A6/4))
+#define Actor_GetPayload10(ACTOR, PLAY, A0, A1, A2, A3, A4, A5, A6, A7)                                              Actor_GetPayloadAndDoRelocs(ACTOR, PLAY, Actor_GetPayload_ARRAY(A0/4, A1/4, A2/4, A3/4, A4/4, A5/4, A6/4, A7/4))
+#define Actor_GetPayload11(ACTOR, PLAY, A0, A1, A2, A3, A4, A5, A6, A7, A8)                                          Actor_GetPayloadAndDoRelocs(ACTOR, PLAY, Actor_GetPayload_ARRAY(A0/4, A1/4, A2/4, A3/4, A4/4, A5/4, A6/4, A7/4, A8/4))
+#define Actor_GetPayload12(ACTOR, PLAY, A0, A1, A2, A3, A4, A5, A6, A7, A8, A9)                                      Actor_GetPayloadAndDoRelocs(ACTOR, PLAY, Actor_GetPayload_ARRAY(A0/4, A1/4, A2/4, A3/4, A4/4, A5/4, A6/4, A7/4, A8/4, A9/4))
+#define Actor_GetPayload13(ACTOR, PLAY, A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10)                                 Actor_GetPayloadAndDoRelocs(ACTOR, PLAY, Actor_GetPayload_ARRAY(A0/4, A1/4, A2/4, A3/4, A4/4, A5/4, A6/4, A7/4, A8/4, A9/4, A10/4))
+#define Actor_GetPayload14(ACTOR, PLAY, A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11)                            Actor_GetPayloadAndDoRelocs(ACTOR, PLAY, Actor_GetPayload_ARRAY(A0/4, A1/4, A2/4, A3/4, A4/4, A5/4, A6/4, A7/4, A8/4, A9/4, A10/4, A11/4))
+#define Actor_GetPayload15(ACTOR, PLAY, A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12)                       Actor_GetPayloadAndDoRelocs(ACTOR, PLAY, Actor_GetPayload_ARRAY(A0/4, A1/4, A2/4, A3/4, A4/4, A5/4, A6/4, A7/4, A8/4, A9/4, A10/4, A11/4, A12/4))
+#define Actor_GetPayload16(ACTOR, PLAY, A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13)                  Actor_GetPayloadAndDoRelocs(ACTOR, PLAY, Actor_GetPayload_ARRAY(A0/4, A1/4, A2/4, A3/4, A4/4, A5/4, A6/4, A7/4, A8/4, A9/4, A10/4, A11/4, A12/4, A13/4))
+#define Actor_GetPayload17(ACTOR, PLAY, A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14)             Actor_GetPayloadAndDoRelocs(ACTOR, PLAY, Actor_GetPayload_ARRAY(A0/4, A1/4, A2/4, A3/4, A4/4, A5/4, A6/4, A7/4, A8/4, A9/4, A10/4, A11/4, A12/4, A13/4, A14/4))
+#define Actor_GetPayload18(ACTOR, PLAY, A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, A15)        Actor_GetPayloadAndDoRelocs(ACTOR, PLAY, Actor_GetPayload_ARRAY(A0/4, A1/4, A2/4, A3/4, A4/4, A5/4, A6/4, A7/4, A8/4, A9/4, A10/4, A11/4, A12/4, A13/4, A14/4, A15/4))
+#define Actor_GetPayload19(ACTOR, PLAY, A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, A15, A16)   Actor_GetPayloadAndDoRelocs(ACTOR, PLAY, Actor_GetPayload_ARRAY(A0/4, A1/4, A2/4, A3/4, A4/4, A5/4, A6/4, A7/4, A8/4, A9/4, A10/4, A11/4, A12/4, A13/4, A14/4, A15/4, A16/4))
+#define Actor_GetPayload(...)    Actor_GetPayload_EXPAND( Actor_GetPayload_DICT(__VA_ARGS__, Actor_GetPayload19, Actor_GetPayload18, Actor_GetPayload17, Actor_GetPayload16, Actor_GetPayload15, Actor_GetPayload14, Actor_GetPayload13, Actor_GetPayload12, Actor_GetPayload11, Actor_GetPayload10, Actor_GetPayload9, Actor_GetPayload8, Actor_GetPayload7, Actor_GetPayload6, Actor_GetPayload5, Actor_GetPayload4, Actor_GetPayload3, Actor_GetPayload2)(__VA_ARGS__) )
+
+#define EASYTALK_OPENED      100   // opened textbox
+#define EASYTALK_CLOSED      200   // closed textbox
+#define EASYTALK_CHOICE_1    1     // made choice 1, 2, or 3
+#define EASYTALK_CHOICE_2    2
+#define EASYTALK_CHOICE_3    3
+#define EASYTALK_NO_EVENT    0     // no event has taken place
+
+// feed this distance into EasyTalkNpc() to activate the textbox instantly
+#define EASYTALK_DISTANCE_ACTIVATE_INSTANTLY -123456.0f
+
+void EasyTalkOverrideString(PlayState *play, const char *string);
+void EasyTalkFlush(PlayState *play);
+int (EasyTalkNpc)(Actor *actor, PlayState *play, const EasyTalkNpcArgs *args);
+void EasyTalkQueueOverrideString(const char *text);
+void EasyTalkApplyQueuedNaviActorDescription(void);
+void EasyTalkSetNaviActorDescriptionString(Actor *actor, PlayState *play, const char *text);
+#define EasyTalkNpc(ACTOR, PLAY, ...) \
+	(EasyTalkNpc)(ACTOR, PLAY, &(EasyTalkNpcArgs) { \
+		EasyTalkNpcArgsDefaults __VA_ARGS__ \
+	})
+_Pragma("GCC diagnostic ignored \"-Woverride-init\"") // for functions w/ optional arguments
+
 typedef enum {
     OVL_MSG_TALK,
     OVL_MSG_CHECK,
@@ -180,12 +289,12 @@ typedef enum {
 
 typedef enum {
     MSGBOX_TYPE_BLACK,
-    MSGBOX_TYPE_WOODEN,
-    MSGBOX_TYPE_BLUE,
-    MSGBOX_TYPE_OCARINA,
-    MSGBOX_TYPE_NONE_BOTTOM,
-    MSGBOX_TYPE_NONE_NO_SHADOW,
-    MSGBOX_TYPE_CREDITS = 11
+    MSGBOX_TYPE_WOODEN          =  1 << 4,
+    MSGBOX_TYPE_BLUE            =  2 << 4,
+    MSGBOX_TYPE_OCARINA         =  3 << 4,
+    MSGBOX_TYPE_NONE_BOTTOM     =  4 << 4,
+    MSGBOX_TYPE_NONE_NO_SHADOW  =  5 << 4,
+    MSGBOX_TYPE_CREDITS         = 11 << 4
 } MsgBoxType;
 
 typedef enum {
@@ -221,6 +330,7 @@ typedef enum {
 #define MSG_TEXT_SPEED(x)        "\x14" x // 1
 #define MSG_HIGHSCORE(x)         "\x1E" x // 1
 
+#define MSG_END           "\x02"
 #define MSG_INSTANT_ON    "\x08"
 #define MSG_INSTANT_OFF   "\x09"
 #define MSG_PERSISTENT    "\xFA"
@@ -231,8 +341,8 @@ typedef enum {
 #define MSG_RACE_TIME     "\x17"
 #define MSG_POINTS        "\x18"
 #define MSG_TOKENS        "\x19"
-#define MSG_TWO_CHOICE    "\x02"
-#define MSG_THREE_CHOICE  "\x03"
+#define MSG_TWO_CHOICE    "\x1B"
+#define MSG_THREE_CHOICE  "\x1C"
 #define MSG_FISH_INFO     "\x1D"
 #define MSG_TIME          "\x1F"
 
@@ -253,5 +363,22 @@ s8 OvlMessage_IsCurrentMessage(OvlMessage* msg);
 s8 OvlMessage_SetBranch(OvlMessage* branch);
 s8 OvlMessage_GetChoice(Actor* actor);
 s8 OvlMessage_GetBoxNum(void);
+
+//Draw helpers
+#define DRAW_ANCHOR_C 0
+#define DRAW_ANCHOR_U (1 << 0)
+#define DRAW_ANCHOR_R (1 << 1)
+#define DRAW_ANCHOR_D (1 << 2)
+#define DRAW_ANCHOR_L (1 << 3)
+#define DRAW_ANCHOR_UR DRAW_ANCHOR_U | DRAW_ANCHOR_R
+#define DRAW_ANCHOR_DR DRAW_ANCHOR_D | DRAW_ANCHOR_R
+#define DRAW_ANCHOR_DL DRAW_ANCHOR_D | DRAW_ANCHOR_L
+#define DRAW_ANCHOR_UL DRAW_ANCHOR_U | DRAW_ANCHOR_L
+void Text_DrawShadowColor(Gfx** glistp, char const* fmt, f32 fontSize, f32 x, f32 y, u8 anchor, Font* fontBuf, Color_RGBA8* color);
+void Text_Finish(Gfx* gfx);
+
+#if MOTION_BLUR
+    #define motionBlurAlpha unk_12428[0]
+#endif
 
 #endif

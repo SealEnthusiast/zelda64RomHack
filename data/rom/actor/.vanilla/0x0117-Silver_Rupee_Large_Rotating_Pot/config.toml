@@ -1,4 +1,4 @@
-# Silver_Rupee_Large_Rotating_Pot
-vram_addr       = 0x80A21EC0
-init_vars       = 0x80A2371C
-alloc_type      = 0
+# file
+alloc_type = 0
+vram_addr  = 0x80800000
+init_vars  = 0x808016A0

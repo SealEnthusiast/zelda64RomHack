@@ -840,7 +840,12 @@ typedef struct {
     /* 0x0009 */ u8     unk_09;
     /* 0x000A */ u8     mainKeepIndex; // "gameplay_keep" index in bank
     /* 0x000B */ u8     subKeepIndex; // "gameplay_field_keep" or "gameplay_dangeon_keep" index in bank
+#if Z64ROM_VERSION >= 1007000 && OBJECT_EXCHANGE_BANK_MAX > 19
+    /* 0x000C */ ObjectStatus *status;
+    /* 0x0010 */ u8            unused[0x508];
+#else
     /* 0x000C */ ObjectStatus status[OBJECT_EXCHANGE_BANK_MAX];
+#endif
 } ObjectContext; // size = 0x518
 
 typedef enum {

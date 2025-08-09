@@ -1,4 +1,4 @@
-# Shopkeeper
-vram_addr       = 0x80AC2CA0
-init_vars       = 0x80AC88A0
-alloc_type      = 0
+# file
+alloc_type = 0
+vram_addr  = 0x80800000
+init_vars  = 0x80805AC8

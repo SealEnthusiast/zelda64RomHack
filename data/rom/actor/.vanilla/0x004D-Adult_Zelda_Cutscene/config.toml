@@ -1,4 +1,4 @@
-# Adult_Zelda_Cutscene
-vram_addr       = 0x80B4E990
-init_vars       = 0x80B528E0
-alloc_type      = 0
+# file
+alloc_type = 0
+vram_addr  = 0x80800000
+init_vars  = 0x808039E0

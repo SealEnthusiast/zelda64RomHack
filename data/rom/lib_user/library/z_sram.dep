@@ -1,3 +1,4 @@
+player_extras.h
 src/lib_user/uLib.h
 src/lib_user/uLib_macros.h
 src/lib_user/uLib_types.h

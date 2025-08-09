@@ -1,6 +1,14 @@
 #ifndef Z64COMMON_H
 #define Z64COMMON_H
 
+// just in case new z64hdr is paired with old z64rom
+#ifndef Z64ROM_VERSION
+#   define Z64ROM_VERSION 0
+#endif
+
+// just in case this is ever needed in the future, versioning starts now
+#define Z64HDR_VERSION 1000000
+
 #define F3DEX_GBI_2
 #define GS2DEX_H
 

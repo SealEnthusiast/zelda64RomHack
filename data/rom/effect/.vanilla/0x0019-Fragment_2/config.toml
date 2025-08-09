@@ -1,3 +1,4 @@
-# Fragment_2
-vram_addr       = 0x809A9680
-init_vars       = 0x809AA520
+# file
+alloc_type = 0
+vram_addr  = 0x80800000
+init_vars  = 0x80800C80

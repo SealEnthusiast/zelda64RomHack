@@ -1,3 +1,4 @@
-# Broken_Weapon
-vram_addr       = 0x809AC2D0
-init_vars       = 0x809AC620
+# file
+alloc_type = 0
+vram_addr  = 0x80800000
+init_vars  = 0x808002B0

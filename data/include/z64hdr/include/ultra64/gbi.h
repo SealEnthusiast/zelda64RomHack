@@ -195,6 +195,7 @@
 #define G_IM_SIZ_8b   1
 #define G_IM_SIZ_16b  2
 #define G_IM_SIZ_32b  3
+#define G_IM_SIZ_DD   5
 
 /* fast64 now emits gsDPLoadTextureBlock and friends as their constituent
 instructions, using the SGI gbi.h names. */
@@ -202,6 +203,22 @@ instructions, using the SGI gbi.h names. */
 #define G_IM_SIZ_8b_LOAD_BLOCK  G_SIZ_LDSIZ(G_IM_SIZ_8b)
 #define G_IM_SIZ_16b_LOAD_BLOCK G_SIZ_LDSIZ(G_IM_SIZ_16b)
 #define G_IM_SIZ_32b_LOAD_BLOCK G_SIZ_LDSIZ(G_IM_SIZ_32b)
+
+#define G_IM_SIZ_4b_BYTES       0
+#define G_IM_SIZ_4b_TILE_BYTES  G_IM_SIZ_4b_BYTES
+#define G_IM_SIZ_4b_LINE_BYTES  G_IM_SIZ_4b_BYTES
+
+#define G_IM_SIZ_8b_BYTES       1
+#define G_IM_SIZ_8b_TILE_BYTES  G_IM_SIZ_8b_BYTES
+#define G_IM_SIZ_8b_LINE_BYTES  G_IM_SIZ_8b_BYTES
+
+#define G_IM_SIZ_16b_BYTES      2
+#define G_IM_SIZ_16b_TILE_BYTES G_IM_SIZ_16b_BYTES
+#define G_IM_SIZ_16b_LINE_BYTES G_IM_SIZ_16b_BYTES
+
+#define G_IM_SIZ_32b_BYTES      4
+#define G_IM_SIZ_32b_TILE_BYTES 2
+#define G_IM_SIZ_32b_LINE_BYTES 2
 
 /* texture settings */
 #define G_TX_NOMIRROR (gI_(0b0) << 0)
@@ -264,6 +281,14 @@ instructions, using the SGI gbi.h names. */
 #define G_MDSIZ_ZSRCSEL      1
 #define G_MDSIZ_RENDERMODE   29
 #define G_MDSIZ_BLENDER      13
+
+/*
+ * Coordinate shift values, number of bits of fraction
+ */
+#define G_TEXTURE_IMAGE_FRAC    2
+#define G_TEXTURE_SCALE_FRAC    16
+#define G_SCALE_FRAC        8
+#define G_ROTATE_FRAC       16
 
 #define G_AC_NONE      (gI_(0b00) << G_MDSFT_ALPHACOMPARE)
 #define G_AC_THRESHOLD (gI_(0b01) << G_MDSFT_ALPHACOMPARE)

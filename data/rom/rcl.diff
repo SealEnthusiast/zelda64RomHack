@@ -460,9 +460,9 @@
 + rom/effect/%s/0x0022-Effect_Dead_Ds/
 + rom/effect/%s/0x0023-Death_Sfx_Only/
 + rom/effect/%s/0x0024-Ice_Smoke/
-+ rom/object/%s/0x0001-GamePlay_Global/
-+ rom/object/%s/0x0002-GamePlay_Field/
-+ rom/object/%s/0x0003-GamePlay_Dungeon/
++ rom/object/%s/0x0001-Gameplay_Keep/
++ rom/object/%s/0x0002-Gameplay_Field/
++ rom/object/%s/0x0003-Gameplay_Dungeon/
 + rom/object/%s/0x0006-Aria/
 + rom/object/%s/0x0007-Octorok/
 + rom/object/%s/0x0008-Guay/

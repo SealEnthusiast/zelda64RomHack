@@ -5,8 +5,8 @@
  */
 
 #include <asm_macros.h>
+#include <uLib.h>
 #include "Player.h"
-#include "NewAnimHeader.h"
 
 Asm_SymbolAlias("__z64_init", Player_Init);
 Asm_SymbolAlias("__z64_dest", Player_Destroy);
@@ -4906,7 +4906,7 @@ void Player_LoadGetItemObject(Player* this, s16 objectId) {
         size = gObjectTable[objectId].vromEnd - gObjectTable[objectId].vromStart;
         
         LOG_HEX("size", size, "../z_player.c", 9090);
-        ASSERT(size <= Pathch_GetItem_SegmentSize, "GetItem model filesize is too big!", "../z_player.c", 9091);
+        ASSERT(size <= Patch_GetItem_SegmentSize, "GetItem model filesize is too big!", "../z_player.c", 9091);
         
         DmaMgr_SendRequest2(
             &this->giObjectDmaRequest,
@@ -5175,6 +5175,8 @@ s32 Player_SetupSpeakOrCheck(Player* this, PlayState* play) {
                         } else {
                             if (sp2C->naviEnemyId != NAVI_ENEMY_NONE) {
                                 sp2C->textId = sp2C->naviEnemyId + 0x600;
+                                if (sp2C->naviEnemyId == NAVI_ENEMY_NONE - 1)
+                                    EasyTalkApplyQueuedNaviActorDescription();
                             }
                         }
                     }
@@ -6100,6 +6102,13 @@ void func_8083DDC8(Player* this, PlayState* play) {
 
 void Player_SetRunVelAndYaw(Player* this, f32 arg1, s16 arg2) {
     Math_AsymStepToF(&this->linearVelocity, arg1, REG(19) / 100.0f, 1.5f);
+
+#if MM_BUNNYHOOD == true
+    if (this->currentMask == PLAYER_MASK_BUNNY) {
+        this->linearVelocity = arg1 * 1.7f;
+    }
+#endif
+
     Math_ScaledStepToS(&this->currentYaw, arg2, REG(27));
 }
 
@@ -9781,7 +9790,7 @@ void Player_Init(Actor* thisx, PlayState* play2) {
     Player_SetEquipmentData(play, this);
     this->prevBoots = this->currentBoots;
     Player_InitCommon(this, play, gPlayerSkelHeaders[((void)0, gSaveContext.linkAge)]);
-    Assert(this->giObjectSegment = (void*)(((u32)ZeldaArena_MallocDebug(Pathch_GetItem_SegmentSize, "../z_player.c", 17175) + 8) & ~0xF));
+    Assert(this->giObjectSegment = (void*)(((u32)ZeldaArena_MallocDebug(Patch_GetItem_SegmentSize, "../z_player.c", 17175) + 8) & ~0xF));
     
     respawnFlag = gSaveContext.respawnFlag;
     

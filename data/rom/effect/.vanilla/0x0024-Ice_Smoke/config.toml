@@ -1,3 +1,4 @@
-# Ice_Smoke
-vram_addr       = 0x809A8BF0
-init_vars       = 0x809A90B0
+# file
+alloc_type = 0
+vram_addr  = 0x80800000
+init_vars  = 0x80800460

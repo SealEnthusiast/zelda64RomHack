@@ -1,4 +1,4 @@
-# Fake_Stomping_Door
-vram_addr       = 0x80994C50
-init_vars       = 0x80995F90
-alloc_type      = 0
+# file
+alloc_type = 0
+vram_addr  = 0x80800000
+init_vars  = 0x808011A0

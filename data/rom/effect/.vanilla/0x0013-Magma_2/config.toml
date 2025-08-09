@@ -1,3 +1,4 @@
-# Magma_2
-vram_addr       = 0x809A63A0
-init_vars       = 0x809A6894
+# file
+alloc_type = 0
+vram_addr  = 0x80800000
+init_vars  = 0x80800440

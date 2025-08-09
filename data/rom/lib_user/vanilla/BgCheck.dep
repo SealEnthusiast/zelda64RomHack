@@ -1,4 +1,5 @@
 src/lib_user/uLib.h
+player_extras.h
 src/lib_user/uLib_macros.h
 src/lib_user/uLib_types.h
 include/sfx_enum.h
