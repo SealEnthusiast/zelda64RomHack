@@ -10,7 +10,7 @@
   <SpecialObject>3</SpecialObject>
   <ElfMessage>0</ElfMessage>
   <InjectOffset>47185920</InjectOffset>
-  <SceneNumber>10</SceneNumber>
+  <SceneNumber>3</SceneNumber>
   <Reverb>6</Reverb>
   <CameraMovement>0</CameraMovement>
   <WorldMap>20</WorldMap>
@@ -113,9 +113,6 @@
   <CollisionFilename>mainmapobj\rev1\Mainmap.obj</CollisionFilename>
   <ZObjects>
     <Capacity>4</Capacity>
-    <ZScene-ZUShort>
-      <Value>54</Value>
-    </ZScene-ZUShort>
   </ZObjects>
   <Transitions>
     <Capacity>8</Capacity>
@@ -187,7 +184,7 @@
       <XRot>0</XRot>
       <YRot>-16384</YRot>
       <ZRot>0</ZRot>
-      <Variable>0</Variable>
+      <Variable>129</Variable>
       <FrontSwitchTo>5</FrontSwitchTo>
       <FrontCamera>255</FrontCamera>
       <BackSwitchTo>3</BackSwitchTo>
@@ -207,7 +204,7 @@
       <XRot>0</XRot>
       <YRot>0</YRot>
       <ZRot>0</ZRot>
-      <Variable>0</Variable>
+      <Variable>64</Variable>
       <FrontSwitchTo>4</FrontSwitchTo>
       <FrontCamera>255</FrontCamera>
       <BackSwitchTo>3</BackSwitchTo>
@@ -227,7 +224,7 @@
       <XRot>0</XRot>
       <YRot>16384</YRot>
       <ZRot>0</ZRot>
-      <Variable>0</Variable>
+      <Variable>128</Variable>
       <FrontSwitchTo>6</FrontSwitchTo>
       <FrontCamera>255</FrontCamera>
       <BackSwitchTo>2</BackSwitchTo>
@@ -304,7 +301,7 @@
     </ZActor>
   </SpawnPoints>
   <Environments>
-    <Capacity>8</Capacity>
+    <Capacity>16</Capacity>
     <ZEnvironment>
       <C1>-12178119</C1>
       <C2>4802889</C2>
@@ -486,9 +483,9 @@
   <Cameras>
     <Capacity>4</Capacity>
     <ZCamera>
-      <XPos>111</XPos>
-      <YPos>-45</YPos>
-      <ZPos>-251</ZPos>
+      <XPos>0</XPos>
+      <YPos>0</YPos>
+      <ZPos>0</ZPos>
       <XRot>0</XRot>
       <YRot>0</YRot>
       <ZRot>0</ZRot>
@@ -546,7 +543,7 @@
     <Capacity>32</Capacity>
     <ZScene-ZRoom>
       <ModelFilename>mainmapobj\rev1\Mainmap.obj</ModelFilename>
-      <StartTime>65535</StartTime>
+      <StartTime>3072</StartTime>
       <TimeSpeed>0</TimeSpeed>
       <DisableSkybox>false</DisableSkybox>
       <DisableSunMoon>false</DisableSunMoon>
@@ -1290,7 +1287,7 @@
     </ZScene-ZRoom>
     <ZScene-ZRoom>
       <ModelFilename>mainmapobj\rev1\Mainmap.obj</ModelFilename>
-      <StartTime>65535</StartTime>
+      <StartTime>3072</StartTime>
       <TimeSpeed>0</TimeSpeed>
       <DisableSkybox>false</DisableSkybox>
       <DisableSunMoon>false</DisableSunMoon>
@@ -1652,7 +1649,7 @@
     </ZScene-ZRoom>
     <ZScene-ZRoom>
       <ModelFilename>mainmapobj\rev1\Mainmap.obj</ModelFilename>
-      <StartTime>65535</StartTime>
+      <StartTime>3072</StartTime>
       <TimeSpeed>0</TimeSpeed>
       <DisableSkybox>false</DisableSkybox>
       <DisableSunMoon>false</DisableSunMoon>
@@ -1675,12 +1672,9 @@
         <ZScene-ZUShort>
           <Value>164</Value>
         </ZScene-ZUShort>
-        <ZScene-ZUShort>
-          <Value>50</Value>
-        </ZScene-ZUShort>
       </ZObjects>
       <ZActors>
-        <Capacity>20</Capacity>
+        <Capacity>11</Capacity>
         <ZActor>
           <Number>298</Number>
           <XPos>225</XPos>
@@ -1702,14 +1696,14 @@
           </IgnoreMMRot>
         </ZActor>
         <ZActor>
-          <Number>285</Number>
+          <Number>273</Number>
           <XPos>-104</XPos>
           <YPos>63</YPos>
           <ZPos>1664</ZPos>
           <XRot>0</XRot>
           <YRot>0</YRot>
           <ZRot>0</ZRot>
-          <Variable>0</Variable>
+          <Variable>259</Variable>
           <FrontSwitchTo>0</FrontSwitchTo>
           <FrontCamera>255</FrontCamera>
           <BackSwitchTo>1</BackSwitchTo>
@@ -1742,14 +1736,14 @@
           </IgnoreMMRot>
         </ZActor>
         <ZActor>
-          <Number>285</Number>
+          <Number>273</Number>
           <XPos>-227</XPos>
           <YPos>63</YPos>
           <ZPos>1664</ZPos>
           <XRot>0</XRot>
           <YRot>0</YRot>
           <ZRot>0</ZRot>
-          <Variable>0</Variable>
+          <Variable>259</Variable>
           <FrontSwitchTo>0</FrontSwitchTo>
           <FrontCamera>255</FrontCamera>
           <BackSwitchTo>1</BackSwitchTo>
@@ -1782,14 +1776,14 @@
           </IgnoreMMRot>
         </ZActor>
         <ZActor>
-          <Number>285</Number>
+          <Number>273</Number>
           <XPos>-353</XPos>
           <YPos>63</YPos>
           <ZPos>1664</ZPos>
           <XRot>0</XRot>
           <YRot>0</YRot>
           <ZRot>0</ZRot>
-          <Variable>0</Variable>
+          <Variable>259</Variable>
           <FrontSwitchTo>0</FrontSwitchTo>
           <FrontCamera>255</FrontCamera>
           <BackSwitchTo>1</BackSwitchTo>
@@ -1870,26 +1864,6 @@
           <YRot>0</YRot>
           <ZRot>0</ZRot>
           <Variable>9216</Variable>
-          <FrontSwitchTo>0</FrontSwitchTo>
-          <FrontCamera>255</FrontCamera>
-          <BackSwitchTo>1</BackSwitchTo>
-          <BackCamera>255</BackCamera>
-          <SpawnRoom>255</SpawnRoom>
-          <IgnoreMMRot>
-            <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
-            <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
-            <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
-          </IgnoreMMRot>
-        </ZActor>
-        <ZActor>
-          <Number>2</Number>
-          <XPos>0</XPos>
-          <YPos>191</YPos>
-          <ZPos>1731</ZPos>
-          <XRot>0</XRot>
-          <YRot>32767</YRot>
-          <ZRot>0</ZRot>
-          <Variable>3</Variable>
           <FrontSwitchTo>0</FrontSwitchTo>
           <FrontCamera>255</FrontCamera>
           <BackSwitchTo>1</BackSwitchTo>
@@ -2410,7 +2384,7 @@
     </ZScene-ZRoom>
     <ZScene-ZRoom>
       <ModelFilename>mainmapobj\rev1\Mainmap.obj</ModelFilename>
-      <StartTime>65535</StartTime>
+      <StartTime>3072</StartTime>
       <TimeSpeed>0</TimeSpeed>
       <DisableSkybox>false</DisableSkybox>
       <DisableSunMoon>false</DisableSunMoon>
@@ -2423,9 +2397,9 @@
       <ShowInvisibleActors>false</ShowInvisibleActors>
       <DisableWarpSongs>false</DisableWarpSongs>
       <Echo>0</Echo>
-      <AffectedByPointLight>false</AffectedByPointLight>
+      <AffectedByPointLight>true</AffectedByPointLight>
       <AdditionalLights>
-        <Capacity>0</Capacity>
+        <Capacity>4</Capacity>
       </AdditionalLights>
       <InjectOffset>47185920</InjectOffset>
       <ZObjects>
@@ -2756,7 +2730,7 @@
     </ZScene-ZRoom>
     <ZScene-ZRoom>
       <ModelFilename>mainmapobj\rev1\Mainmap.obj</ModelFilename>
-      <StartTime>65535</StartTime>
+      <StartTime>3072</StartTime>
       <TimeSpeed>0</TimeSpeed>
       <DisableSkybox>false</DisableSkybox>
       <DisableSunMoon>false</DisableSunMoon>
@@ -3142,7 +3116,7 @@
     </ZScene-ZRoom>
     <ZScene-ZRoom>
       <ModelFilename>mainmapobj\rev1\Mainmap.obj</ModelFilename>
-      <StartTime>65535</StartTime>
+      <StartTime>3072</StartTime>
       <TimeSpeed>0</TimeSpeed>
       <DisableSkybox>false</DisableSkybox>
       <DisableSunMoon>false</DisableSunMoon>
@@ -3755,7 +3729,7 @@
     </ZScene-ZRoom>
     <ZScene-ZRoom>
       <ModelFilename>mainmapobj\rev1\Mainmap.obj</ModelFilename>
-      <StartTime>65535</StartTime>
+      <StartTime>3072</StartTime>
       <TimeSpeed>0</TimeSpeed>
       <DisableSkybox>false</DisableSkybox>
       <DisableSunMoon>false</DisableSunMoon>
@@ -4035,7 +4009,7 @@
     </ZScene-ZRoom>
     <ZScene-ZRoom>
       <ModelFilename>mainmapobj\rev1\Mainmap.obj</ModelFilename>
-      <StartTime>65535</StartTime>
+      <StartTime>3072</StartTime>
       <TimeSpeed>0</TimeSpeed>
       <DisableSkybox>false</DisableSkybox>
       <DisableSunMoon>false</DisableSunMoon>
@@ -4315,7 +4289,7 @@
     </ZScene-ZRoom>
     <ZScene-ZRoom>
       <ModelFilename>mainmapobj\rev1\Mainmap.obj</ModelFilename>
-      <StartTime>65535</StartTime>
+      <StartTime>3072</StartTime>
       <TimeSpeed>0</TimeSpeed>
       <DisableSkybox>false</DisableSkybox>
       <DisableSunMoon>false</DisableSunMoon>
@@ -4400,14 +4374,14 @@
           </IgnoreMMRot>
         </ZActor>
         <ZActor>
-          <Number>337</Number>
+          <Number>119</Number>
           <XPos>-1513</XPos>
           <YPos>-1</YPos>
           <ZPos>1780</ZPos>
           <XRot>0</XRot>
           <YRot>-25920</YRot>
           <ZRot>0</ZRot>
-          <Variable>1</Variable>
+          <Variable>3</Variable>
           <FrontSwitchTo>0</FrontSwitchTo>
           <FrontCamera>255</FrontCamera>
           <BackSwitchTo>1</BackSwitchTo>
@@ -4420,14 +4394,14 @@
           </IgnoreMMRot>
         </ZActor>
         <ZActor>
-          <Number>321</Number>
+          <Number>119</Number>
           <XPos>-1476</XPos>
           <YPos>-1</YPos>
           <ZPos>829</ZPos>
           <XRot>0</XRot>
           <YRot>-25920</YRot>
           <ZRot>0</ZRot>
-          <Variable>0</Variable>
+          <Variable>3</Variable>
           <FrontSwitchTo>0</FrontSwitchTo>
           <FrontCamera>255</FrontCamera>
           <BackSwitchTo>1</BackSwitchTo>
