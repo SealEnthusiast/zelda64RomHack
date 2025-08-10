@@ -1,0 +1,30 @@
+# Blender MTL File: 'StartingArea.blend'
+# Material Count: 9
+
+newmtl materials/courtyardbackroundtrees.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00013B60_64x16_rgba16.png
+
+newmtl materials/courtyardgrass.vmat.002
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00014360_32x32_rgba16.png
+
+newmtl materials/courtyardgrass.vmat.003
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00014360_32x32_rgba16.png
+
+newmtl materials/courtyardwalls.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00011360_32x64_rgba16.png
+
+newmtl materials/treeswater.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000AEB8_32x32_rgba16.png
+
+newmtl materials/underwatergrass.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000C2B8_16x16_rgba16.png
+
+newmtl materials/water.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\000170B8_32x32_rgba16.png
+map_Ks ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\000170B8_32x32_rgba16.png
+
+newmtl materials/watergrass1.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\000184B8_32x32_rgba16.png
+
+newmtl materials/watergrasswall.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00017CB8_64x64_ci4.png
