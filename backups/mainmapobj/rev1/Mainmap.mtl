@@ -1,5 +1,5 @@
 # Blender MTL File: 'Mainmap.blend'
-# Material Count: 48
+# Material Count: 47
 
 newmtl materials/courtyardbackroundtrees.vmat.001
 map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00013B60_64x16_rgba16.png
@@ -42,8 +42,6 @@ newmtl materials/dev/reflectivity_30.vmat.040
 newmtl materials/dev/reflectivity_30.vmat.041
 
 newmtl materials/dev/reflectivity_30.vmat.042
-
-newmtl materials/dev/reflectivity_30.vmat.043
 
 newmtl materials/glasspanes.vmat.001
 map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00027978_32x32_rgba16.png
