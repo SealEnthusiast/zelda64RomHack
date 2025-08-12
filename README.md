@@ -8,24 +8,15 @@ Loris ipsum
 
 - 6 new areas (Including a boss and mini boss)
 
-- Works with MM and OOT
-
-- A vanilla patched version (Keyless)
-
-- A master quest remix mode
+- MM and OOT support
 
 ## Features planned
 
 - Zelda 64 Recomp Compatiblity
 
-- N64 Hardware compatible version
-
-- New items
-
-
 ## FAQ
 
-#### Will there be support for SOH or Habour Master projects?
+#### Will there be support for SOH or other Habour Master projects?
 
 No, they are cringe
 
