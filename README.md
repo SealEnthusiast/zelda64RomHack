@@ -1,10 +1,10 @@
 
-# Zelda 64: Underground Bunker
+# Zelda 64: Seal's Small RomHack
 
 Loris ipsum
 
 
-## Features finished / In development
+## Features in development
 
 - 6 new areas (Including a boss and mini boss)
 
