@@ -3,7 +3,6 @@
 
 Loris ipsum
 
-
 ## Features in development
 
 - 6 new areas (Including a boss and mini boss)
@@ -22,8 +21,7 @@ Will there be support for SOH or other Habour Master projects?
 
 OOT/MM is crashing / going slow
 
-- Turn on 8mb ram and overclocked CPU in your settings if needed (If on N64 make sure you are using the N64 branch)
-
+- Turn on 8mb ram and overclocked CPU in your settings if needed (If on N64 make sure you have an expansion pak installed)
 
 ## Screenshots
 
