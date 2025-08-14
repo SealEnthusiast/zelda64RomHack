@@ -1,38 +1,27 @@
 
-# Zelda 64: Underground Bunker
+# Zelda 64: Seal's Small RomHack
 
 Loris ipsum
 
-
-## Features finished / In development
+## Features in development
 
 - 6 new areas (Including a boss and mini boss)
 
-- Works with MM and OOT
-
-- A vanilla patched version (Keyless)
-
-- A master quest remix mode
+- MM and OOT support
 
 ## Features planned
 
 - Zelda 64 Recomp Compatiblity
 
-- N64 Hardware compatible version
-
-- New items
-
-
 ## FAQ
 
-#### Will there be support for SOH or Habour Master projects?
+Will there be support for SOH or other Habour Master projects?
 
-No, they are cringe
+- No, they are cringe
 
-#### The game is crashing / Is going slow
+OOT/MM is crashing / going slow
 
-Turn on 8mb ram and overclocked CPU in your settings if needed (If on N64 make sure you are using the N64 branch)
-
+- Turn on 8mb ram and overclocked CPU in your settings if needed (If on N64 make sure you have an expansion pak installed)
 
 ## Screenshots
 
