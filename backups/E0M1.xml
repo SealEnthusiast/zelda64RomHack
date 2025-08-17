@@ -118,7 +118,7 @@
     <Capacity>0</Capacity>
   </Transitions>
   <SpawnPoints>
-    <Capacity>4</Capacity>
+    <Capacity>2</Capacity>
     <ZActor>
       <Number>0</Number>
       <XPos>-0</XPos>
@@ -409,7 +409,7 @@
         </ZScene-ZUShort>
       </ZObjects>
       <ZActors>
-        <Capacity>28</Capacity>
+        <Capacity>30</Capacity>
         <ZActor>
           <Number>21</Number>
           <XPos>33</XPos>
