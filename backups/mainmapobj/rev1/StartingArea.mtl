@@ -1,30 +1,63 @@
 # Blender MTL File: 'StartingArea.blend'
-# Material Count: 9
+# Material Count: 20
 
-newmtl materials/courtyardbackroundtrees.vmat.001
+newmtl materials/collum.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000D000_32x32_rgba16.png
+
+newmtl materials/collum.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000D000_32x32_rgba16.png
+
+newmtl materials/courtyardbackroundtrees.vmat
 map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00013B60_64x16_rgba16.png
 
-newmtl materials/courtyardgrass.vmat.002
+newmtl materials/courtyardgrass.vmat
 map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00014360_32x32_rgba16.png
 
-newmtl materials/courtyardgrass.vmat.003
+newmtl materials/courtyardgrass.vmat.001
 map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00014360_32x32_rgba16.png
+
+newmtl materials/courtyardstairs.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0002EE60_64x32_i8.png
+
+newmtl materials/courtyardvariedwhitebricks.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000E360_64x64_i4.png
+
+newmtl materials/courtyardvariedwhitebricks.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000E360_64x64_i4.png
+
+newmtl materials/courtyardwalls.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00011360_32x64_rgba16.png
 
 newmtl materials/courtyardwalls.vmat.001
 map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00011360_32x64_rgba16.png
 
-newmtl materials/treeswater.vmat.001
+newmtl materials/hylialakewall.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00009AB8_32x64_rgba16.png
+
+newmtl materials/lakelabwall.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000CD50_32x64_ci8.png
+
+newmtl materials/rooftile.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\000140B8_16x64_rgba16.png
+
+newmtl materials/treeswater.vmat
 map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000AEB8_32x32_rgba16.png
 
-newmtl materials/underwatergrass.vmat.001
+newmtl materials/underwatergrass.vmat
 map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000C2B8_16x16_rgba16.png
 
-newmtl materials/water.vmat.001
+newmtl materials/walkinggrass.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00030C98_32x32_rgba16.png
+
+newmtl materials/walkinggrass.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00030C98_32x32_rgba16.png
+
+newmtl materials/water.vmat
 map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\000170B8_32x32_rgba16.png
 map_Ks ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\000170B8_32x32_rgba16.png
 
-newmtl materials/watergrass1.vmat.001
+newmtl materials/watergrass1.vmat
 map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\000184B8_32x32_rgba16.png
 
-newmtl materials/watergrasswall.vmat.001
+newmtl materials/watergrasswall.vmat
 map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00017CB8_64x64_ci4.png

@@ -41,8 +41,8 @@
       <Functions>
         <Capacity>4</Capacity>
         <ZTextureAnim>
-          <XVelocity1>-1</XVelocity1>
-          <XVelocity2>1</XVelocity2>
+          <XVelocity1>1</XVelocity1>
+          <XVelocity2>-1</XVelocity2>
           <YVelocity1>1</YVelocity1>
           <YVelocity2>-1</YVelocity2>
           <Width1>32</Width1>
@@ -4535,9 +4535,9 @@
         </ZActor>
         <ZActor>
           <Number>27</Number>
-          <XPos>-1492</XPos>
-          <YPos>-10</YPos>
-          <ZPos>1441</ZPos>
+          <XPos>-1504</XPos>
+          <YPos>-1</YPos>
+          <ZPos>1616</ZPos>
           <XRot>0</XRot>
           <YRot>12607</YRot>
           <ZRot>0</ZRot>
@@ -4555,11 +4555,11 @@
         </ZActor>
         <ZActor>
           <Number>27</Number>
-          <XPos>-1297</XPos>
-          <YPos>-10</YPos>
-          <ZPos>1253</ZPos>
+          <XPos>-1264</XPos>
+          <YPos>-18</YPos>
+          <ZPos>1344</ZPos>
           <XRot>0</XRot>
-          <YRot>-14273</YRot>
+          <YRot>17407</YRot>
           <ZRot>0</ZRot>
           <Variable>65534</Variable>
           <FrontSwitchTo>0</FrontSwitchTo>
@@ -4575,11 +4575,11 @@
         </ZActor>
         <ZActor>
           <Number>27</Number>
-          <XPos>-1449</XPos>
+          <XPos>-1305</XPos>
           <YPos>-10</YPos>
-          <ZPos>1130</ZPos>
+          <ZPos>1290</ZPos>
           <XRot>0</XRot>
-          <YRot>21727</YRot>
+          <YRot>7327</YRot>
           <ZRot>0</ZRot>
           <Variable>65534</Variable>
           <FrontSwitchTo>0</FrontSwitchTo>
@@ -4595,9 +4595,9 @@
         </ZActor>
         <ZActor>
           <Number>27</Number>
-          <XPos>-1582</XPos>
-          <YPos>-10</YPos>
-          <ZPos>1272</ZPos>
+          <XPos>-1534</XPos>
+          <YPos>-1</YPos>
+          <ZPos>1694</ZPos>
           <XRot>0</XRot>
           <YRot>8287</YRot>
           <ZRot>0</ZRot>
@@ -4995,7 +4995,7 @@
           <string xmlns="https://extendedxmlserializer.github.io/system"></string>
           <string xmlns="https://extendedxmlserializer.github.io/system"></string>
           <string xmlns="https://extendedxmlserializer.github.io/system"></string>
-          <string xmlns="https://extendedxmlserializer.github.io/system"></string>
+          <string xmlns="https://extendedxmlserializer.github.io/system">000170B8_32x32_rgba16.png</string>
           <string xmlns="https://extendedxmlserializer.github.io/system"></string>
           <string xmlns="https://extendedxmlserializer.github.io/system"></string>
           <string xmlns="https://extendedxmlserializer.github.io/system"></string>
