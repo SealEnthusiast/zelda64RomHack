@@ -703,7 +703,7 @@ vc 0.6353 0.6627 0.6275 0.9608
 vc 0.6078 0.6392 0.6039 0.9765
 vc 0.5804 0.6157 0.5765 0.9961
 vc 0.6235 0.6510 0.6157 0.9686
-g Room0mesh1_#Room0#_materials/courtyardgrass.vmat#SFX_2
+g Room0mesh1_#Room0#_materials/courtyardgrass.vmat#SFX_8
 usemtl materials/courtyardgrass.vmat
 f 104/103/7 78/104/7 101/105/7
 fc 4 4 4
@@ -980,8 +980,8 @@ vt -1.750000 -0.500000
 vn 0.0000 1.0000 0.0000
 vc 1.0000 1.0000 1.0000 1.0000
 vc 0.0000 0.0000 0.0000 1.0000
-g Room0mesh3_#Room0#_materials/courtyardgrass.vmat#SFX_2
-usemtl materials/courtyardgrass.vmat
+g Room0mesh3_#Room0#_00014360_32x32_rgba16#SFX_8#Exit00
+usemtl 00014360_32x32_rgba16
 f 133/442/34 131/443/34 132/444/34
 fc 42 43 42
 f 133/445/34 130/446/34 131/447/34

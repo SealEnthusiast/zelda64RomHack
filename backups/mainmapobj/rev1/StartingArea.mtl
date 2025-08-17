@@ -1,5 +1,8 @@
 # Blender MTL File: 'StartingArea.blend'
-# Material Count: 20
+# Material Count: 21
+
+newmtl 00014360_32x32_rgba16
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00014360_32x32_rgba16.png
 
 newmtl materials/collum.vmat
 map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000D000_32x32_rgba16.png

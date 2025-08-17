@@ -6,10 +6,10 @@
 // # # # # # # # # # # # # # # # # # # # #
 
 // New save patches
-#define Patch_SaveStartEntrance 0xBB
-#define Patch_SaveStartAge      LINK_AGE_CHILD
+#define Patch_SaveStartEntrance 0x34
+#define Patch_SaveStartAge LINK_AGE_CHILD;
 #define Patch_SaveStartTime     0x6AAB
-#define Patch_SaveStartCsIndex  0xFFF1
+#define Patch_SaveStartCsIndex 0xFFF1
 
 #define OOT 0
 #define MM  1
@@ -31,7 +31,7 @@
 #define MM_BUNNYHOOD false
 
 // Save anywhere but a grotto
-#define SAVE_ANYWHERE false
+#define SAVE_ANYWHERE true
 
 // Use MM style titlecards
 #define MM_TITLECARD false

@@ -1,5 +1,8 @@
 # Blender MTL File: 'Mainmap.blend'
-# Material Count: 47
+# Material Count: 48
+
+newmtl 00014360_32x32_rgba16
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00014360_32x32_rgba16.png
 
 newmtl materials/courtyardbackroundtrees.vmat.001
 map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00013B60_64x16_rgba16.png
