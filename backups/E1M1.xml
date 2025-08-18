@@ -1331,7 +1331,7 @@
           <XRot>0</XRot>
           <YRot>127</YRot>
           <ZRot>0</ZRot>
-          <Variable>29541</Variable>
+          <Variable>30629</Variable>
           <FrontSwitchTo>0</FrontSwitchTo>
           <FrontCamera>255</FrontCamera>
           <BackSwitchTo>1</BackSwitchTo>
@@ -1639,7 +1639,7 @@
       </AdditionalLights>
       <InjectOffset>47185920</InjectOffset>
       <ZObjects>
-        <Capacity>4</Capacity>
+        <Capacity>8</Capacity>
         <ZScene-ZUShort>
           <Value>164</Value>
         </ZScene-ZUShort>
@@ -1651,6 +1651,9 @@
         </ZScene-ZUShort>
         <ZScene-ZUShort>
           <Value>158</Value>
+        </ZScene-ZUShort>
+        <ZScene-ZUShort>
+          <Value>12</Value>
         </ZScene-ZUShort>
       </ZObjects>
       <ZActors>
@@ -1956,14 +1959,14 @@
           </IgnoreMMRot>
         </ZActor>
         <ZActor>
-          <Number>75</Number>
+          <Number>18</Number>
           <XPos>221</XPos>
           <YPos>63</YPos>
           <ZPos>1547</ZPos>
           <XRot>0</XRot>
           <YRot>-29760</YRot>
           <ZRot>0</ZRot>
-          <Variable>255</Variable>
+          <Variable>0</Variable>
           <FrontSwitchTo>0</FrontSwitchTo>
           <FrontCamera>255</FrontCamera>
           <BackSwitchTo>1</BackSwitchTo>
@@ -2020,26 +2023,6 @@
           <XPos>-194</XPos>
           <YPos>63</YPos>
           <ZPos>1426</ZPos>
-          <XRot>0</XRot>
-          <YRot>21600</YRot>
-          <ZRot>0</ZRot>
-          <Variable>0</Variable>
-          <FrontSwitchTo>0</FrontSwitchTo>
-          <FrontCamera>255</FrontCamera>
-          <BackSwitchTo>1</BackSwitchTo>
-          <BackCamera>255</BackCamera>
-          <SpawnRoom>255</SpawnRoom>
-          <IgnoreMMRot>
-            <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
-            <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
-            <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
-          </IgnoreMMRot>
-        </ZActor>
-        <ZActor>
-          <Number>153</Number>
-          <XPos>-254</XPos>
-          <YPos>63</YPos>
-          <ZPos>1408</ZPos>
           <XRot>0</XRot>
           <YRot>21600</YRot>
           <ZRot>0</ZRot>

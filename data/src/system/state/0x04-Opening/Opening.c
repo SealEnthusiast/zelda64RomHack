@@ -14,7 +14,7 @@ void Opening_SetupTitleScreen(TitleSetupState* this) {
     gExitParam.nextEntranceIndex = 0x009B;
     gSaveContext.gameMode = 1;
     this->state.running = false;
-    gSaveContext.linkAge = LINK_AGE_ADULT;
+    gSaveContext.linkAge = LINK_AGE_CHILD;
     Sram_InitDebugSave();
     gSaveContext.cutsceneIndex = 0x0000;  gSaveContext.entranceIndex = 0x009B;
     gSaveContext.sceneLayer = 7;
