@@ -11,15 +11,15 @@ Loris ipsum
 
 ## Features planned
 
-- Zelda 64 Recomp Compatiblity
+- Zelda 64 Recomp Compatibility
 
 ## FAQ
 
-Will there be support for SOH or other Habour Master projects?
+Will there be support for SOH or other Harbor Master projects?
 
-- No, they are cringe
+- No, I only develop for the Recomp and N64 hardware
 
-OOT/MM is crashing / going slow
+OOT/MM is crashing
 
 - Turn on 8mb ram and overclocked CPU in your settings if needed (If on N64 make sure you have an expansion pak installed)
 
