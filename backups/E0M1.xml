@@ -408,10 +408,10 @@
           <Value>7</Value>
         </ZScene-ZUShort>
         <ZScene-ZUShort>
-          <Value>10</Value>
+          <Value>124</Value>
         </ZScene-ZUShort>
         <ZScene-ZUShort>
-          <Value>124</Value>
+          <Value>74</Value>
         </ZScene-ZUShort>
       </ZObjects>
       <ZActors>
@@ -1303,6 +1303,46 @@
           <ZPos>100</ZPos>
           <XRot>0</XRot>
           <YRot>-6847</YRot>
+          <ZRot>0</ZRot>
+          <Variable>0</Variable>
+          <FrontSwitchTo>0</FrontSwitchTo>
+          <FrontCamera>255</FrontCamera>
+          <BackSwitchTo>1</BackSwitchTo>
+          <BackCamera>255</BackCamera>
+          <SpawnRoom>255</SpawnRoom>
+          <IgnoreMMRot>
+            <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
+            <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
+            <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
+          </IgnoreMMRot>
+        </ZActor>
+        <ZActor>
+          <Number>96</Number>
+          <XPos>1982</XPos>
+          <YPos>147</YPos>
+          <ZPos>991</ZPos>
+          <XRot>0</XRot>
+          <YRot>32767</YRot>
+          <ZRot>0</ZRot>
+          <Variable>0</Variable>
+          <FrontSwitchTo>0</FrontSwitchTo>
+          <FrontCamera>255</FrontCamera>
+          <BackSwitchTo>1</BackSwitchTo>
+          <BackCamera>255</BackCamera>
+          <SpawnRoom>255</SpawnRoom>
+          <IgnoreMMRot>
+            <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
+            <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
+            <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
+          </IgnoreMMRot>
+        </ZActor>
+        <ZActor>
+          <Number>96</Number>
+          <XPos>2114</XPos>
+          <YPos>147</YPos>
+          <ZPos>991</ZPos>
+          <XRot>0</XRot>
+          <YRot>32767</YRot>
           <ZRot>0</ZRot>
           <Variable>0</Variable>
           <FrontSwitchTo>0</FrontSwitchTo>
