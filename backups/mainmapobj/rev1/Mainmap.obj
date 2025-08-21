@@ -4317,7 +4317,7 @@ f 545/1969/91 546/1970/91 541/1971/91
 fc 196 197 198
 f 553/1972/89 551/1973/89 549/1974/89
 fc 201 205 202
-g Room5mesh1_#Room5#_materials/windowlightray.vmat.001#NoCollision#AlphaC8
+g Room5mesh1_#Room5#_materials/windowlightray.vmat.001#NoCollision#AlphaAF
 usemtl materials/windowlightray.vmat.001
 f 528/1975/92 521/1976/93 527/1977/94
 fc 192 190 193
