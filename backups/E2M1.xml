@@ -39,7 +39,32 @@
     <Capacity>8</Capacity>
     <ZSegmentFunction>
       <Functions>
-        <Capacity>0</Capacity>
+        <Capacity>4</Capacity>
+        <ZTextureAnim>
+          <XVelocity1>1</XVelocity1>
+          <XVelocity2>-1</XVelocity2>
+          <YVelocity1>-1</YVelocity1>
+          <YVelocity2>1</YVelocity2>
+          <Width1>32</Width1>
+          <Width2>32</Width2>
+          <Height1>32</Height1>
+          <Height2>32</Height2>
+          <Type>1</Type>
+          <FlagReverse>false</FlagReverse>
+          <FlagValue>0</FlagValue>
+          <FlagBitwise>0</FlagBitwise>
+          <FlagType>255</FlagType>
+          <Preview>true</Preview>
+          <Freeze>true</Freeze>
+          <FreezeAtEnd>false</FreezeAtEnd>
+          <TextureSwapList>
+            <Capacity>0</Capacity>
+          </TextureSwapList>
+          <ColorList>
+            <Capacity>0</Capacity>
+          </ColorList>
+          <CameraEffect>0</CameraEffect>
+        </ZTextureAnim>
       </Functions>
     </ZSegmentFunction>
     <ZSegmentFunction>
@@ -334,7 +359,7 @@
     </ZWaterbox>
   </Waterboxes>
   <PolyTypes>
-    <Capacity>8</Capacity>
+    <Capacity>16</Capacity>
     <ZColPolyType>
       <Raw>0</Raw>
       <PolyFlagA>0</PolyFlagA>
@@ -375,12 +400,26 @@
       <PolyFlagA>0</PolyFlagA>
       <PolyFlagB>0</PolyFlagB>
     </ZColPolyType>
+    <ZColPolyType>
+      <Raw>1099511627778</Raw>
+      <PolyFlagA>0</PolyFlagA>
+      <PolyFlagB>0</PolyFlagB>
+    </ZColPolyType>
   </PolyTypes>
   <ExitList>
-    <Capacity>0</Capacity>
+    <Capacity>4</Capacity>
+    <ZScene-ZUShort>
+      <Value>0</Value>
+    </ZScene-ZUShort>
   </ExitList>
   <ExitListV2>
-    <Capacity>0</Capacity>
+    <Capacity>4</Capacity>
+    <ZExit>
+      <Raw>515</Raw>
+    </ZExit>
+    <ZExit>
+      <Raw>0</Raw>
+    </ZExit>
   </ExitListV2>
   <Pathways>
     <Capacity>0</Capacity>
@@ -471,7 +510,7 @@
     <Capacity>0</Capacity>
   </ActorCutscenes>
   <Rooms>
-    <Capacity>8</Capacity>
+    <Capacity>16</Capacity>
     <ZScene-ZRoom>
       <ModelFilename>mainmapobj\rev1\UnderwaterVilliage.obj</ModelFilename>
       <StartTime>65535</StartTime>
@@ -506,7 +545,7 @@
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
-          <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
+          <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">2113929215</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
@@ -558,7 +597,7 @@
           <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
-          <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
+          <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
@@ -571,7 +610,7 @@
           <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
-          <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
+          <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
@@ -766,7 +805,7 @@
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
-          <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">16777215</unsignedInt>
+          <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">2113929215</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
@@ -1005,7 +1044,7 @@
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
-          <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
+          <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">2113929215</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
@@ -1073,7 +1112,7 @@
           <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
-          <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
+          <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
@@ -1090,7 +1129,7 @@
           <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
-          <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
+          <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
@@ -1345,7 +1384,7 @@
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
-          <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">16777215</unsignedInt>
+          <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">2113929215</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
@@ -1639,7 +1678,7 @@
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
-          <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
+          <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">2113929215</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
         </TintAlpha>
@@ -1671,7 +1710,7 @@
           <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
-          <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
+          <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
         </BackfaceCulling>
@@ -1679,7 +1718,7 @@
           <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
-          <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
+          <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
         </Animated>
@@ -1799,7 +1838,7 @@
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
-          <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">16777215</unsignedInt>
+          <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">2113929215</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
         </MultiTexAlpha>
@@ -1954,7 +1993,7 @@
         <TintAlpha>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
-          <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
+          <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">2113929215</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
         </TintAlpha>
@@ -1982,14 +2021,14 @@
         <BackfaceCulling>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
-          <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
+          <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
         </BackfaceCulling>
         <Animated>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
-          <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
+          <boolean xmlns="https://extendedxmlserializer.github.io/system">true</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
           <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
         </Animated>
@@ -2057,7 +2096,7 @@
           <int xmlns="https://extendedxmlserializer.github.io/system">-1</int>
         </MultiTexMaterial>
         <MultiTexMaterialName>
-          <string xmlns="https://extendedxmlserializer.github.io/system"></string>
+          <string xmlns="https://extendedxmlserializer.github.io/system">(none)</string>
           <string xmlns="https://extendedxmlserializer.github.io/system"></string>
           <string xmlns="https://extendedxmlserializer.github.io/system">0001A0E0_32x32_rgba16.png</string>
           <string xmlns="https://extendedxmlserializer.github.io/system"></string>
@@ -2094,7 +2133,7 @@
         <MultiTexAlpha>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
-          <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">16777215</unsignedInt>
+          <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">2113929215</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
         </MultiTexAlpha>

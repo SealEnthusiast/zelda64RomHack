@@ -68,13 +68,13 @@ map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00
 newmtl materials/underwaterstone.vmat
 map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\WT-0x13C30_32x32_RGBA16.png
 
-newmtl materials/underwaterstone.vmat.001
-map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\WT-0x13C30_32x32_RGBA16.png
-
 newmtl materials/underwaterstone.vmat.002
 map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\WT-0x13C30_32x32_RGBA16.png
 
 newmtl materials/underwaterstone.vmat.003
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\WT-0x13C30_32x32_RGBA16.png
+
+newmtl materials/underwaterstone.vmat.004
 map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\WT-0x13C30_32x32_RGBA16.png
 
 newmtl materials/wall1.vmat
