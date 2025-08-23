@@ -1,0 +1,124 @@
+# Blender MTL File: 'UnderwaterVilliage.blend'
+# Material Count: 42
+
+newmtl materials/cheapcarpet.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00020860_16x64_rgba16.png
+
+newmtl materials/cheapcarpet.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00020860_16x64_rgba16.png
+
+newmtl materials/courtyardvariedwhitebricks.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000E360_64x64_i4.png
+
+newmtl materials/dev/reflectivity_30.vmat
+
+newmtl materials/dev/reflectivity_30.vmat.001
+
+newmtl materials/dev/reflectivity_30.vmat.002
+
+newmtl materials/dev/reflectivity_30.vmat.003
+
+newmtl materials/dev/reflectivity_30.vmat.004
+
+newmtl materials/dev/reflectivity_30.vmat.005
+
+newmtl materials/dev/reflectivity_30.vmat.006
+
+newmtl materials/dev/reflectivity_30.vmat.007
+
+newmtl materials/housewall.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\HOS-0x4720_64x64_CI4.png
+
+newmtl materials/housewall.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\HOS-0x4720_64x64_CI4.png
+
+newmtl materials/housewall.vmat.002
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\HOS-0x4720_64x64_CI4.png
+
+newmtl materials/housewall.vmat.003
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\HOS-0x4720_64x64_CI4.png
+
+newmtl materials/housewall.vmat.004
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\HOS-0x4720_64x64_CI4.png
+
+newmtl materials/housewall.vmat.005
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\HOS-0x4720_64x64_CI4.png
+
+newmtl materials/outerwall.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000E1E0_64x64_i4.png
+
+newmtl materials/outerwall.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000E1E0_64x64_i4.png
+
+newmtl materials/stonemarking.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00021978_64x32_rgba16+00020978_64x32_rgba16.png
+
+newmtl materials/underwatergrass.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000C2B8_16x16_rgba16.png
+
+newmtl materials/underwatergrass.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000C2B8_16x16_rgba16.png
+
+newmtl materials/underwatergrass.vmat.002
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000C2B8_16x16_rgba16.png
+
+newmtl materials/underwatergrass.vmat.003
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000C2B8_16x16_rgba16.png
+
+newmtl materials/underwaterstone.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\WT-0x13C30_32x32_RGBA16.png
+
+newmtl materials/underwaterstone.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\WT-0x13C30_32x32_RGBA16.png
+
+newmtl materials/underwaterstone.vmat.002
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\WT-0x13C30_32x32_RGBA16.png
+
+newmtl materials/underwaterstone.vmat.003
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\WT-0x13C30_32x32_RGBA16.png
+
+newmtl materials/wall1.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\000179E8_16x64_rgba16.png
+
+newmtl materials/walltest.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00005410_32x32_rgba16.png
+
+newmtl materials/walltest.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00005410_32x32_rgba16.png
+
+newmtl materials/walltest.vmat.002
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00005410_32x32_rgba16.png
+
+newmtl materials/walltest.vmat.003
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00005410_32x32_rgba16.png
+
+newmtl materials/walltest.vmat.005
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00005410_32x32_rgba16.png
+
+newmtl materials/water.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\000170B8_32x32_rgba16.png
+map_Ks ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\000170B8_32x32_rgba16.png
+
+newmtl materials/waterclean.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0001A0E0_32x32_rgba16.png
+map_Ks ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0001A0E0_32x32_rgba16.png
+
+newmtl materials/waterclean.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0001A0E0_32x32_rgba16.png
+map_Ks ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0001A0E0_32x32_rgba16.png
+
+newmtl materials/waterclean.vmat.002
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0001A0E0_32x32_rgba16.png
+map_Ks ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0001A0E0_32x32_rgba16.png
+
+newmtl materials/watertemplefloor.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\WT-0xE7A00_32x32_RGBA16.png
+
+newmtl materials/watertemplefloor.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\WT-0xE7A00_32x32_RGBA16.png
+
+newmtl materials/window.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00021060_32x64_rgba16.png
+
+newmtl materials/window.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00021060_32x64_rgba16.png
