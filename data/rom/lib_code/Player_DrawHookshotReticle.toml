@@ -1,3 +1,0 @@
-rom             = 0xB07C9C
-ram             = 0x80090AFC
-next            = 0x80090D20

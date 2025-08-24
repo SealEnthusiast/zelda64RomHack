@@ -1,9 +1,0 @@
-src/actor/0x0066-EnHook/z_arms_hook.h
-player_extras.h
-src/lib_user/uLib.h
-src/lib_user/uLib_macros.h
-src/lib_user/uLib_types.h
-include/sfx_enum.h
-include/object/0x0014-Adult_Link.h
-include/object/0x0015-Child_Link.h
-
