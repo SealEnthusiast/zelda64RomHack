@@ -46,7 +46,7 @@ void BootTitle_Calc(ConsoleLogoState* this) {
         }
     }
     this->uls = this->ult & 0x7F;
-this->ult++;
+    this->ult++;
 }
 
 void BootTitle_SetupView(ConsoleLogoState* this, f32 x, f32 y, f32 z) {
