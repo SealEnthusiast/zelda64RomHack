@@ -1,0 +1,5 @@
+src/effect/0x0010-z_eff_ss_stick/z_eff_ss_stick.h
+player_extras.h
+include/object/0x0014-Adult_Link.h
+include/object/0x0015-Child_Link.h
+

@@ -5,9 +5,12 @@
  */
 
 #include <asm_macros.h>
-#include <uLib.h>
 #include "Player.h"
-#include "NewAnimHeader.h"
+#include "macros.h"
+#include "uLib.h"
+#include "z64.h"
+#include "z64player.h"
+#include "z64save.h"
 
 Asm_SymbolAlias("__z64_init", Player_Init);
 Asm_SymbolAlias("__z64_dest", Player_Destroy);
@@ -1081,6 +1084,10 @@ static LinkAnimationHeader* sAnims_FpsItemStandy[] = {
     &gPlayerAnim_link_hook_wait,
 };
 
+#ifndef Patch_GetItem_SegmentSize
+    #define Patch_GetItem_SegmentSize Pahtch_GetItem_SegmentSize
+#endif
+
 // return type can't be void due to regalloc in Player_DebugMode
 void Player_StopMovement(Player* this) {
     this->actor.speedXZ = 0.0f;
@@ -1712,24 +1719,14 @@ void Player_SetupExplosive(PlayState* play, Player* this) {
     }
 }
 
+/// DEBUG HOOKSHOT
 void Player_SetupHookshot(PlayState* play, Player* this) {
     this->stateFlags1 |= PLAYER_STATE1_3;
     this->unk_860 = -3;
-    
+
     this->heldActor =
-        Actor_SpawnAsChild(
-        &play->actorCtx,
-        &this->actor,
-        play,
-        ACTOR_ARMS_HOOK,
-        this->actor.world.pos.x,
-        this->actor.world.pos.y,
-        this->actor.world.pos.z,
-        0,
-        this->actor.shape.rot.y,
-        0,
-        0
-        );
+        Actor_SpawnAsChild(&play->actorCtx, &this->actor, play, ACTOR_ARMS_HOOK, this->actor.world.pos.x,
+                           this->actor.world.pos.y, this->actor.world.pos.z, 0, this->actor.shape.rot.y, 0, 0);
 }
 
 void Player_SetupBoomerang(PlayState* play, Player* this) {
@@ -1740,7 +1737,7 @@ void Player_ChangeItem(PlayState* play, Player* this, s8 actionParam) {
     this->unk_860 = 0;
     this->unk_85C = 0.0f;
     this->unk_858 = 0.0f;
-    
+
     this->heldItemActionParam = this->itemActionParam = actionParam;
     this->modelGroup = this->nextModelGroup;
     
@@ -1977,16 +1974,18 @@ void Player_SetupItem(Player* this, PlayState* play) {
 }
 
 s32 Player_GetFpsItemAmmo(PlayState* play, Player* this, s32* itemPtr, s32* typePtr) {
-    if (LINK_IS_ADULT) {
+    
+    //Hack changes for Ammo count/ use of magic arrows as child
+    if (this->itemActionParam == PLAYER_AP_SLINGSHOT) {
+        *itemPtr = ITEM_SLINGSHOT;
+        *typePtr = ARROW_SEED;
+    } else {
         *itemPtr = ITEM_BOW;
         if (this->stateFlags1 & PLAYER_STATE1_23) {
             *typePtr = ARROW_NORMAL_HORSE;
         } else {
             *typePtr = ARROW_NORMAL + (this->heldItemActionParam - PLAYER_AP_BOW);
         }
-    } else {
-        *itemPtr = ITEM_SLINGSHOT;
-        *typePtr = ARROW_SEED;
     }
     
     if (gSaveContext.minigameState == 1) {
@@ -2002,7 +2001,7 @@ s32 Player_SetupReadyFpsItemToShoot(Player* this, PlayState* play) {
     s32 item;
     s32 arrowType;
     s32 magicArrowType;
-    
+
     if (
         (this->heldItemActionParam >= PLAYER_AP_BOW_FIRE) && (this->heldItemActionParam <= PLAYER_AP_BOW_0E) &&
         (gSaveContext.magicState != MAGIC_STATE_IDLE)
@@ -2099,7 +2098,7 @@ s32 Player_StartZTargetDefend(PlayState* play, Player* this) {
     if (
         !(this->stateFlags1 & (PLAYER_STATE1_22 | PLAYER_STATE1_23 | PLAYER_STATE1_29)) &&
         (play->shootingGalleryStatus == 0) && (this->heldItemActionParam == this->itemActionParam) &&
-        (this->currentShield != PLAYER_SHIELD_NONE) && !Player_IsChildWithHylianShield(this) && Player_IsZTargeting(this) &&
+        (this->currentShield != PLAYER_SHIELD_NONE) && Player_IsZTargeting(this) &&
         CHECK_BTN_ALL(sControlInput->cur.button, BTN_R)
     ) {
         anim = Player_GetAnim_Defend(play, this);
@@ -2238,7 +2237,7 @@ s32 Player_EndDefend(Player* this, PlayState* play) {
 
 s32 Player_SetupUseFpsItem(Player* this, PlayState* play) {
     LinkAnimationHeader* anim;
-    
+
     if (this->heldItemActionParam != PLAYER_AP_BOOMERANG) {
         if (!Player_SetupReadyFpsItemToShoot(this, play)) {
             return 0;
@@ -2287,6 +2286,7 @@ s32 Player_SetupAimAttention(Player* this, PlayState* play) {
 }
 
 s32 Player_CanUseFpsItem(Player* this, PlayState* play) {
+
     if ((this->doorType == PLAYER_DOORTYPE_NONE) && !(this->stateFlags1 & PLAYER_STATE1_25)) {
         if (sActiveItemUseFlag || Player_CheckShootingGalleryShootInput(play)) {
             if (Player_SetupUseFpsItem(this, play)) {
@@ -2313,6 +2313,7 @@ s32 Player_EndHookshotMove(Player* this) {
 }
 
 s32 Player_HoldFpsItem(Player* this, PlayState* play) {
+
     if (this->unk_860 >= 0) {
         this->unk_860 = -this->unk_860;
     }
@@ -2894,7 +2895,15 @@ s32 Player_SetupCurrentUpperAction(Player* this, PlayState* play) {
         this->actor.bgCheckFlags &= ~BGCHECKFLAG_GROUND;
         this->hoverBootsTimer = 0;
         this->unk_6AE |= 0x43;
-        Player_PlayVoiceSfxForAge(this, NA_SE_VO_LI_LASH);
+
+        //Change sound effect as desired
+        if (LINK_IS_ADULT){
+            //Debug_Text(255,255,255,4,15,"adult");
+            Player_PlayVoiceSfxForAge(this, NA_SE_VO_LI_LASH);
+        }else{
+            //Debug_Text(255,255,255,4,15,"child");
+            Audio_PlayActorSfx2(&this->actor, NA_SE_VO_LI_FREEZE_KID);
+        }
         
         return 1;
     }
@@ -3817,34 +3826,33 @@ s32 Player_UpdateDamage(Player* this, PlayState* play) {
             ) {
                 Player_SetRumble(this, 180, 20, 100, 0);
                 
-                if (!Player_IsChildWithHylianShield(this)) {
-                    if (this->invincibilityTimer >= 0) {
-                        LinkAnimationHeader* anim;
-                        s32 sp54 = Player_AimShieldCrouched == this->func_674;
-                        
-                        if (!Player_IsSwimming(this)) {
-                            Player_SetActionFunc(play, this, Player_DeflectAttackWithShield, 0);
-                        }
-                        
-                        if (!(this->unk_84F = sp54)) {
-                            Player_SetUpperActionFunc(this, Player_EndDeflectAttackStanding);
-                            
-                            if (this->unk_870 < 0.5f) {
-                                anim = sAnims_DefendStanceRight_Deflect[Player_HoldsTwoHandedWeapon(this)];
-                            } else {
-                                anim = sAnims_DefendStanceLeft_Deflect[Player_HoldsTwoHandedWeapon(this)];
-                            }
-                            LinkAnimation_PlayOnce(play, &this->skelAnime2, anim);
-                        } else {
-                            Player_PlayAnimOnce(play, this, sAnims_Deflect[Player_HoldsTwoHandedWeapon(this)]);
-                        }
+                if (this->invincibilityTimer >= 0) {
+                    LinkAnimationHeader* anim;
+                    s32 sp54 = Player_AimShieldCrouched == this->func_674;
+                    
+                    if (!Player_IsSwimming(this)) {
+                        Player_SetActionFunc(play, this, Player_DeflectAttackWithShield, 0);
                     }
                     
-                    if (!(this->stateFlags1 & (PLAYER_STATE1_13 | PLAYER_STATE1_14 | PLAYER_STATE1_21))) {
-                        this->linearVelocity = -18.0f;
-                        this->currentYaw = this->actor.shape.rot.y;
+                    if (!(this->unk_84F = sp54)) {
+                        Player_SetUpperActionFunc(this, Player_EndDeflectAttackStanding);
+                        
+                        if (this->unk_870 < 0.5f) {
+                            anim = sAnims_DefendStanceRight_Deflect[Player_HoldsTwoHandedWeapon(this)];
+                        } else {
+                            anim = sAnims_DefendStanceLeft_Deflect[Player_HoldsTwoHandedWeapon(this)];
+                        }
+                        LinkAnimation_PlayOnce(play, &this->skelAnime2, anim);
+                    } else {
+                        Player_PlayAnimOnce(play, this, sAnims_Deflect[Player_HoldsTwoHandedWeapon(this)]);
                     }
                 }
+                
+                if (!(this->stateFlags1 & (PLAYER_STATE1_13 | PLAYER_STATE1_14 | PLAYER_STATE1_21))) {
+                    this->linearVelocity = -18.0f;
+                    this->currentYaw = this->actor.shape.rot.y;
+                }
+            
                 
                 if (sp64 && (this->shieldQuad.info.acHitInfo->toucher.effect == 1)) {
                     Player_BurnDekuShield(this, play);
@@ -4907,7 +4915,7 @@ void Player_LoadGetItemObject(Player* this, s16 objectId) {
         size = gObjectTable[objectId].vromEnd - gObjectTable[objectId].vromStart;
         
         LOG_HEX("size", size, "../z_player.c", 9090);
-        ASSERT(size <= Patch_GetItem_SegmentSize, "GetItem model filesize is too big!", "../z_player.c", 9091);
+        ASSERT(size <= 1024 * 8, "size <= 1024 * 8", "../z_player.c", 9091);
         
         DmaMgr_SendRequest2(
             &this->giObjectDmaRequest,
@@ -5176,8 +5184,6 @@ s32 Player_SetupSpeakOrCheck(Player* this, PlayState* play) {
                         } else {
                             if (sp2C->naviEnemyId != NAVI_ENEMY_NONE) {
                                 sp2C->textId = sp2C->naviEnemyId + 0x600;
-                                if (sp2C->naviEnemyId == NAVI_ENEMY_NONE - 1)
-                                    EasyTalkApplyQueuedNaviActorDescription();
                             }
                         }
                     }
@@ -5439,7 +5445,7 @@ s32 Player_SetupDefend(Player* this, PlayState* play) {
     if (
         (play->shootingGalleryStatus == 0) && (this->currentShield != PLAYER_SHIELD_NONE) &&
         CHECK_BTN_ALL(sControlInput->cur.button, BTN_R) &&
-        (Player_IsChildWithHylianShield(this) || (!Player_IsFriendlyZTargeting(this) && (this->unk_664 == NULL)))
+        ((!Player_IsFriendlyZTargeting(this) && (this->unk_664 == NULL)))
     ) {
         Player_InactivateMeleeWeapon(this);
         Player_DetatchHeldActor(play, this);
@@ -5447,12 +5453,12 @@ s32 Player_SetupDefend(Player* this, PlayState* play) {
         if (Player_SetActionFunc(play, this, Player_AimShieldCrouched, 0)) {
             this->stateFlags1 |= PLAYER_STATE1_22;
             
-            if (!Player_IsChildWithHylianShield(this)) {
-                Player_SetModelsForHoldingShield(this);
-                anim = GET_PLAYER_ANIM(PLAYER_ANIMGROUP_20, this->modelAnimType);
-            } else {
-                anim = &gPlayerAnim_clink_normal_defense_ALL;
-            }
+            //if (!Player_IsChildWithHylianShield(this)) {
+            Player_SetModelsForHoldingShield(this);
+            anim = GET_PLAYER_ANIM(PLAYER_ANIMGROUP_20, this->modelAnimType);
+            //} else {
+            //anim = &gPlayerAnim_clink_normal_defense_ALL;
+            //}
             
             if (anim != this->skelAnime.animation) {
                 if (func_8008E9C4(this)) {
@@ -5467,9 +5473,9 @@ s32 Player_SetupDefend(Player* this, PlayState* play) {
             frame = Animation_GetLastFrame(anim);
             LinkAnimation_Change(play, &this->skelAnime, anim, 1.0f, frame, frame, ANIMMODE_ONCE, 0.0f);
             
-            if (Player_IsChildWithHylianShield(this)) {
-                Player_SetupAnimMovement(play, this, 4);
-            }
+            //if (Player_IsChildWithHylianShield(this)) {
+                //Player_SetupAnimMovement(play, this, 4);
+            //}
             
             func_8002F7DC(&this->actor, NA_SE_IT_SHIELD_POSTURE);
         }
@@ -6103,13 +6109,6 @@ void func_8083DDC8(Player* this, PlayState* play) {
 
 void Player_SetRunVelAndYaw(Player* this, f32 arg1, s16 arg2) {
     Math_AsymStepToF(&this->linearVelocity, arg1, REG(19) / 100.0f, 1.5f);
-
-#if MM_BUNNYHOOD == true
-    if (this->currentMask == PLAYER_MASK_BUNNY) {
-        this->linearVelocity = arg1 * 1.7f;
-    }
-#endif
-
     Math_ScaledStepToS(&this->currentYaw, arg2, REG(27));
 }
 
@@ -7961,7 +7960,7 @@ s32 Player_SetupMeleeAttack(Player* this, f32 arg1, f32 arg2, f32 arg3) {
 }
 
 s32 Player_AttackWhileDefending(Player* this, PlayState* play) {
-    if (!Player_IsChildWithHylianShield(this) && (Player_GetMeleeWeaponHeld(this) != 0) && sActiveItemUseFlag) {
+    if ((Player_GetMeleeWeaponHeld(this) != 0) && sActiveItemUseFlag) {
         Player_PlayAnimOnce(play, this, &gPlayerAnim_link_normal_defense_kiru);
         this->unk_84F = 1;
         this->meleeWeaponAnimation = PLAYER_MWA_STAB_1H;
@@ -8186,18 +8185,18 @@ void Player_AimShieldCrouched(Player* this, PlayState* play) {
     f32 sp40;
     
     if (LinkAnimation_Update(play, &this->skelAnime)) {
-        if (!Player_IsChildWithHylianShield(this)) {
+        //if (!Player_IsChildWithHylianShield(this)) {
             Player_PlayAnimLoop(play, this, GET_PLAYER_ANIM(PLAYER_ANIMGROUP_21, this->modelAnimType));
-        }
+        //}
         this->unk_850 = 1;
         this->unk_84F = 0;
     }
     
-    if (!Player_IsChildWithHylianShield(this)) {
+    //if (!Player_IsChildWithHylianShield(this)) {
         this->stateFlags1 |= PLAYER_STATE1_22;
         Player_SetupCurrentUpperAction(this, play);
         this->stateFlags1 &= ~PLAYER_STATE1_22;
-    }
+    //}
     
     Player_StepLinearVelToZero(this);
     
@@ -8245,7 +8244,7 @@ void Player_AimShieldCrouched(Player* this, PlayState* play) {
                 this->stateFlags1 &= ~PLAYER_STATE1_22;
                 Player_InactivateMeleeWeapon(this);
                 
-                if (Player_IsChildWithHylianShield(this)) {
+/*                if (Player_IsChildWithHylianShield(this)) {
                     Player_SetupReturnToStandStill(this, play);
                     LinkAnimation_Change(
                         play,
@@ -8258,12 +8257,12 @@ void Player_AimShieldCrouched(Player* this, PlayState* play) {
                         0.0f
                     );
                     Player_SetupAnimMovement(play, this, 4);
-                } else {
+                } else {*/
                     if (this->itemActionParam < 0) {
                         func_8008EC70(this);
                     }
                     Player_SetupReturnToStandStillSetAnim(this, GET_PLAYER_ANIM(PLAYER_ANIMGROUP_22, this->modelAnimType), play);
-                }
+                //}
                 
                 func_8002F7DC(&this->actor, NA_SE_IT_SHIELD_REMOVE);
                 
@@ -8663,6 +8662,7 @@ void Player_UpdateMidair(Player* this, PlayState* play) {
                             AnimationContext_DisableQueue(play);
                             if (this->stateFlags1 & PLAYER_STATE1_2) {
                                 Player_PlayVoiceSfxForAge(this, NA_SE_VO_LI_HOOKSHOT_HANG);
+
                             } else {
                                 Player_PlayVoiceSfxForAge(this, NA_SE_VO_LI_HANG);
                             }
@@ -10033,9 +10033,9 @@ void Player_SetupDoActionText(PlayState* play, Player* this) {
                 } else if (sp1C && !(this->stateFlags2 & PLAYER_STATE2_10)) {
                     doAction = DO_ACTION_DIVE;
                 } else if (
-                    !sp1C && (!(this->stateFlags1 & PLAYER_STATE1_22) || Player_IsZTargeting(this) ||
-                    !Player_IsChildWithHylianShield(this))
-                ) {
+                    !sp1C && (!(this->stateFlags1 & PLAYER_STATE1_22) || Player_IsZTargeting(this)))
+                    //!Player_IsChildWithHylianShield(this))
+                {
                     if (
                         (!(this->stateFlags1 & PLAYER_STATE1_14) && (sp20 <= 0) &&
                         (func_8008E9C4(this) ||
@@ -10654,8 +10654,301 @@ static Vec3f sHorseRaycastOffset = { 0.0f, 0.0f, 200.0f };
 static f32 sWaterConveyorSpeeds[] = { 2.0f, 4.0f, 7.0f };
 static f32 sFloorConveyorSpeeds[] = { 0.5f, 1.0f, 3.0f };
 
+///// ARROW CYCLING 
+void* actorAddr(u16 actorId, u32 addr)
+{
+    ActorOverlay* ovl;
+    u32 offset;
+
+    ovl = gActorOverlayTable + actorId;
+    offset = addr - (u32)ovl->vramStart;
+    
+    if (!ovl->loadedRamAddr)
+        return 0;
+    
+    return (char*)ovl->loadedRamAddr + offset;
+}
+
+typedef struct
+{
+    u16 frameDelay;
+    s8 magicCost;
+    Actor* arrow;
+}
+ArrowCycleState;
+
+static ArrowCycleState sArrowCycleState;
+
+typedef struct
+{
+    u8  item;
+    u8  slot;
+    u8  icon;
+    u8  action;
+    u16 var;
+    u8  magicCost;
+}
+ArrowInfo;
+
+// Can change magic costs at sMagicArrowCosts
+static const ArrowInfo kArrowsInfo[] = {
+    { ITEM_BOW,         SLOT_BOW,         ITEM_BOW,             PLAYER_AP_BOW,        0x2, 0 },
+    { ITEM_ARROW_FIRE,  SLOT_ARROW_FIRE,  ITEM_BOW_ARROW_FIRE,  PLAYER_AP_BOW_FIRE,   0x3, 4 },
+    { ITEM_ARROW_ICE,   SLOT_ARROW_ICE,   ITEM_BOW_ARROW_ICE,   PLAYER_AP_BOW_ICE,    0x4, 4 },
+    { ITEM_ARROW_LIGHT, SLOT_ARROW_LIGHT, ITEM_BOW_ARROW_LIGHT, PLAYER_AP_BOW_LIGHT,  0x5, 8 },
+};
+
+static const ArrowInfo* GetArrowInfo(u16 variable){
+
+    for (int i = 0; i < ARRAY_COUNT(kArrowsInfo); i++)
+    {
+        if (kArrowsInfo[i].var == variable)
+            return &kArrowsInfo[i];
+    }
+
+    return NULL;
+}
+
+static u16 GetNextArrowVariable(u16 variable){
+    
+    switch (variable)
+    {
+        case 2: return 3;
+        case 3: return 4;
+        case 4: return 5;
+        case 5: return 2;
+        default: do{}while(0); // UNREACHABLE
+    }
+}
+
+static int HasEnoughMagicForArrow(s8 prevCost, s8 curCost){
+    return gSaveContext.magic >= (curCost - prevCost);
+}
+
+static const ArrowInfo* GetNextArrowInfo(u16 variable){
+    s8 magicCost;
+    u16 current;
+    const ArrowInfo* info;
+    s8 magic;
+    int hasMagic;
+
+    magicCost = GetArrowInfo(variable)->magicCost;
+    current = variable;
+    
+    for (int i = 0; i < ARRAY_COUNT(kArrowsInfo); ++i){
+        
+        current = GetNextArrowVariable(current);
+        info = GetArrowInfo(current);
+        magic = info->magicCost;
+        hasMagic = HasEnoughMagicForArrow(magicCost, magic);
+        if (info && info->item == gSaveContext.inventory.items[info->slot] && hasMagic)
+            return info;
+    }
+
+    return NULL;
+}
+
+// Run the below command in powershell / wsl  after placing rom .elf file of en_arrow actor in \tools\mips64-binutils\bin
+//  ./mips64-objdump.exe -t file.elf|grep EnArrow  
+
+//Grab values from EnArrow_Init 
+#define EN_ARROW_CTOR   0x80800000
+//Grab values from EnArrow_Destroy 
+#define EN_ARROW_DTOR   0x808001D0
+
+static void ReinitializeArrow(Actor* arrow, PlayState* play){
+    ActorFunc init;
+    ActorFunc destroy;
+
+    init = actorAddr(ACTOR_EN_ARROW, EN_ARROW_CTOR);
+    destroy = actorAddr(ACTOR_EN_ARROW, EN_ARROW_DTOR);
+
+    destroy(arrow, play);
+    init(arrow, play);
+}
+
+static int IsArrowItem(u8 item){
+    
+    switch (item){
+        case ITEM_BOW:
+        case ITEM_BOW_ARROW_FIRE:
+        case ITEM_BOW_ARROW_ICE:
+        case ITEM_BOW_ARROW_LIGHT:
+            return 1;
+    default:
+        return 0;
+    }
+}
+
+static void UpdateCButton(Player* link, PlayState* play, const ArrowInfo* info){
+
+    /* Update the icon */
+    gSaveContext.equips.buttonItems[link->heldItemButton] = info->icon;
+    Interface_LoadItemIcon2(play, link->heldItemButton);
+
+    /* Update the action */
+    link->itemActionParam = info->action;
+    link->heldItemActionParam = info->action;
+}
+
+static int ActorHelper_DoesActorExist(Actor* actor, PlayState* play, int category){
+    Actor* list;
+
+    list = play->actorCtx.actorLists[category].head;
+    while (list)
+    {
+        if (list == actor)
+            return 1;
+        list = list->next;
+    }
+    return 0;
+}
+
+static void HandleFrameDelay(Player* link, PlayState* play, Actor* arrow){
+    s16 prevEffectState;
+    const ArrowInfo* curInfo;
+    Actor* special;
+
+    /* Sanity check */
+    if (!ActorHelper_DoesActorExist(arrow, play, ACTORCAT_ITEMACTION)) {
+        return;
+    }
+
+    (void)prevEffectState;
+
+    curInfo = GetArrowInfo(arrow->params);
+    if (arrow && curInfo){
+        special = arrow->child;
+        
+        if (special){
+            Actor_Delete(&play->actorCtx, special, play);
+            arrow->child = NULL;
+        }
+
+        /* Update the magic state */
+        if (curInfo->item != ITEM_BOW){
+            gSaveContext.magicState = 3;
+        } else{
+            gSaveContext.magicState = 0;
+        }
+
+        /* Refund the previous arrow magic */
+        gSaveContext.magic += sArrowCycleState.magicCost;
+        gSaveContext.magic -= curInfo->magicCost;
+    }
+}
+
+static Actor* ArrowCycle_FindArrow(Player* link, PlayState* play){
+    Actor* attached;
+
+    attached = link->actor.child;
+    if (attached && attached->id == ACTOR_EN_ARROW && attached->parent == &link->actor) {
+        return attached;
+    } else {
+        return NULL;
+    }
+}
+
+void ArrowCycle_Handle(Player* link, PlayState* play){
+    Actor* arrow;
+    Actor* special;
+    u8 selectedItem;
+    const ArrowInfo* curInfo;
+    const ArrowInfo* nextInfo;
+
+    Vec3f projectedHeadPos;
+    SkinMatrix_Vec3fMtxFMultXYZ(&play->viewProjectionMtxF, &link->actor.focus.pos, &projectedHeadPos);
+
+    if (sArrowCycleState.frameDelay >= 1)
+    {
+        HandleFrameDelay(link, play, sArrowCycleState.arrow);
+        sArrowCycleState.arrow = NULL;
+        sArrowCycleState.frameDelay = 0;
+        sArrowCycleState.magicCost = 0;
+        return;
+    }
+
+    /* Find the arrow */
+    arrow = ArrowCycle_FindArrow(link, play);
+    
+    if (!arrow){
+        // allows arrow type switching without arrow drawn
+        if (play->state.input[0].press.button & BTN_R && (play->mainCamera.mode == CAM_MODE_BOWARROW && projectedHeadPos.z < -4.0f) && play->shootingGalleryStatus == 0 &&
+            (link->heldItemActionParam >= PLAYER_AP_BOW && link->heldItemActionParam <= PLAYER_AP_BOW_LIGHT)){
+
+            for (int i = 0; i <= 3; ++i){
+                
+                int itemIndex;
+                
+                for (itemIndex = 0; itemIndex < 4; ++itemIndex){
+
+                    if (gSaveContext.equips.buttonItems[i] == kArrowsInfo[itemIndex].icon)
+                        break;
+                }
+                
+                if (itemIndex < 4){
+
+                    curInfo = GetArrowInfo(itemIndex + 2);
+                    nextInfo = GetNextArrowInfo(itemIndex + 2);
+                    play->state.input[0].press.button &= ~BTN_R;
+                    UpdateCButton(link, play, nextInfo);
+                }
+            }
+        }
+        
+        return;
+    }
+
+    selectedItem =  gSaveContext.equips.buttonItems[link->heldItemButton];
+    if (!IsArrowItem(selectedItem)) {
+        return;
+    }
+
+    if (!(play->state.input[0].press.button & BTN_R))
+        return;
+
+    play->state.input[0].press.button &= ~BTN_R;
+
+    /* get the various infos */
+    curInfo = GetArrowInfo(arrow->params);
+    nextInfo = GetNextArrowInfo(arrow->params);
+
+    /* Handle not having anything to cycle */
+    if (!curInfo || !nextInfo || curInfo->var == nextInfo->var){
+        return;
+    }
+
+    if (curInfo->item == ITEM_BOW && gSaveContext.magicState != 0){
+        return;
+    } 
+
+    /* Update the arrow and reload it */
+    arrow->params = nextInfo->var;
+    ReinitializeArrow(arrow, play);
+
+    special = arrow->child;
+    if (special){
+        special->draw = NULL;
+    }
+
+    /* Update the C buttons */
+    UpdateCButton(link, play, nextInfo);
+
+    /* Prepare the frame skip stuff */
+    sArrowCycleState.arrow = arrow;
+    sArrowCycleState.frameDelay++;
+    sArrowCycleState.magicCost = curInfo->magicCost;
+
+    if (curInfo->item == ITEM_BOW) {
+        gSaveContext.magicState = 3;
+    }
+}
+
 void Player_UpdateCommon(Player* this, PlayState* play, Input* input) {
     sControlInput = input;
+
+    // Arrow Cycling
+    ArrowCycle_Handle(this, play);
     
     if (this->unk_A86 < 0) {
         this->unk_A86++;
@@ -11084,7 +11377,11 @@ void Player_Update(Actor* thisx, PlayState* play) {
     s32 dogParams;
     Input sp44;
     Actor* dog;
-    
+    //Debug_Text(255,255,255,4,10,"%d sheathType",this->sheathType);
+    //Debug_Text(255,255,255,4,11,"%d param", this->itemActionParam);
+    //Debug_Text(255,255,255,4,12,"%d shield",  this->currentShield);
+    //Debug_Text(255,255,255,4,12,"%d AP?",this->itemActionParam);
+
     if (Player_DebugMode(this, play)) {
         if (gSaveContext.dogParams < 0) {
             if (Object_GetIndex(&play->objectCtx, OBJECT_DOG) < 0) {
@@ -11142,9 +11439,14 @@ void Player_Update(Actor* thisx, PlayState* play) {
 static struct_80858AC8 D_80858AC8;
 static Vec3s D_80858AD8[25];
 
-static Gfx* sMaskDlists[PLAYER_MASK_MAX - 1] = {
-    gLinkChildKeatonMaskDL, gLinkChildSkullMaskDL, gLinkChildSpookyMaskDL,  gLinkChildBunnyHoodDL,
-    gLinkChildGoronMaskDL,  gLinkChildZoraMaskDL,  gLinkChildGerudoMaskDL,  gLinkChildMaskOfTruthDL,
+static Gfx* sChildMaskDlists[PLAYER_MASK_MAX - 1] = {
+    gPlayAsDlChildKeatonMaskDL, gPlayAsDlChildSkullMaskDL, gPlayAsDlChildSpookyMaskDL,  gPlayAsDlChildBunnyHoodDL,
+    gPlayAsDlChildGoronMaskDL,  gPlayAsDlChildZoraMaskDL,  gPlayAsDlChildGerudoMaskDL,  gPlayAsDlChildMaskOfTruthDL,
+};
+
+static Gfx* sAdultMaskDlists[PLAYER_MASK_MAX - 1] = {
+    gPlayAsDlAdultKeatonMaskDL, gPlayAsDlAdultSkullMaskDL, gPlayAsDlAdultSpookyMaskDL,  gPlayAsDlAdultBunnyHoodDL,
+    gPlayAsDlAdultGoronMaskDL,  gPlayAsDlAdultZoraMaskDL,  gPlayAsDlAdultGerudoMaskDL,  gPlayAsDlAdultMaskOfTruthDL,
 };
 
 static Vec3s D_80854864 = { 0, 0, 0 };
@@ -11188,11 +11490,35 @@ void Player_DrawGameplay(PlayState* play, Player* this, s32 lod, Gfx* cullDList,
             sp68.x = D_80858AC8.unk_02 - 0x3E2;
             sp68.y = -0xDBE - D_80858AC8.unk_04;
             sp68.z = D_80858AC8.unk_00 - 0x348A;
+
             Matrix_SetTranslateRotateYXZ(97.0f, -1203.0f, 240.0f, &sp68);
             Matrix_ToMtx(sp70, "../z_player.c", 19279);
+
+            // Using vanilla bunnyhood adjustment
+            if (LINK_IS_ADULT){
+                Matrix_Push();
+                Matrix_Put(&play->viewProjectionMtxF);
+                Matrix_Translate(0.0f, 2.3f, 0.0f, MTXMODE_APPLY);
+                gSPMatrix(POLY_OPA_DISP++, Matrix_NewMtx(play->state.gfxCtx, __FILE__, __LINE__),
+                      G_MTX_LOAD | G_MTX_PROJECTION | G_MTX_NOPUSH);
+
+                gSPDisplayList(POLY_OPA_DISP++, gPlayAsDlAdultBunnyHoodDL);
+
+                Matrix_Put(&play->viewProjectionMtxF);
+                gSPMatrix(POLY_OPA_DISP++, Matrix_NewMtx(play->state.gfxCtx, __FILE__, __LINE__),
+                          G_MTX_LOAD | G_MTX_PROJECTION | G_MTX_NOPUSH);
+                Matrix_Pop();
+
+            }else{
+                gSPDisplayList(POLY_OPA_DISP++,gPlayAsDlChildBunnyHoodDL);
+            }
         }
-        
-        gSPDisplayList(POLY_OPA_DISP++, sMaskDlists[this->currentMask - 1]);
+
+        if (this->currentMask != PLAYER_MASK_NONE && this->currentMask != PLAYER_MASK_BUNNY) {
+            //Select correct mask based on age
+            Gfx** maskDListsToUse = LINK_IS_ADULT ? sAdultMaskDlists : sChildMaskDlists;
+            gSPDisplayList(POLY_OPA_DISP++, maskDListsToUse[this->currentMask - 1]);
+        }
     }
     
     if (
@@ -11524,7 +11850,8 @@ void Player_FirstPersonAiming(Player* this, PlayState* play) {
     if (
         (this->csMode != 0) || (this->unk_6AD == 0) || (this->unk_6AD >= 4) || Player_SetupStartEnemyZTargeting(this) ||
         (this->unk_664 != NULL) || !Player_SetupCameraMode(play, this) ||
-        (((this->unk_6AD == 2) && (CHECK_BTN_ANY(sControlInput->press.button, BTN_A | BTN_B | BTN_R) ||
+        // remove R button from check that clears attention
+        (((this->unk_6AD == 2) && (CHECK_BTN_ANY(sControlInput->press.button, BTN_A | BTN_B) ||
         Player_IsFriendlyZTargeting(this) || (!func_8002DD78(this) && !Player_IsAimingReady_Boomerang(this)))) ||
         ((this->unk_6AD == 1) &&
         CHECK_BTN_ANY(

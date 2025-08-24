@@ -2,15 +2,22 @@
 #define PROJECT_ENUM_H
 
 enum {
+	ZACTOR_EN_ARROW         = 0x0016,
+	ZACTOR_EN_DARK_LINK     = 0x0033,
+	ZACTOR_EN_HOOK          = 0x0066,
+	ZACTOR_ITEM_SHIELD      = 0x00EE,
 	ZACTOR_EN_PLAY_CUTSCENE = 0x01E0,
 	ZACTOR_MAX,
 };
 
 enum {
+	ZEFFECT_Z_EFF_SS_STICK   = 0x10,
 	ZEFFECT_MAX,
 };
 
 enum {
+	ZOBJ_ADULT_LINK       = 0x0014,
+	ZOBJ_CHILD_LINK       = 0x0015,
 	ZOBJ_MAX,
 };
 
