@@ -6,10 +6,10 @@
 // # # # # # # # # # # # # # # # # # # # #
 
 // New save patches
-#define Patch_SaveStartEntrance 0xBB
-#define Patch_SaveStartAge      LINK_AGE_CHILD
+#define Patch_SaveStartEntrance 0x00
+#define Patch_SaveStartAge LINK_AGE_CHILD;
 #define Patch_SaveStartTime     0x6AAB
-#define Patch_SaveStartCsIndex  0xFFF1
+#define Patch_SaveStartCsIndex 0x0000
 
 #define OOT 0
 #define MM  1
