@@ -11,12 +11,12 @@ Asm_SymbolAlias("__z64_init", TitleSetup_Init);
 Asm_SymbolAlias("__z64_dest", Opening_Destroy);
 
 void Opening_SetupTitleScreen(TitleSetupState* this) {
-    gExitParam.nextEntranceIndex = 0x009B;
+    gExitParam.nextEntranceIndex = 0x0000;
     gSaveContext.gameMode = 1;
     this->state.running = false;
-    gSaveContext.linkAge = LINK_AGE_ADULT;
+    gSaveContext.linkAge = LINK_AGE_CHILD;
     Sram_InitDebugSave();
-    gSaveContext.cutsceneIndex = 0x0000;  gSaveContext.entranceIndex = 0x009B;
+    gSaveContext.cutsceneIndex = 0x0000;  gSaveContext.entranceIndex = 0x0000;
     gSaveContext.sceneLayer = 7;
     SET_NEXT_GAMESTATE(&this->state, Play_Init, PlayState);
     
