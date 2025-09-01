@@ -12,7 +12,7 @@ Layer0
 	//---- Color ----
 	g_flModelTintAmount "1.000"
 	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
-	TextureColor "texturesForMaterials/ice_doukutu_sceneTex_00FCC0.i8.png"
+	TextureColor "texturesForMaterials/IC-0x31E10_32x64_RGBA16.png"
 
 	//---- Fade ----
 	g_flFadeExponent "1.000"
