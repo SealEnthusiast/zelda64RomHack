@@ -1,0 +1,28 @@
+# Blender MTL File: 'IceCavernMini.blend'
+# Material Count: 9
+
+newmtl materials/dev/reflectivity_30.vmat
+
+newmtl materials/frostyfloor.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\ice_doukutu_room_1Tex_006910.rgba16.png
+
+newmtl materials/icecaverngeo.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\IC-0x31E10_32x64_RGBA16.png
+
+newmtl materials/icewall2.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\ice_doukutu_room_1Tex_008110.i8.png
+
+newmtl materials/icewall2.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\ice_doukutu_room_1Tex_008110.i8.png
+
+newmtl materials/newice.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\ice_doukutu_room_1Tex_007110.rgba16.png
+
+newmtl materials/softice.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\ice_doukutu_sceneTex_00FCC0.i8.png
+
+newmtl materials/softice.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\ice_doukutu_sceneTex_00FCC0.i8.png
+
+newmtl materials/whitenedfrostyfloor.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\ice_doukutu_room_0Tex_003F50.rgba16.png
