@@ -1,11 +1,11 @@
 
 # Zelda 64: Seal's Small Rom Hack
 
-This is my first ever Rom Hack, unlike my other projects this one is unthemed and designed to just be a bunch of different areas
+This is my first ever Rom Hack, unlike my other projects this one is unthemed and designed to just be a bunch of different areas to test OOT and MM romhacking for a future larger project
 
 ## Features in development
 
-- 5 new areas (START -> Courtyard -> Dungeon 1 -> Water Maze -> Ice Cavern -> Dungeon -> END)
+- 5 new areas
 
 - MM and OOT support (MM Version has been reworked for MM items)
 
@@ -21,7 +21,7 @@ Will there be support for SOH or other Harbor Master projects?
 
 OOT/MM is crashing
 
-- Turn on 8mb ram andn overclocked CPU in your settings if needed. 
+- Turn on 8mb ram and overclocked CPU in your settings if needed. 
 - If you are on the physical N64 make sure you have an expansion pak installed. (The game has been tested to work on a NTSC N64 with an expansion pak, running on a SummerKart 64)
 
 ## Screenshots
