@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Created with SharpOcarina 1.61-->
+<ZScene cloneid="0" xmlns="clr-namespace:SharpOcarina;assembly=SharpOcarina">
   <Name>e2m2</Name>
   <Scale>1</Scale>
   <Music>2</Music>
@@ -9,7 +10,7 @@
   <SpecialObject>3</SpecialObject>
   <ElfMessage>0</ElfMessage>
   <InjectOffset>47185920</InjectOffset>
-  <SceneNumber>8</SceneNumber>
+  <SceneNumber>12</SceneNumber>
   <Reverb>0</Reverb>
   <CameraMovement>0</CameraMovement>
   <WorldMap>0</WorldMap>
@@ -92,9 +93,29 @@
     <Capacity>4</Capacity>
     <ZActor>
       <Number>46</Number>
-      <XPos>693</XPos>
-      <YPos>-1</YPos>
-      <ZPos>154</ZPos>
+      <XPos>66</XPos>
+      <YPos>-101</YPos>
+      <ZPos>-429</ZPos>
+      <XRot>0</XRot>
+      <YRot>-16383</YRot>
+      <ZRot>0</ZRot>
+      <Variable>0</Variable>
+      <FrontSwitchTo>1</FrontSwitchTo>
+      <FrontCamera>255</FrontCamera>
+      <BackSwitchTo>2</BackSwitchTo>
+      <BackCamera>255</BackCamera>
+      <SpawnRoom>255</SpawnRoom>
+      <IgnoreMMRot>
+        <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
+        <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
+        <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
+      </IgnoreMMRot>
+    </ZActor>
+    <ZActor>
+      <Number>46</Number>
+      <XPos>498</XPos>
+      <YPos>-101</YPos>
+      <ZPos>402</ZPos>
       <XRot>0</XRot>
       <YRot>-16384</YRot>
       <ZRot>0</ZRot>
@@ -110,34 +131,14 @@
         <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
       </IgnoreMMRot>
     </ZActor>
-    <ZActor>
-      <Number>46</Number>
-      <XPos>255</XPos>
-      <YPos>-1</YPos>
-      <ZPos>-677</ZPos>
-      <XRot>0</XRot>
-      <YRot>-16384</YRot>
-      <ZRot>0</ZRot>
-      <Variable>0</Variable>
-      <FrontSwitchTo>1</FrontSwitchTo>
-      <FrontCamera>255</FrontCamera>
-      <BackSwitchTo>2</BackSwitchTo>
-      <BackCamera>255</BackCamera>
-      <SpawnRoom>255</SpawnRoom>
-      <IgnoreMMRot>
-        <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
-        <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
-        <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
-      </IgnoreMMRot>
-    </ZActor>
   </Transitions>
   <SpawnPoints>
-    <Capacity>4</Capacity>
+    <Capacity>1</Capacity>
     <ZActor>
       <Number>0</Number>
-      <XPos>0</XPos>
-      <YPos>0</YPos>
-      <ZPos>0</ZPos>
+      <XPos>-155</XPos>
+      <YPos>-102</YPos>
+      <ZPos>253</ZPos>
       <XRot>0</XRot>
       <YRot>16320</YRot>
       <ZRot>0</ZRot>
@@ -290,7 +291,7 @@
   <ExitListV2>
     <Capacity>4</Capacity>
     <ZExit>
-      <Raw>262</Raw>
+      <Raw>261</Raw>
     </ZExit>
   </ExitListV2>
   <Pathways>
@@ -302,9 +303,9 @@
   <Cameras>
     <Capacity>4</Capacity>
     <ZCamera>
-      <XPos>0</XPos>
-      <YPos>0</YPos>
-      <ZPos>0</ZPos>
+      <XPos>-160</XPos>
+      <YPos>-81</YPos>
+      <ZPos>252</ZPos>
       <XRot>0</XRot>
       <YRot>0</YRot>
       <ZRot>0</ZRot>
@@ -336,7 +337,7 @@
     <Capacity>0</Capacity>
   </ActorCutscenes>
   <Rooms>
-    <Capacity>4</Capacity>
+    <Capacity>8</Capacity>
     <ZScene-ZRoom>
       <ModelFilename>mainmapobj\rev1\IceCavernMini.obj</ModelFilename>
       <StartTime>65535</StartTime>
@@ -361,7 +362,7 @@
         <Capacity>0</Capacity>
       </ZObjects>
       <ZActors>
-        <Capacity>0</Capacity>
+        <Capacity>2</Capacity>
       </ZActors>
       <GroupSettings>
         <TintAlpha>
@@ -882,14 +883,37 @@
       </AdditionalLights>
       <InjectOffset>47185920</InjectOffset>
       <ZObjects>
-        <Capacity>0</Capacity>
+        <Capacity>4</Capacity>
+        <ZScene-ZUShort>
+          <Value>107</Value>
+        </ZScene-ZUShort>
       </ZObjects>
       <ZActors>
-        <Capacity>0</Capacity>
+        <Capacity>4</Capacity>
+        <ZActor>
+          <Number>298</Number>
+          <XPos>-457</XPos>
+          <YPos>-114</YPos>
+          <ZPos>-569</ZPos>
+          <XRot>0</XRot>
+          <YRot>0</YRot>
+          <ZRot>0</ZRot>
+          <Variable>32</Variable>
+          <FrontSwitchTo>0</FrontSwitchTo>
+          <FrontCamera>255</FrontCamera>
+          <BackSwitchTo>1</BackSwitchTo>
+          <BackCamera>255</BackCamera>
+          <SpawnRoom>255</SpawnRoom>
+          <IgnoreMMRot>
+            <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
+            <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
+            <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
+          </IgnoreMMRot>
+        </ZActor>
       </ZActors>
       <GroupSettings>
         <TintAlpha>
-          <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">1275068415</unsignedInt>
+          <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">2952790015</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>
           <unsignedInt xmlns="https://extendedxmlserializer.github.io/system">4294967295</unsignedInt>

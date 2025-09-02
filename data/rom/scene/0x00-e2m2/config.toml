@@ -1,5 +1,5 @@
-# E0M1
-draw_func_index = 4
+# e2m2
+draw_func_index = 0
 [enables]
 	bottles     = true
 	a_button    = true

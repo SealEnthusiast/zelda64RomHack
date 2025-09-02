@@ -1,7 +1,9 @@
 # Blender MTL File: 'IceCavernMini.blend'
-# Material Count: 9
+# Material Count: 10
 
-newmtl materials/dev/reflectivity_30.vmat
+newmtl materials/dev/reflectivity_30.vmat.006
+
+newmtl materials/dev/reflectivity_30.vmat.007
 
 newmtl materials/frostyfloor.vmat.001
 map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\ice_doukutu_room_1Tex_006910.rgba16.png
@@ -12,10 +14,10 @@ map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\IC
 newmtl materials/icewall2.vmat
 map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\ice_doukutu_room_1Tex_008110.i8.png
 
-newmtl materials/icewall2.vmat.001
-map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\ice_doukutu_room_1Tex_008110.i8.png
-
 newmtl materials/newice.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\ice_doukutu_room_1Tex_007110.rgba16.png
+
+newmtl materials/newice.vmat.001
 map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\ice_doukutu_room_1Tex_007110.rgba16.png
 
 newmtl materials/softice.vmat
