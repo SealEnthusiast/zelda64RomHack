@@ -1,65 +1,47 @@
 # Blender MTL File: 'IceCavernMini.blend'
-# Material Count: 39
+# Material Count: 31
 
-newmtl materials/dev/reflectivity_30.vmat.004
+newmtl materials/dev/color_purple.vmat
 
-newmtl materials/dev/reflectivity_30.vmat.005
+newmtl materials/dev/color_purple.vmat.001
 
-newmtl materials/dev/reflectivity_30.vmat.006
+newmtl materials/dev/color_purple.vmat.002
 
-newmtl materials/dev/reflectivity_30.vmat.007
+newmtl materials/dev/color_purple.vmat.003
 
-newmtl materials/dev/reflectivity_30.vmat.008
+newmtl materials/dev/color_purple.vmat.004
 
-newmtl materials/dev/reflectivity_30.vmat.009
+newmtl materials/dev/color_purple.vmat.005
 
-newmtl materials/dev/reflectivity_30.vmat.010
+newmtl materials/dev/color_purple.vmat.006
 
-newmtl materials/dev/reflectivity_30.vmat.011
+newmtl materials/dev/color_purple.vmat.007
 
-newmtl materials/dev/reflectivity_30.vmat.012
+newmtl materials/dev/color_purple.vmat.016
 
-newmtl materials/dev/reflectivity_30.vmat.013
+newmtl materials/dev/color_purple.vmat.017
 
-newmtl materials/dev/reflectivity_30.vmat.014
+newmtl materials/dev/color_purple.vmat.018
 
-newmtl materials/dev/reflectivity_30.vmat.015
+newmtl materials/dev/color_purple.vmat.019
 
-newmtl materials/dev/reflectivity_30.vmat.016
+newmtl materials/dev/color_purple.vmat.020
 
-newmtl materials/dev/reflectivity_30.vmat.017
+newmtl materials/dev/color_purple.vmat.021
 
-newmtl materials/dev/reflectivity_30.vmat.018
+newmtl materials/dev/color_purple.vmat.022
 
-newmtl materials/dev/reflectivity_30.vmat.019
+newmtl materials/dev/color_purple.vmat.023
 
-newmtl materials/dev/reflectivity_30.vmat.020
+newmtl materials/dev/color_purple.vmat.024
 
-newmtl materials/dev/reflectivity_30.vmat.021
+newmtl materials/dev/color_purple.vmat.025
 
-newmtl materials/dev/reflectivity_30.vmat.022
+newmtl materials/dev/color_purple.vmat.026
 
-newmtl materials/dev/reflectivity_30.vmat.023
+newmtl materials/dev/color_purple.vmat.027
 
-newmtl materials/dev/reflectivity_30.vmat.024
-
-newmtl materials/dev/reflectivity_30.vmat.025
-
-newmtl materials/dev/reflectivity_30.vmat.026
-
-newmtl materials/dev/reflectivity_30.vmat.027
-
-newmtl materials/dev/reflectivity_30.vmat.028
-
-newmtl materials/dev/reflectivity_30.vmat.029
-
-newmtl materials/dev/reflectivity_30.vmat.030
-
-newmtl materials/dev/reflectivity_30.vmat.031
-
-newmtl materials/dev/reflectivity_30.vmat.032
-
-newmtl materials/dev/reflectivity_30.vmat.033
+newmtl materials/dev/reflectivity_30.vmat
 
 newmtl materials/frostyfloor.vmat.001
 map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\ice_doukutu_room_1Tex_006910.rgba16.png
@@ -84,6 +66,9 @@ newmtl materials/softice.vmat
 map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\ice_doukutu_sceneTex_00FCC0.i8.png
 
 newmtl materials/softice.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\ice_doukutu_sceneTex_00FCC0.i8.png
+
+newmtl materials/softice.vmat.002
 map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\ice_doukutu_sceneTex_00FCC0.i8.png
 
 newmtl materials/whitenedfrostyfloor.vmat

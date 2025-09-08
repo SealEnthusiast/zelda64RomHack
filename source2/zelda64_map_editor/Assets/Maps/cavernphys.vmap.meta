@@ -1,0 +1,22 @@
+{
+  "publish": {
+    "Enabled": false,
+    "ProjectConfig": {
+      "Title": "Cavernphys",
+      "Type": "map",
+      "Org": "local",
+      "Ident": "cavernphys",
+      "Schema": 0,
+      "IncludeSourceFiles": false,
+      "Resources": null,
+      "PackageReferences": [],
+      "EditorReferences": [],
+      "Mounts": null,
+      "IsStandaloneOnly": false,
+      "Metadata": {
+        "SingleAssetSource": "maps/cavernphys.vmap",
+        "ParentPackage": ""
+      }
+    }
+  }
+}
