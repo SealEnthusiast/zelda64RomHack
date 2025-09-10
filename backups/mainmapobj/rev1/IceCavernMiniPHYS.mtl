@@ -1,0 +1,10 @@
+# Blender MTL File: 'IceCavernMiniPHYS.blend'
+# Material Count: 4
+
+newmtl materials/dev/color_purple.vmat
+
+newmtl materials/dev/dev_measuregeneric.vmat
+
+newmtl materials/dev/dev_measuregeneric01.vmat
+
+newmtl materials/dev/reflectivity_30.vmat
