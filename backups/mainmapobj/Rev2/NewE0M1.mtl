@@ -1,0 +1,75 @@
+# Blender MTL File: 'Startingarea.blend'
+# Material Count: 23
+
+newmtl materials/cheapcarpet.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00020860_16x64_rgba16.png
+
+newmtl materials/courtyardbackroundtrees.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00013B60_64x16_rgba16.png
+
+newmtl materials/courtyardgrass.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00014360_32x32_rgba16.png
+
+newmtl materials/courtyardstairs.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0002EE60_64x32_i8.png
+
+newmtl materials/courtyardvariedwhitebricks.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000E360_64x64_i4.png
+
+newmtl materials/courtyardwalls.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00011360_32x64_rgba16.png
+
+newmtl materials/floralwreath.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00009D20_32x32_rgba16.png
+
+newmtl materials/frostyfloor.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\ice_doukutu_room_1Tex_006910.rgba16.png
+
+newmtl materials/frostyfloor.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\ice_doukutu_room_1Tex_006910.rgba16.png
+
+newmtl materials/hylialakewall.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00009AB8_32x64_rgba16.png
+
+newmtl materials/insidebanister.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00012C68_32x32_rgba16.png
+
+newmtl materials/insidebanister.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00012C68_32x32_rgba16.png
+
+newmtl materials/lakelabwall.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000CD50_32x64_ci8.png
+
+newmtl materials/rooftile.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\000140B8_16x64_rgba16.png
+
+newmtl materials/stonemarking.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00021978_64x32_rgba16+00020978_64x32_rgba16.png
+
+newmtl materials/treeswater.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000AEB8_32x32_rgba16.png
+
+newmtl materials/underwatergrass.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000C2B8_16x16_rgba16.png
+
+newmtl materials/walkinggrass.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00030C98_32x32_rgba16.png
+
+newmtl materials/water.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\000170B8_32x32_rgba16.png
+map_Ks ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\000170B8_32x32_rgba16.png
+
+newmtl materials/water.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\000170B8_32x32_rgba16.png
+map_Ks ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\000170B8_32x32_rgba16.png
+
+newmtl materials/water.vmat.002
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\000170B8_32x32_rgba16.png
+map_Ks ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\000170B8_32x32_rgba16.png
+
+newmtl materials/water.vmat.003
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\000170B8_32x32_rgba16.png
+map_Ks ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\000170B8_32x32_rgba16.png
+
+newmtl materials/watergrass1.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\000184B8_32x32_rgba16.png
