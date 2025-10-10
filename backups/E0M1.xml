@@ -540,6 +540,9 @@
         <ZScene-ZUShort>
           <Value>212</Value>
         </ZScene-ZUShort>
+        <ZScene-ZUShort>
+          <Value>5</Value>
+        </ZScene-ZUShort>
       </ZObjects>
       <ZActors>
         <Capacity>80</Capacity>
@@ -1165,31 +1168,11 @@
         </ZActor>
         <ZActor>
           <Number>14</Number>
-          <XPos>1706</XPos>
+          <XPos>2000</XPos>
           <YPos>63</YPos>
           <ZPos>-368</ZPos>
           <XRot>0</XRot>
-          <YRot>-11040</YRot>
-          <ZRot>0</ZRot>
-          <Variable>0</Variable>
-          <FrontSwitchTo>0</FrontSwitchTo>
-          <FrontCamera>255</FrontCamera>
-          <BackSwitchTo>1</BackSwitchTo>
-          <BackCamera>255</BackCamera>
-          <SpawnRoom>255</SpawnRoom>
-          <IgnoreMMRot>
-            <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
-            <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
-            <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
-          </IgnoreMMRot>
-        </ZActor>
-        <ZActor>
-          <Number>14</Number>
-          <XPos>1860</XPos>
-          <YPos>69</YPos>
-          <ZPos>-204</ZPos>
-          <XRot>0</XRot>
-          <YRot>-18720</YRot>
+          <YRot>-13440</YRot>
           <ZRot>0</ZRot>
           <Variable>0</Variable>
           <FrontSwitchTo>0</FrontSwitchTo>
@@ -1325,13 +1308,33 @@
         </ZActor>
         <ZActor>
           <Number>14</Number>
-          <XPos>1860</XPos>
+          <XPos>1968</XPos>
           <YPos>69</YPos>
           <ZPos>-204</ZPos>
           <XRot>0</XRot>
           <YRot>-18720</YRot>
           <ZRot>0</ZRot>
           <Variable>0</Variable>
+          <FrontSwitchTo>0</FrontSwitchTo>
+          <FrontCamera>255</FrontCamera>
+          <BackSwitchTo>1</BackSwitchTo>
+          <BackCamera>255</BackCamera>
+          <SpawnRoom>255</SpawnRoom>
+          <IgnoreMMRot>
+            <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
+            <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
+            <boolean xmlns="https://extendedxmlserializer.github.io/system">false</boolean>
+          </IgnoreMMRot>
+        </ZActor>
+        <ZActor>
+          <Number>3</Number>
+          <XPos>873</XPos>
+          <YPos>44</YPos>
+          <ZPos>0</ZPos>
+          <XRot>0</XRot>
+          <YRot>-14880</YRot>
+          <ZRot>0</ZRot>
+          <Variable>513</Variable>
           <FrontSwitchTo>0</FrontSwitchTo>
           <FrontCamera>255</FrontCamera>
           <BackSwitchTo>1</BackSwitchTo>
