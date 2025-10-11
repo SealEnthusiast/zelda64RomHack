@@ -1,0 +1,7 @@
+HMU=Source 2 Default cubes
+
+x40 is export size from blender to Sharp Ocarina
+
+link is about 1-1/4 HMU tall, 1-1/4 HMU wide and 1/5 HMU thick
+
+Doors are about 2 HMU tall, 1-1/2 HMU wide and 1 HMU thick

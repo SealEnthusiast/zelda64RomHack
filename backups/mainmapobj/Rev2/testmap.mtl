@@ -1,0 +1,5 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl materials/insidecheckerboardflooring.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000D7A0_32x32_rgba16.png
