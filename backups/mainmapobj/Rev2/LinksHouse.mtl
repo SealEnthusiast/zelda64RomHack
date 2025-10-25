@@ -1,0 +1,56 @@
+# Blender MTL File: 'LinksHouse.blend'
+# Material Count: 18
+
+newmtl bookshelf.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\bookshelf.jpg
+
+newmtl materials/courtyardstairs.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0002EE60_64x32_i8.png
+
+newmtl materials/courtyardunpolishedmarble.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00015E00_32x32_rgba16.png
+
+newmtl materials/housewall.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\HOS-0x4720_64x64_CI4.png
+
+newmtl materials/housewall.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\HOS-0x4720_64x64_CI4.png
+
+newmtl materials/housewall.vmat.002
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\HOS-0x4720_64x64_CI4.png
+
+newmtl materials/insideredcarpetcenter.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000CFA0_32x32_rgba16 - Cropped.png
+
+newmtl materials/insideredcarpetcenter.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000CFA0_32x32_rgba16 - Cropped.png
+
+newmtl materials/marioandluigi.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\MarioAndLuigi.jpg
+
+newmtl materials/pdiddykong.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\PDiddyKong.jpg
+
+newmtl materials/purplecarpet.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\GC-0x90F58_64x32_CI8 - Copy.png
+
+newmtl materials/purplecarpet.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\GC-0x90F58_64x32_CI8 - Copy.png
+
+newmtl materials/softice.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\ice_doukutu_sceneTex_00FCC0.i8.png
+
+newmtl materials/walltest.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00009A20_64x32_rgba16.png
+
+newmtl materials/walltest.vmat.001
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00009A20_64x32_rgba16.png
+
+newmtl materials/window.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00021060_32x64_rgba16.png
+
+newmtl materials/windowlightray.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\FT-0x7FAD8_32x32_IA16.png
+
+newmtl materials/yoshidrawing.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\YoshiDrawing.jpg
