@@ -7,7 +7,7 @@
 
 // New save patches
 #define Patch_SaveStartEntrance 0x05
-#define Patch_SaveStartAge LINK_AGE_ADULT;
+#define Patch_SaveStartAge LINK_AGE_CHILD;
 #define Patch_SaveStartTime     0x6AAB
 #define Patch_SaveStartCsIndex 0x0000
 
