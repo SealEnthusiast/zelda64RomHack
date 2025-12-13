@@ -54,6 +54,18 @@ typedef struct  {
     Flag      flag;
 } TexScrollFlag;
 
+typedef struct  {
+    Flag flag;
+    u8 polytypeID[2];
+    u8 polytypeVFlags[2];
+    u16 maxTimer;
+    u16 curTimer;
+    u32 polytype1Data[2];   
+    u32 polytype2Data[2];         
+    u16 triangleIDs[];
+
+} PolytypeSwap;
+
 typedef enum  {
     COLORKEY_PRIM     = 1 << 0,
     COLORKEY_ENV      = 1 << 1,
@@ -137,6 +149,19 @@ typedef struct {
     u16   type;                /* function          */
     void* data;                /* data              */
 } AnimInfo;
+
+// scene overlay, for zovl's inside scenes
+struct SceneOvl
+{
+    // offsets are relative to the start of scene file in ram
+    u32       start;           // start of overlay
+    u32       end;             // end of overlay
+    union
+    {
+        u32   main;            // entry point within overlay
+        void  (*exec)(void*);  // main routine after relocating
+    } u;
+};
 
 typedef struct {
     Flag flag;                 /* flag structure    */

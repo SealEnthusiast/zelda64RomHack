@@ -1,3 +1,7 @@
 [0x20]
 file = "rom/NewLinkAnims.bin"
 compress = false
+
+[0x21]
+file = "rom/FunctionNames.bin"
+compress = false

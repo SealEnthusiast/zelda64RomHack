@@ -1,0 +1,22 @@
+{
+  "publish": {
+    "Enabled": false,
+    "ProjectConfig": {
+      "Title": "Playerhouse",
+      "Type": "map",
+      "Org": "local",
+      "Ident": "playerhouse",
+      "Schema": 0,
+      "IncludeSourceFiles": false,
+      "Resources": null,
+      "PackageReferences": [],
+      "EditorReferences": [],
+      "Mounts": null,
+      "IsStandaloneOnly": false,
+      "Metadata": {
+        "SingleAssetSource": "maps/playerhouse.vmap",
+        "ParentPackage": ""
+      }
+    }
+  }
+}
