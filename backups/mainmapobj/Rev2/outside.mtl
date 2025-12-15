@@ -1,0 +1,70 @@
+# Blender MTL File: 'outside.blend'
+# Material Count: 23
+
+newmtl materials/bundled_straw.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000E508_32x32_rgba16.png
+
+newmtl materials/courtyardbackroundtrees.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00013B60_64x16_rgba16.png
+
+newmtl materials/courtyardgrass.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00014360_32x32_rgba16.png
+
+newmtl materials/courtyardpillars.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00015E00_32x32_rgba16.png
+
+newmtl materials/courtyardvariedwhitebricks.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000E360_64x64_i4.png
+
+newmtl materials/courtyardwalls.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00011360_32x64_rgba16.png
+
+newmtl materials/curtians.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00020F48_32x64_rgba16.png
+
+newmtl materials/goroncealing.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00009C48_64x32_ci8.png
+
+newmtl materials/goronfloor.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00009008_64x32_ci8.png
+
+newmtl materials/housewalloutside.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00017B50_32x64_ci8.png
+
+newmtl materials/insideredcarpetcenter.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000CFA0_32x32_rgba16 - Cropped.png
+
+newmtl materials/kakarikoroof.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0001BF50_16x32_ci8.png
+
+newmtl materials/lonlonlog.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00004C10_32x16_rgba16.png
+
+newmtl materials/lonlonwall.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00005410_32x32_rgba16.png
+
+newmtl materials/lonlonwood.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00005C10_64x32_rgba16.png
+
+newmtl materials/path1.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000F1E0_64x64_i4.png
+
+newmtl materials/rooftile.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\000140B8_16x64_rgba16.png
+
+newmtl materials/sealsig.vmat
+
+newmtl materials/stable.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000ABE0_32x64_rgba16.png
+
+newmtl materials/stray_straw.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0000ED08_32x64_rgba16.png
+
+newmtl materials/walkinggrass.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00030C98_32x32_rgba16.png
+
+newmtl materials/window.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\00021060_32x64_rgba16.png
+
+newmtl materials/woodfence.vmat
+map_Kd ..\\..\\..\\source2\\zelda64_map_editor\\Assets\\texturesForMaterials\\0001D148_32x32_rgba16.png

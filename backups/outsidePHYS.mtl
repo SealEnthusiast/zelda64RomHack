@@ -1,0 +1,34 @@
+# Blender MTL File: 'outsidePHYS.blend'
+# Material Count: 16
+
+newmtl materials/bundled_straw.vmat
+
+newmtl materials/courtyardgrass.vmat
+
+newmtl materials/courtyardpillars.vmat
+
+newmtl materials/courtyardvariedwhitebricks.vmat
+
+newmtl materials/courtyardwalls.vmat
+
+newmtl materials/goroncealing.vmat
+
+newmtl materials/goronfloor.vmat
+
+newmtl materials/goronfloor.vmat.001
+
+newmtl materials/housewalloutside.vmat
+
+newmtl materials/lonlonlog.vmat
+
+newmtl materials/lonlonwall.vmat
+
+newmtl materials/lonlonwood.vmat
+
+newmtl materials/lonlonwood.vmat.001
+
+newmtl materials/sealsig.vmat
+
+newmtl materials/stable.vmat
+
+newmtl materials/woodfence.vmat
