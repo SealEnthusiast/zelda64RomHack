@@ -1,5 +1,7 @@
-# Project-specific ignores
-*.z64
-*.n64
-*.v64
-*.exe
+# Seal's Zelda 64 gitnore
+*.z64 
+*.n64 
+*.v64 
+# ^ Prevent piracy DMCA 
+*.exe 
+# ^ Optional but recommended due to redundancy
